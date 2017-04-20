@@ -1,0 +1,201 @@
+﻿﻿<link href="../../Content/style/common.css" rel="stylesheet" />
+<div class="row">
+    <div id="content" class="col-lg-12">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="page-header">
+                    <ul class="breadcrumb">
+                        <li>
+                            <i class="fa fa-home"></i>
+                            <a href={{homeUrl}}>首页</a>
+                        </li>
+                        <li>
+                            <a ui-sref="appcertList">护理险资格申请列表</a>
+                        </li>
+                        <li>护理险资格申请编辑</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="tabbable header-tabs">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#box_tab1" data-toggle="tab"> <span class="hidden-inline-mobile">资格申请</span></a></li>
+                        <li><a href="#box_tab2" data-toggle="tab" ng-click="GetEvalData('ADL')"> <span class="hidden-inline-mobile">日常生活能力评定量表</span></a></li>
+                    </ul>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane fade in active" id="box_tab1">
+                        <div class="row">
+                            <form class="form-horizontal" name="appertForm" role="form" novalidate>
+                                <div class="col-md-12">
+                                    <div class="box border primary">
+                                        <div class="box-title">
+                                            <h4><i class="fa fa-columns"></i><span class="hidden-inline-mobile">巨鹿县长期护理保险待遇申请表</span></h4>
+                                        </div>
+                                        <div class="box-body">
+
+                                            <div class="form-group">
+                                                <label class="col-md-1 control-label">社会保障卡号<span class="required">*</span></label>
+                                                <div class="col-md-2">
+                                                    <input name="社会保障卡号" class="form-control" placeholder="输入有效的保障卡号" ng-model="currentItem.SsNo" ng-blur="GetApplicantInfo(currentItem.SsNo,'Ss')" ng-keydown="EnterGetApplicantInfo($event,currentItem.SsNo,'Ss')" required ng-maxlength="50" />
+                                                </div>
+                                                <label class="col-md-1 control-label">身份证号<span class="required">*</span></label>
+                                                <div class="col-md-2">
+                                                    <input name="身份证号" class="form-control" placeholder="输入有效的身份证号" ng-model="currentItem.IdNo" ng-blur="GetApplicantInfo(currentItem.IdNo,'Id')" ng-keydown="EnterGetApplicantInfo($event,currentItem.IdNo,'Id')" required ng-maxlength="18" />
+                                                </div>
+                                                <label class="col-md-1 control-label">护理类型<span class="required">*</span></label>
+                                                <div class="col-md-5">
+                                                    <div class="left mgb10" ng-repeat="careType in careTypeList">
+                                                        <label class="checkbox-inline mgb15 control-label">
+                                                            <input type="radio" name="NsappcareType" ng-model="currentItem.NsappcareType" ng-value="careType.CareType">{{careType.DisPlayName}}
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-md-1 control-label">姓名</label>
+                                                <div class="col-md-2">
+                                                    <input name="姓名" class="form-control" ng-model="currentItem.Name" ng-disabled="true" />
+                                                </div>
+                                                <label class="col-md-1 control-label">性别</label>
+                                                <div class="col-md-2">
+                                                    <input name="性别" class="form-control" ng-model="currentItem.Gender" ng-disabled="true" />
+                                                </div>
+                                                <label class="col-md-1 control-label">年龄</label>
+                                                <div class="col-md-2">
+                                                    <input name="年龄" class="form-control" ng-model="currentItem.Age" ng-disabled="true" />
+                                                </div>
+                                                <label class="col-md-1 control-label">人员身份</label>
+                                                <div class="col-md-2">
+                                                    <select name="人员身份" id="selMcType" class="form-control" select-code="A002" ng-model="currentItem.McType" ng-disabled="true"></select>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-md-1 control-label">病种<span class="required">*</span></label>
+                                                <div class="col-md-11">
+                                                    <input type="text" id="selDisease" class="form-control" ng-model="currentItem.Disease" select-multiple-code="A003" name="病种" required />
+                                                    <!--<select name="病种" id="selDisease" class="form-control" select-code="A003" ng-model="currentItem.Disease" required></select>-->
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-md-1 control-label">现住址</label>
+                                                <div class="col-md-5">
+                                                    <input name="现住址" class="form-control" ng-model="currentItem.Address" ng-disabled="true" ng-maxlength="100" />
+                                                </div>
+                                                <label class="col-md-1 control-label">联系电话</label>
+                                                <div class="col-md-5">
+                                                    <input name="联系电话" class="form-control" ng-model="currentItem.Phone" ng-disabled="true" ng-maxlength="50" />
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-md-1 control-label">申请原因<span class="required">*</span></label>
+                                                <div class="col-md-11">
+                                                    <textarea name="申请原因" class="form-control" rows="6" ng-model="currentItem.AppReason" required ng-maxlength="500"></textarea>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-md-1 control-label">机构意见<span class="required">*</span></label>
+                                                <div class="col-md-11">
+                                                    <textarea name="机构意见" class="form-control" rows="6" ng-model="currentItem.NsComment" required ng-maxlength="500"></textarea>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-md-1 control-label">上传相关材料附件</label>
+                                                <div class="col-md-11">
+                                                    <div class="border">
+                                                        <!--<div class="left pdl15 pdt15" ng-if="currentItem.UploadFiles">
+                                                            <span><img ng-src="{{currentItem.UploadFiles | filePathFormat}}" alt=""></span>
+                                                        </div>-->
+                                                        <!--<div class="left pdl15 pdt10">
+                                                            <div id="ArchiveFilePicker"></div>
+                                                        </div>-->
+                                                        <div id="uploader-demo">
+                                                            <!--用来存放item-->
+                                                            <div id="fileList" class="uploader-list"></div>
+                                                            <div id="filePicker">选择文件</div>
+                                                            <!--<button id="ctlBtn" class="btn btn-default">开始上传</button>-->
+                                                        </div>
+
+                                                        <!--<div class="left pdl15 pdt10">
+                                                            <button class="btn btn-sm btn-primary" type="button" ng-click="clear()">清除</button>
+                                                        </div>-->
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="hack hack-border"></div>
+                                    <div class="form-group">
+
+                                        <div class="col-md-offset-8">
+                                            <a class="btn btn-primary" id="saveList" ng-click="saveAppcert(currentItem)"><i class="fa">保存</i></a>
+                                            <a class="btn btn-primary" ng-click="Print(currentItem.AppcertId,'ApplyBILL')" ng-show="showADL">打印</a>
+                                            <a class="btn btn-default" ng-click="closeAppcert()"><i class="fa">返回列表</i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="box_tab2">
+                        <div ng-show="showADL">
+                            <div class="box border primary">
+                                <div class="box-title">
+                                    <h4><i class="fa fa-columns"></i><span class="hidden-inline-mobile">题目({{QuestionName}})</span></h4>
+                                </div>
+                                <div class="box-body">
+                                    <div>
+                                        <fieldset>
+                                            <div class="form-group display-table">
+                                                <div ng-repeat="Item in MakerItem" class="border-bottom-lightgray-dashed mgb20">
+                                                    <div class="form-group  display-table">
+                                                        <div class="col-sm-3">
+                                                            <label class="control-label">{{Item.MakeName}}</label>
+                                                        </div>
+                                                        <div class="col-sm-9">
+                                                            <div ng-repeat="answer in Item.MakerItemLimitedValue" class="left mgb10">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="radio" name="{{Item.MakeName}}" ng-model="Item.LimitedValueId" id="{{answer.LimitedValueId}}" value="{{answer.LimitedValueId}}" ng-change="calcResult(Item,answer)">{{answer.LimitedValueName}}
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-md-offset-6">
+                                        <h5><span class="hidden-inline-mobile">分数小计：{{NursingHomeAsstRecord.TotalScore}}</span></h5>
+                                    </div>
+                                    <div class="hack hack-border"></div>
+                                    <div class="col-md-offset-8">
+                                        <a class="btn btn-primary" ng-click="saveADL()"><i class="fa">保存</i></a>
+                                        <a class="btn btn-primary" ng-click="Print(currentItem.AppcertId,'ADLBILL')" ng-show="showSubmit">打印</a>
+                                        <a class="btn btn-success" ng-click="submitAppcert(currentItem)" ng-show="showSubmit"><i class="fa">提交</i></a>
+                                        <a class="btn btn-default" ng-click="closeAppcert()"><i class="fa">返回列表</i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div ng-hide="showADL">
+                            <span>请先保存待遇申请资料表</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

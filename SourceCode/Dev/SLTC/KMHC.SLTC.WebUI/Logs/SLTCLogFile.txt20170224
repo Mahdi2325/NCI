@@ -1,0 +1,25 @@
+
+ 记录时间：2017-02-24 17:27:57,231 线程ID:[12] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_AGENCY` AS `Extent1`) AS `GroupBy1`
+ 
+
+ 记录时间：2017-02-24 17:27:57,471 线程ID:[12] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`AGENCYID`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`AGENCYNAME`, 
+`Extent1`.`AGENCYNO`, 
+`Extent1`.`CONTACT`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_AGENCY` AS `Extent1`
+ ORDER BY 
+`Extent1`.`AGENCYID` ASC LIMIT 0,10
+ 

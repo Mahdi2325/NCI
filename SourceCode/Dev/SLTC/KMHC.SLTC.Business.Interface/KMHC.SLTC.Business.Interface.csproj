@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5B2E2137-06D2-4ADF-BC85-AA94984ACC50}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KMHC.SLTC.Business.Interface</RootNamespace>
+    <AssemblyName>KMHC.SLTC.Business.Interface</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IBaseService.cs" />
+    <Compile Include="IPersonStatusReportService.cs" />
+    <Compile Include="IReportService.cs" />
+    <Compile Include="NCIA\IAuditYearCertService.cs" />
+    <Compile Include="NCIA\IHlxDeskService.cs" />
+    <Compile Include="NCIP\IRSMonFeeDtlService.cs" />
+    <Compile Include="NCIP\IMonFeeService.cs" />
+    <Compile Include="ILtcService.cs" />
+    <Compile Include="IMyDeskService.cs" />
+    <Compile Include="IReportManageService.cs" />
+    <Compile Include="IIndexManageService.cs" />
+    <Compile Include="ICarePlansManageService.cs" />
+    <Compile Include="IInventoryManageService.cs" />
+    <Compile Include="INursingRecord.cs" />
+    <Compile Include="INursingWorkstationService.cs" />
+    <Compile Include="ICostManageService.cs" />
+    <Compile Include="IGoodsManageService.cs" />
+    <Compile Include="IPharmacistManageService.cs" />
+    <Compile Include="IResidentManageService.cs" />
+    <Compile Include="IDictManageService.cs" />
+    <Compile Include="IOrganizationManageService.cs" />
+    <Compile Include="INursingManageService.cs" />
+    <Compile Include="ISocialWorkerManageService.cs" />
+    <Compile Include="IVisitManageService.cs" />
+    <Compile Include="NCIA\IAppcertService.cs" />
+    <Compile Include="NCIA\IAppHospService.cs" />
+    <Compile Include="NCIA\IApplicantService.cs" />
+    <Compile Include="NCIA\IAuditAppcertService.cs" />
+    <Compile Include="NCIA\IAuditAppHospService.cs" />
+    <Compile Include="NCIA\IOrgStatistics.cs" />
+    <Compile Include="NCIP\IPayGrantService.cs" />
+    <Compile Include="NCIP\IResidentMonfeeService.cs" />
+    <Compile Include="NCIP\IRegInHosStatusListService.cs" />
+    <Compile Include="NCIP\IServiceDepositGrantListService.cs" />
+    <Compile Include="NCIP\IServiceDepositGrantService.cs" />
+    <Compile Include="NCIP\IServiceDepositService.cs" />
+    <Compile Include="NCI\IORGService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KMHC.SLTC.Business.Entity\KMHC.SLTC.Business.Entity.csproj">
+      <Project>{208d3a36-9507-4ff2-a3bf-374d718f0a11}</Project>
+      <Name>KMHC.SLTC.Business.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KMHC.SLTC.Business.Interceptor\KMHC.SLTC.Business.Interceptor.csproj">
+      <Project>{23a3026e-dc64-45c1-a5bf-dc3b857d4eeb}</Project>
+      <Name>KMHC.SLTC.Business.Interceptor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KMHC.SLTC.Persistence\KMHC.SLTC.Persistence.csproj">
+      <Project>{3a0737ce-99b6-429f-9b11-85b49fad1de2}</Project>
+      <Name>KMHC.SLTC.Persistence</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Report\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,117 @@
+﻿<div class="row">
+    <div id="content" class="col-lg-12">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="page-header">
+                    <ul class="breadcrumb">
+                        <li>
+                            <i class="fa fa-home"></i>
+                            <a href={{homeUrl}}>首页</a>
+                        </li>
+                        <li>护理险资格年审</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="box border primary">
+                    <div class="box-title">
+                        <h4><i class="fa fa-search"></i>查询条件</h4>
+                    </div>
+                    <form class="form-horizontal ng-pristine ng-valid" role="form">
+                        <div class="box-body">
+                            <div class="input-group">
+                                <label class="search-lable ">姓名</label>
+                                <input type="text" class="search-control search-input input-width-sm" ng-model="options.params.name" placeholder="请输入姓名" />
+                                <label class="search-lable ">社保卡号(身份证号)</label>
+                                <input type="text" class="search-control search-input input-width-sm" ng-model="options.params.idno" placeholder="请输入社保卡号或身份证号" />
+                                <label class="search-lable">定点机构</label>
+                                <select class="search-control search-input input-width-sm" ng-model="options.params.nsId" ng-options="item.NsId as item.NsName for item in OrgData">
+                                    <option value="">所有机构</option>
+                                </select>
+                                <label class="search-lable ">护理险状态</label>
+                                <select class="search-control search-input input-width-sm " ng-model="options.params.status">
+                                    <option value="">--请选择--</option>
+                                    <option value="Y">使用中</option>
+                                    <option value="N">暂停中</option>
+                                    <option value="N">已停用</option>
+                                </select>
+                                <div class="search-btn-div">
+                                    <a class="btn btn-primary btn-sm" ng-click="Search()"><i class="fa fa-search"></i> 查询</a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="box border primary">
+                    <div class="box-title">
+                        <h4><i class="fa fa-table"></i>护理险资格年审列表</h4>
+                    </div>
+                    <div class="box-body">
+                        <div class="box-center">
+                            <div class="box-center">
+                                <ui-data-table options="options">
+                                    <table id="datatable1" class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th class="center">序号</th>
+                                                <th class="center">姓名</th>
+                                                <th class="center">性别</th>
+                                                <th class="center">年龄</th>
+                                                <th class="center">社保卡号</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr ng-repeat="ayc in Data.AuditYearCertLsit">
+                                                <td class="center">{{(options.pageInfo.CurrentPage-1)*options.pageInfo.PageSize+$index+1}}</td>
+                                                <td class="center">{{ayc.Name}}</td>
+                                                <td class="center">{{ayc.Gender}}</td>
+                                                <td class="center">{{ayc.Age}}</td>
+                                                <td class="center">{{ayc.SsNo}}</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </ui-data-table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalYearCert" tabindex="-2" role="dialog" aria-labelledby="modalOrgListLabel" data-target=".bs-example-modal-lg">
+    <div class="modal-dialog bs-example-modal-lg" role="document">
+        <div class="modal-content modal-lg">
+            <div class="modal-header bg-success">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">  &times; </button>
+                <h4 class="modal-title" id="modalOrgListLabel">资格年审启用/停用理由：</h4>
+            </div>
+            <div class="modal-body">
+                <div class="mgl15">
+                    <form class="form-horizontal" role="form" name="ReqForm" novalidate>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">{{currentItem.HospStatus==6?"停用":"启用"}}理由<span class="required">*</span></label>
+                            <div class="col-sm-10">
+                                <textarea class="form-control col-md-10" ng-model="currentItem.Reason" rows="5" required></textarea>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" type="submit" ng-click="save(currentItem)" ng-disabled="ReqForm.$invalid">保存</button>
+                <button class="btn btn-primary" type="button" data-dismiss="modal">取消</button>
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,113 @@
+﻿<div class="row">
+    <div id="content" class="col-lg-12">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="page-header">
+                    <ul class="breadcrumb">
+                        <li>
+                            <i class="fa fa-home"></i>
+                            <a href={{homeUrl}}>首页</a>
+                        </li>
+                        <li>护理险资格申请列表</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="box border primary">
+                    <div class="box-title">
+                        <h4><i class="fa fa-search"></i>查询条件</h4>
+                    </div>
+                    <form class="form-horizontal ng-pristine ng-valid" role="form">
+                        <div class="box-body">
+                            <div class="input-group">
+                                <label class="search-lable ">姓名</label>
+                                <input type="text" class="search-control search-input input-width-sm" ng-model="options.params.name" placeholder="请输入姓名" />
+                                <label class="search-lable ">社保卡号(身份证号)</label>
+                                <input type="text" class="search-control search-input input-width-sm" ng-model="options.params.idno" placeholder="请输入社保卡号或身份证号" />
+                                <label class="search-lable ">申请状态</label>
+                                <select class="search-control search-input input-width-sm " ng-model="status">
+                                    <option value="">--请选择--</option>
+                                    <option value="0">未提交</option>
+                                    <option value="1">已撤回</option>
+                                    <option value="3">待审核</option>
+                                    <option value="6">审核通过</option>
+                                    <option value="9">审核不通过</option>
+                                    <option value="11">重新审核</option>
+                                </select>
+                                <div class="search-btn-div">
+                                    <a class="btn btn-primary btn-sm" ng-click="Search()"><i class="fa fa-search"></i> 查询</a>
+                                </div>
+                                <a class="btn btn-primary btn-sm" ui-sref="appcertEdit"><i class="fa fa-plus"></i> 新增申请</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="box border primary">
+                    <div class="box-title">
+                        <h4><i class="fa fa-table"></i>资格申请列表</h4>
+                    </div>
+                    <div class="box-body">
+                        <div class="box-center">
+                            <ui-data-table options="options">
+                                <table id="datatable1" class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th class="center"  width="60">序号</th>
+                                            <th class="center" width="80">姓名</th>
+                                            <th class="center">社保卡号</th>
+                                            <th class="center">性别</th>
+                                            <th class="center">年龄</th>
+                                            <th class="center">人员身份</th>
+                                            <th class="center">护理类型</th>
+                                            <th class="center">ADL分数</th>
+                                            <th class="center">是否是重申</th>
+                                            <th class="center">重新申报开始日期</th>
+                                            <th class="center">申请状态</th>
+                                            <th class="center"><i class="fa fa-bars"></i> 操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr ng-repeat="Appcert in Data.AppcertList">
+                                            <td class="center">{{(options.pageInfo.CurrentPage-1)*options.pageInfo.PageSize+$index+1}}</td>
+                                            <td class="center">{{Appcert.Name}}</td>
+                                            <td class="center">{{Appcert.SsNo}}</td>
+                                            <td class="center">{{Appcert.Gender}}</td>
+                                            <td class="center">{{Appcert.Age}}</td>
+                                            <td class="center"><span select-code="A002" select-value="{{Appcert.McType}}"></span></td>
+                                            <td class="center">{{Appcert.NsappcareType | careTypeFormat}}</td>
+                                            <td class="center">{{Appcert.TotalScore}}</td>
+                                            <td class="center">{{Appcert.BaseAppcertIdOfReApp==null?"否":"是"}}</td>
+                                            <td class="center">{{Appcert.ReApplicatedStartDate | dateFormat}}</td>
+                                            <td class="center">{{Appcert.Status | appcertStatsFormat}}</td>
+                                            <td class=" center">
+                                                <div class="btn-group btn-group-xs" style="width: 120px" role="group" aria-label="...">
+                                                    <a ng-show="Appcert.Status==3" class="btn btn-warning" role="button" ng-click="cancelAppcert(Appcert)"><i class="fa fa-undo"></i>撤回</a>
+                                                    <a ng-show="Appcert.Status==0 || Appcert.Status==1" class="btn btn-warning" role="button" ng-click="submitAppcert(Appcert)"><i class="fa fa-upload"></i>提交</a>
+                                                    <a ng-show="Appcert.Status==0 || Appcert.Status==1" class="btn btn-success" role="button" ui-sref="appcertEdit({id:Appcert.AppcertId})"><i class="fa fa-pencil"></i>编辑</a>
+                                                    <a ng-show="Appcert.Status==0 || Appcert.Status==1" class="btn btn-danger" role="button" ng-click="deleteAppcert(Appcert)"><i class="fa fa-times"></i>删除</a>
+                                                    <a ng-show="Appcert.Status==9 && Appcert.BaseAppcertIdOfReApp==null" class="btn btn-grey" role="button" ui-sref="appcertEdit({oldId:Appcert.AppcertId})"><i class="fa fa-pencil"></i>重申</a>
+                                                    <!--<a ng-show="Appcert.Status==9 && Appcert.BaseAppcertIdOfReApp!=null" class="btn btn-grey" role="button" ui-sref="appcertEdit({ssNo:Appcert.SsNo})"><i class="fa fa-plus"></i>新增申请</a>-->
+                                                    <a ng-hide="Appcert.BaseAppcertIdOfReApp==null" class="btn btn-info" role="button" ui-sref="appcertForm({id:Appcert.BaseAppcertIdOfReApp})"><i class="fa fa-search"></i>查看上次</a>
+                                                    <a ng-show="Appcert.Status==3 || Appcert.Status==6 || Appcert.Status==9 || Appcert.Status==11" class="btn btn-primary" role="button" ui-sref="appcertForm({id:Appcert.AppcertId})"><i class="fa fa-search"></i>查看</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </ui-data-table>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

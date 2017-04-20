@@ -1,0 +1,109 @@
+﻿<div class="row">
+    <div id="content" class="col-lg-12">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="page-header">
+                    <ul class="breadcrumb">
+                        <li>
+                            <i class="fa fa-home"></i>
+                            <a href={{homeUrl}}>首页</a>
+                        </li>
+                        <li>参保人信息列表</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--搜索框-->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="box border primary">
+                    <div class="box-title">
+                        <h4><i class="fa fa-search"></i>查询条件</h4>
+                    </div>
+                    <form class="form-horizontal ng-pristine ng-valid" role="form">
+                        <div class="box-body">
+                            <div class="form-group">
+                                <label class="search-lable">参保人姓名</label>
+                                <input type="text" class="search-control search-input input-width-sm" maxlength="32" ng-model="options.params.name" placeholder="请输入参保人姓名" />
+                                <label class="search-lable">身份证号码或社保卡号</label>
+                                <input type="text" class="search-control search-input input-width-sm" maxlength="18" ng-model="options.params.idno" placeholder="请输入身份证号码或社保卡号" />
+                                <label class="search-lable" ng-show="IsShowNs">定点机构</label>
+                                <select class="search-control search-input input-width-sm" ng-model="options.params.nsId" ng-options="item.NsId as item.NsName for item in OrgData" ng-show="IsShowNs">
+                                    <option value="">所有机构</option>
+                                </select>
+                                <div class="search-btn-div">
+                                    <a class="btn btn-primary btn-sm" ng-click="searchPersonList()"><i class="fa fa-search"></i> 查询</a>
+                                    <a class="btn btn-primary btn-sm" ui-sref="applicantEdit({id:''})" ng-hide="IsShowNs"><i class="fa fa-plus"></i> 新增</a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--搜索框-->
+        <!-- BOX -->
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="box border primary">
+                    <div class="box-title">
+                        <h4><i class="fa fa-table"></i>资格申请列表</h4>
+                        <div class="tools hidden-xs">
+                            <a class="reload" href="javascript:;" ca-reload>
+                                <i class="fa fa-refresh"></i>
+                            </a>
+                            <a href="javascript:;" class="collapse" ca-collapse>
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="remove" href="javascript:;" ca-remove>
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="box-body">
+                        <div class="box-center">
+                            <ui-data-table options="options">
+                                <table id="datatable1" class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th class="column-w50">序号</th>
+                                            <th class="column-w80">姓名</th>
+                                            <th class="column-w150">身份证号码</th>
+                                            <th class="column-w150">社保卡号</th>
+                                            <th class="column-w80">性别</th>
+                                            <th class="column-w80">年龄</th>
+                                            <th class="column-w80">人员身份</th>
+                                            <th class="column-w120 center"><i class="fa fa-bars"></i> 操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr ng-repeat="p in Data.personList">
+                                            <td class="column-w50">{{(options.pageInfo.CurrentPage-1)*options.pageInfo.PageSize+$index+1}}</td>
+                                            <td class="column-w80">{{p.Name}}</td>
+                                            <td class="column-w150">{{p.Idno}}</td>
+                                            <td class="column-w150">{{p.Ssno}}</td>
+                                            <td class="column-w80">{{p.Gender}}</td>
+                                            <td class="column-w80">{{p.Age}}</td>
+                                            <td><span select-code="A002" select-value="{{p.McType}}"></span></td>
+                                            <td class="column-w120 center">
+                                                <div class="btn-group btn-group-xs" role="group" aria-label="...">
+                                                    <a class="btn btn-success" role="button" ui-sref="applicantEdit({id:p.ApplicantId})"><i class="fa fa-pencil"></i>编辑</a>
+                                                    <a class="btn btn-danger" role="button" ng-click="deletePerson(p)" ng-hide="IsShowNs"><i class="fa fa-times"></i>删除</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </ui-data-table>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /BOX -->
+
+    </div>
+</div>

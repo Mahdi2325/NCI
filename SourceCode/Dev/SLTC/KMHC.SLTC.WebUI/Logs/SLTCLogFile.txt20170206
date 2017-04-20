@@ -1,0 +1,5300 @@
+
+ 记录时间：2017-02-06 09:34:04,364 线程ID:[5] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_AGENCY` AS `Extent1`) AS `GroupBy1`
+ 
+
+ 记录时间：2017-02-06 09:34:04,551 线程ID:[5] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`AGENCYID`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`AGENCYNAME`, 
+`Extent1`.`AGENCYNO`, 
+`Extent1`.`CONTACT`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_AGENCY` AS `Extent1`
+ ORDER BY 
+`Extent1`.`AGENCYID` ASC LIMIT 0,10
+ 
+
+ 记录时间：2017-02-06 09:34:44,685 线程ID:[12] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_AGENCY` AS `Extent1`) AS `GroupBy1`
+ 
+
+ 记录时间：2017-02-06 09:34:44,689 线程ID:[12] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`AGENCYID`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`AGENCYNAME`, 
+`Extent1`.`AGENCYNO`, 
+`Extent1`.`CONTACT`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_AGENCY` AS `Extent1`
+ ORDER BY 
+`Extent1`.`AGENCYID` ASC LIMIT 0,10
+ 
+
+ 记录时间：2017-02-06 09:34:44,743 线程ID:[12] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`USERID`, 
+`Extent1`.`PARENTUSERID`, 
+`Extent1`.`ROLEID`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`ACCOUNT`, 
+`Extent1`.`PASSWORD`, 
+`Extent1`.`USERNAME`, 
+`Extent1`.`EMAIL`, 
+`Extent1`.`IDNO`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_USER` AS `Extent1`
+ WHERE NOT ((1 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))
+ 
+
+ 记录时间：2017-02-06 09:34:44,897 线程ID:[12] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = @EntityKeyValue1
+ 
+
+ 记录时间：2017-02-06 09:34:44,967 线程ID:[12] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = @EntityKeyValue1
+ 
+
+ 记录时间：2017-02-06 09:34:45,035 线程ID:[12] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`NSID`, 
+`Extent1`.`NSNO`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`NSNAME`, 
+`Extent1`.`NSTYPE`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`CONTACTOR`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ WHERE `Extent1`.`NSID` = @p0 LIMIT 2
+ 
+
+ 记录时间：2017-02-06 09:34:45,052 线程ID:[12] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = @EntityKeyValue1
+ 
+
+ 记录时间：2017-02-06 09:34:45,066 线程ID:[12] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`NSID`, 
+`Extent1`.`NSNO`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`NSNAME`, 
+`Extent1`.`NSTYPE`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`CONTACTOR`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ WHERE `Extent1`.`NSID` = @p0 LIMIT 2
+ 
+
+ 记录时间：2017-02-06 09:34:45,069 线程ID:[12] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = @EntityKeyValue1
+ 
+
+ 记录时间：2017-02-06 09:34:45,079 线程ID:[12] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`AGENCYID`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`AGENCYNAME`, 
+`Extent1`.`AGENCYNO`, 
+`Extent1`.`CONTACT`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_AGENCY` AS `Extent1`
+ WHERE `Extent1`.`AGENCYID` = @p0 LIMIT 2
+ 
+
+ 记录时间：2017-02-06 09:34:45,083 线程ID:[12] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = @EntityKeyValue1
+ 
+
+ 记录时间：2017-02-06 09:34:45,106 线程ID:[12] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ICID`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`ICNAME`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`CONTACT`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_INSURANCECOMPANY` AS `Extent1`
+ WHERE `Extent1`.`ICID` = @p0 LIMIT 2
+ 
+
+ 记录时间：2017-02-06 09:34:45,119 线程ID:[12] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = @EntityKeyValue1
+ 
+
+ 记录时间：2017-02-06 09:34:45,141 线程ID:[12] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`GOVID`, 
+`Extent1`.`GOVERMENTLEVELID`, 
+`Extent1`.`LOCATIONID`, 
+`Extent1`.`GOVNAME`, 
+`Extent1`.`PARENTGOVID`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`CONTACT`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_GOVERNMENT` AS `Extent1`
+ WHERE `Extent1`.`GOVID` = @p0 LIMIT 2
+ 
+
+ 记录时间：2017-02-06 09:34:45,158 线程ID:[12] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = @EntityKeyValue1
+ 
+
+ 记录时间：2017-02-06 09:34:45,165 线程ID:[12] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = @EntityKeyValue1
+ 
+
+ 记录时间：2017-02-06 09:34:45,170 线程ID:[12] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = @EntityKeyValue1
+ 
+
+ 记录时间：2017-02-06 09:34:45,175 线程ID:[12] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = @EntityKeyValue1
+ 
+
+ 记录时间：2017-02-06 09:34:45,219 线程ID:[12] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`USERID`, 
+`Extent1`.`PARENTUSERID`, 
+`Extent1`.`ROLEID`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`ACCOUNT`, 
+`Extent1`.`PASSWORD`, 
+`Extent1`.`USERNAME`, 
+`Extent1`.`EMAIL`, 
+`Extent1`.`IDNO`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_USER` AS `Extent1`
+ WHERE NOT ((1 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))
+ 
+
+ 记录时间：2017-02-06 09:34:57,372 线程ID:[17] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 
+
+ 记录时间：2017-02-06 09:35:20,839 线程ID:[10] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE (((NOT ((1 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AND ((`Extent1`.`ORGTYPE` = @p__linq__0) AND (@p__linq__0 IS NOT NULL))) AND ((`Extent1`.`ORGID` = @p__linq__1) AND (@p__linq__1 IS NOT NULL))) AND (NOT (((`Extent1`.`ROLETYPE` = @p__linq__2) AND (NOT ((`Extent1`.`ROLETYPE` IS  NULL) OR (@p__linq__2 IS  NULL)))) OR ((`Extent1`.`ROLETYPE` IS  NULL) AND (@p__linq__2 IS  NULL))))) AS `GroupBy1`
+ 
+
+ 记录时间：2017-02-06 09:35:20,849 线程ID:[10] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Project1`.`ROLEID`, 
+`Project1`.`PARENTROLEID`, 
+`Project1`.`ROLENAME`, 
+`Project1`.`ROLETYPE`, 
+`Project1`.`STATUS`, 
+`Project1`.`ORGTYPE`, 
+`Project1`.`ORGID`, 
+`Project1`.`CREATEBY`, 
+`Project1`.`CREATETIME`, 
+`Project1`.`UPDATEBY`, 
+`Project1`.`UPDATETIME`, 
+`Project1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Project1`
+ WHERE (((NOT ((1 = `Project1`.`ISDELETE`) AND (`Project1`.`ISDELETE` IS NOT NULL))) AND ((`Project1`.`ORGTYPE` = @p__linq__0) AND (@p__linq__0 IS NOT NULL))) AND ((`Project1`.`ORGID` = @p__linq__1) AND (@p__linq__1 IS NOT NULL))) AND (NOT (((`Project1`.`ROLETYPE` = @p__linq__2) AND (NOT ((`Project1`.`ROLETYPE` IS  NULL) OR (@p__linq__2 IS  NULL)))) OR ((`Project1`.`ROLETYPE` IS  NULL) AND (@p__linq__2 IS  NULL))))
+ ORDER BY 
+`Project1`.`CREATETIME` DESC LIMIT 0,10
+ 
+
+ 记录时间：2017-02-06 09:35:28,158 线程ID:[15] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ 
+
+ 记录时间：2017-02-06 09:35:28,203 线程ID:[18] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 
+
+ 记录时间：2017-02-06 09:35:28,208 线程ID:[18] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 
+
+ 记录时间：2017-02-06 09:35:32,193 线程ID:[7] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_USER` AS `Extent1`
+ WHERE ((NOT ((1 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AND ((`Extent1`.`ORGID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL))) AND ((`Extent1`.`ORGTYPE` = @p__linq__1) AND (@p__linq__1 IS NOT NULL))) AS `GroupBy1`
+ 
+
+ 记录时间：2017-02-06 09:35:32,205 线程ID:[7] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Project1`.`USERID`, 
+`Project1`.`PARENTUSERID`, 
+`Project1`.`ROLEID`, 
+`Project1`.`ORGTYPE`, 
+`Project1`.`ORGID`, 
+`Project1`.`ACCOUNT`, 
+`Project1`.`PASSWORD`, 
+`Project1`.`USERNAME`, 
+`Project1`.`EMAIL`, 
+`Project1`.`IDNO`, 
+`Project1`.`STATUS`, 
+`Project1`.`CREATEBY`, 
+`Project1`.`CREATETIME`, 
+`Project1`.`UPDATEBY`, 
+`Project1`.`UPDATETIME`, 
+`Project1`.`ISDELETE`
+FROM `NCI_USER` AS `Project1`
+ WHERE ((NOT ((1 = `Project1`.`ISDELETE`) AND (`Project1`.`ISDELETE` IS NOT NULL))) AND ((`Project1`.`ORGID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL))) AND ((`Project1`.`ORGTYPE` = @p__linq__1) AND (@p__linq__1 IS NOT NULL))
+ ORDER BY 
+`Project1`.`CREATEBY` DESC LIMIT 0,10
+ 
+
+ 记录时间：2017-02-06 09:35:36,011 线程ID:[18] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE (((NOT ((1 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AND ((`Extent1`.`ORGTYPE` = @p__linq__0) AND (@p__linq__0 IS NOT NULL))) AND ((`Extent1`.`ORGID` = @p__linq__1) AND (@p__linq__1 IS NOT NULL))) AND (NOT (((`Extent1`.`ROLETYPE` = @p__linq__2) AND (NOT ((`Extent1`.`ROLETYPE` IS  NULL) OR (@p__linq__2 IS  NULL)))) OR ((`Extent1`.`ROLETYPE` IS  NULL) AND (@p__linq__2 IS  NULL))))) AS `GroupBy1`
+ 
+
+ 记录时间：2017-02-06 09:35:36,017 线程ID:[18] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Project1`.`ROLEID`, 
+`Project1`.`PARENTROLEID`, 
+`Project1`.`ROLENAME`, 
+`Project1`.`ROLETYPE`, 
+`Project1`.`STATUS`, 
+`Project1`.`ORGTYPE`, 
+`Project1`.`ORGID`, 
+`Project1`.`CREATEBY`, 
+`Project1`.`CREATETIME`, 
+`Project1`.`UPDATEBY`, 
+`Project1`.`UPDATETIME`, 
+`Project1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Project1`
+ WHERE (((NOT ((1 = `Project1`.`ISDELETE`) AND (`Project1`.`ISDELETE` IS NOT NULL))) AND ((`Project1`.`ORGTYPE` = @p__linq__0) AND (@p__linq__0 IS NOT NULL))) AND ((`Project1`.`ORGID` = @p__linq__1) AND (@p__linq__1 IS NOT NULL))) AND (NOT (((`Project1`.`ROLETYPE` = @p__linq__2) AND (NOT ((`Project1`.`ROLETYPE` IS  NULL) OR (@p__linq__2 IS  NULL)))) OR ((`Project1`.`ROLETYPE` IS  NULL) AND (@p__linq__2 IS  NULL))))
+ ORDER BY 
+`Project1`.`CREATETIME` DESC LIMIT 0,10
+ 
+
+ 记录时间：2017-02-06 09:36:22,649 线程ID:[15] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ WHERE ((`Extent1`.`GOVID` = @p__linq__0) AND (NOT ((`Extent1`.`GOVID` IS  NULL) OR (@p__linq__0 IS  NULL)))) OR ((`Extent1`.`GOVID` IS  NULL) AND (@p__linq__0 IS  NULL))) AS `GroupBy1`
+ 
+
+ 记录时间：2017-02-06 09:36:22,659 线程ID:[15] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Project1`.`NSID`, 
+`Project1`.`NSNO`, 
+`Project1`.`GOVID`, 
+`Project1`.`NSNAME`, 
+`Project1`.`NSTYPE`, 
+`Project1`.`ADDRESS`, 
+`Project1`.`CONTACTOR`, 
+`Project1`.`PHONE`, 
+`Project1`.`CREATEBY`, 
+`Project1`.`CREATETIME`, 
+`Project1`.`UPDATEBY`, 
+`Project1`.`UPDATETIME`, 
+`Project1`.`ISDELETE`
+FROM `NCI_NURSINGHOME` AS `Project1`
+ WHERE ((`Project1`.`GOVID` = @p__linq__0) AND (NOT ((`Project1`.`GOVID` IS  NULL) OR (@p__linq__0 IS  NULL)))) OR ((`Project1`.`GOVID` IS  NULL) AND (@p__linq__0 IS  NULL))
+ ORDER BY 
+`Project1`.`NSID` ASC LIMIT 0,1000
+ 
+
+ 记录时间：2017-02-06 09:36:22,667 线程ID:[21] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCIP_SERVICEDEPOSIT` AS `Extent1`
+ WHERE ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)) AND (`Extent1`.`YEARMONTH` LIKE @p__linq__0)) AS `GroupBy1`
+ 
+
+ 记录时间：2017-02-06 09:36:22,685 线程ID:[21] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Project1`.`SERVICEDEPOSITID`, 
+`Project1`.`SDGRANTID`, 
+`Project1`.`NSID`, 
+`Project1`.`YEARMONTH`, 
+`Project1`.`AMOUNT`, 
+`Project1`.`SERVICEDEPOSITDATE`, 
+`Project1`.`STATUS`, 
+`Project1`.`CREATEBY`, 
+`Project1`.`CREATETIME`, 
+`Project1`.`UPDATEBY`, 
+`Project1`.`UPDATETIME`, 
+`Project1`.`ISDELETE`
+FROM `NCIP_SERVICEDEPOSIT` AS `Project1`
+ WHERE ((0 = `Project1`.`ISDELETE`) AND (`Project1`.`ISDELETE` IS NOT NULL)) AND (`Project1`.`YEARMONTH` LIKE @p__linq__0)
+ ORDER BY 
+`Project1`.`YEARMONTH` ASC LIMIT 0,12
+ 
+
+ 记录时间：2017-02-06 09:36:31,318 线程ID:[15] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ WHERE ((`Extent1`.`GOVID` = @p__linq__0) AND (NOT ((`Extent1`.`GOVID` IS  NULL) OR (@p__linq__0 IS  NULL)))) OR ((`Extent1`.`GOVID` IS  NULL) AND (@p__linq__0 IS  NULL))) AS `GroupBy1`
+ 
+
+ 记录时间：2017-02-06 09:36:31,321 线程ID:[15] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Project1`.`NSID`, 
+`Project1`.`NSNO`, 
+`Project1`.`GOVID`, 
+`Project1`.`NSNAME`, 
+`Project1`.`NSTYPE`, 
+`Project1`.`ADDRESS`, 
+`Project1`.`CONTACTOR`, 
+`Project1`.`PHONE`, 
+`Project1`.`CREATEBY`, 
+`Project1`.`CREATETIME`, 
+`Project1`.`UPDATEBY`, 
+`Project1`.`UPDATETIME`, 
+`Project1`.`ISDELETE`
+FROM `NCI_NURSINGHOME` AS `Project1`
+ WHERE ((`Project1`.`GOVID` = @p__linq__0) AND (NOT ((`Project1`.`GOVID` IS  NULL) OR (@p__linq__0 IS  NULL)))) OR ((`Project1`.`GOVID` IS  NULL) AND (@p__linq__0 IS  NULL))
+ ORDER BY 
+`Project1`.`NSID` ASC LIMIT 0,1000
+ 
+
+ 记录时间：2017-02-06 09:36:31,326 线程ID:[22] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCIP_SERVICEDEPOSITGRANT` AS `Extent1`
+ WHERE (0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)) AS `GroupBy1`
+ 
+
+ 记录时间：2017-02-06 09:36:31,344 线程ID:[22] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`SDGRANTID`, 
+`Extent1`.`NSID`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`DUEOFPAY`, 
+`Extent1`.`ACTRUALPAY`, 
+`Extent1`.`DECUT`, 
+`Extent1`.`DECUTREASON`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCIP_SERVICEDEPOSITGRANT` AS `Extent1`
+ WHERE (0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)
+ ORDER BY 
+`Extent1`.`YEAR` ASC LIMIT 0,10
+ 
+
+ 记录时间：2017-02-06 09:39:48,239 线程ID:[30] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_USER` AS `Extent1`
+ WHERE ((NOT ((1 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AND ((`Extent1`.`ORGID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL))) AND ((`Extent1`.`ORGTYPE` = @p__linq__1) AND (@p__linq__1 IS NOT NULL))) AS `GroupBy1`
+ 
+
+ 记录时间：2017-02-06 09:39:48,243 线程ID:[30] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Project1`.`USERID`, 
+`Project1`.`PARENTUSERID`, 
+`Project1`.`ROLEID`, 
+`Project1`.`ORGTYPE`, 
+`Project1`.`ORGID`, 
+`Project1`.`ACCOUNT`, 
+`Project1`.`PASSWORD`, 
+`Project1`.`USERNAME`, 
+`Project1`.`EMAIL`, 
+`Project1`.`IDNO`, 
+`Project1`.`STATUS`, 
+`Project1`.`CREATEBY`, 
+`Project1`.`CREATETIME`, 
+`Project1`.`UPDATEBY`, 
+`Project1`.`UPDATETIME`, 
+`Project1`.`ISDELETE`
+FROM `NCI_USER` AS `Project1`
+ WHERE ((NOT ((1 = `Project1`.`ISDELETE`) AND (`Project1`.`ISDELETE` IS NOT NULL))) AND ((`Project1`.`ORGID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL))) AND ((`Project1`.`ORGTYPE` = @p__linq__1) AND (@p__linq__1 IS NOT NULL))
+ ORDER BY 
+`Project1`.`CREATEBY` DESC LIMIT 0,10
+ 
+
+ 记录时间：2017-02-06 09:39:52,370 线程ID:[44] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE (((NOT ((1 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AND ((`Extent1`.`ORGTYPE` = @p__linq__0) AND (@p__linq__0 IS NOT NULL))) AND ((`Extent1`.`ORGID` = @p__linq__1) AND (@p__linq__1 IS NOT NULL))) AND (NOT (((`Extent1`.`ROLETYPE` = @p__linq__2) AND (NOT ((`Extent1`.`ROLETYPE` IS  NULL) OR (@p__linq__2 IS  NULL)))) OR ((`Extent1`.`ROLETYPE` IS  NULL) AND (@p__linq__2 IS  NULL))))) AS `GroupBy1`
+ 
+
+ 记录时间：2017-02-06 09:39:52,377 线程ID:[42] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`USERID`, 
+`Extent1`.`PARENTUSERID`, 
+`Extent1`.`ROLEID`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`ACCOUNT`, 
+`Extent1`.`PASSWORD`, 
+`Extent1`.`USERNAME`, 
+`Extent1`.`EMAIL`, 
+`Extent1`.`IDNO`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_USER` AS `Extent1`
+ WHERE (`Extent1`.`USERID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL) LIMIT 1
+ 
+
+ 记录时间：2017-02-06 09:39:52,383 线程ID:[44] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Project1`.`ROLEID`, 
+`Project1`.`PARENTROLEID`, 
+`Project1`.`ROLENAME`, 
+`Project1`.`ROLETYPE`, 
+`Project1`.`STATUS`, 
+`Project1`.`ORGTYPE`, 
+`Project1`.`ORGID`, 
+`Project1`.`CREATEBY`, 
+`Project1`.`CREATETIME`, 
+`Project1`.`UPDATEBY`, 
+`Project1`.`UPDATETIME`, 
+`Project1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Project1`
+ WHERE (((NOT ((1 = `Project1`.`ISDELETE`) AND (`Project1`.`ISDELETE` IS NOT NULL))) AND ((`Project1`.`ORGTYPE` = @p__linq__0) AND (@p__linq__0 IS NOT NULL))) AND ((`Project1`.`ORGID` = @p__linq__1) AND (@p__linq__1 IS NOT NULL))) AND (NOT (((`Project1`.`ROLETYPE` = @p__linq__2) AND (NOT ((`Project1`.`ROLETYPE` IS  NULL) OR (@p__linq__2 IS  NULL)))) OR ((`Project1`.`ROLETYPE` IS  NULL) AND (@p__linq__2 IS  NULL))))
+ ORDER BY 
+`Project1`.`CREATETIME` DESC
+ 
+
+ 记录时间：2017-02-06 09:40:07,630 线程ID:[46] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ WHERE ((`Extent1`.`GOVID` = @p__linq__0) AND (NOT ((`Extent1`.`GOVID` IS  NULL) OR (@p__linq__0 IS  NULL)))) OR ((`Extent1`.`GOVID` IS  NULL) AND (@p__linq__0 IS  NULL))) AS `GroupBy1`
+ 
+
+ 记录时间：2017-02-06 09:40:07,636 线程ID:[46] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Project1`.`NSID`, 
+`Project1`.`NSNO`, 
+`Project1`.`GOVID`, 
+`Project1`.`NSNAME`, 
+`Project1`.`NSTYPE`, 
+`Project1`.`ADDRESS`, 
+`Project1`.`CONTACTOR`, 
+`Project1`.`PHONE`, 
+`Project1`.`CREATEBY`, 
+`Project1`.`CREATETIME`, 
+`Project1`.`UPDATEBY`, 
+`Project1`.`UPDATETIME`, 
+`Project1`.`ISDELETE`
+FROM `NCI_NURSINGHOME` AS `Project1`
+ WHERE ((`Project1`.`GOVID` = @p__linq__0) AND (NOT ((`Project1`.`GOVID` IS  NULL) OR (@p__linq__0 IS  NULL)))) OR ((`Project1`.`GOVID` IS  NULL) AND (@p__linq__0 IS  NULL))
+ ORDER BY 
+`Project1`.`NSID` ASC LIMIT 0,1000
+ 
+
+ 记录时间：2017-02-06 09:40:07,648 线程ID:[41] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCIP_NSMONFEE` AS `Extent1`
+ WHERE ((((`Extent1`.`NSID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AND (`Extent1`.`YEARMONTH` >= @p__linq__1)) AND (`Extent1`.`YEARMONTH` <= @p__linq__2)) AS `GroupBy1`
+ 
+
+ 记录时间：2017-02-06 09:40:07,668 线程ID:[41] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Project1`.`NSMONFEEID`, 
+`Project1`.`NCIPAYGRANTID`, 
+`Project1`.`NSID`, 
+`Project1`.`NSNO`, 
+`Project1`.`YEARMONTH`, 
+`Project1`.`TOTALRESIDENT`, 
+`Project1`.`TOTALHOSPDAY`, 
+`Project1`.`TOTALAMOUNT`, 
+`Project1`.`TOTALNCIPAY`, 
+`Project1`.`STATUS`, 
+`Project1`.`CREATORNAME`, 
+`Project1`.`CREATEBY`, 
+`Project1`.`CREATETIME`, 
+`Project1`.`UPDATEBY`, 
+`Project1`.`UPDATETIME`, 
+`Project1`.`ISDELETE`
+FROM `NCIP_NSMONFEE` AS `Project1`
+ WHERE ((((`Project1`.`NSID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((0 = `Project1`.`ISDELETE`) AND (`Project1`.`ISDELETE` IS NOT NULL))) AND (`Project1`.`YEARMONTH` >= @p__linq__1)) AND (`Project1`.`YEARMONTH` <= @p__linq__2)
+ ORDER BY 
+`Project1`.`CREATETIME` DESC LIMIT 0,10
+ 
+
+ 记录时间：2017-02-06 09:40:10,802 线程ID:[46] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ WHERE ((`Extent1`.`GOVID` = @p__linq__0) AND (NOT ((`Extent1`.`GOVID` IS  NULL) OR (@p__linq__0 IS  NULL)))) OR ((`Extent1`.`GOVID` IS  NULL) AND (@p__linq__0 IS  NULL))) AS `GroupBy1`
+ 
+
+ 记录时间：2017-02-06 09:40:10,805 线程ID:[46] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Project1`.`NSID`, 
+`Project1`.`NSNO`, 
+`Project1`.`GOVID`, 
+`Project1`.`NSNAME`, 
+`Project1`.`NSTYPE`, 
+`Project1`.`ADDRESS`, 
+`Project1`.`CONTACTOR`, 
+`Project1`.`PHONE`, 
+`Project1`.`CREATEBY`, 
+`Project1`.`CREATETIME`, 
+`Project1`.`UPDATEBY`, 
+`Project1`.`UPDATETIME`, 
+`Project1`.`ISDELETE`
+FROM `NCI_NURSINGHOME` AS `Project1`
+ WHERE ((`Project1`.`GOVID` = @p__linq__0) AND (NOT ((`Project1`.`GOVID` IS  NULL) OR (@p__linq__0 IS  NULL)))) OR ((`Project1`.`GOVID` IS  NULL) AND (@p__linq__0 IS  NULL))
+ ORDER BY 
+`Project1`.`NSID` ASC LIMIT 0,1000
+ 
+
+ 记录时间：2017-02-06 09:40:13,877 线程ID:[45] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ WHERE ((`Extent1`.`GOVID` = @p__linq__0) AND (NOT ((`Extent1`.`GOVID` IS  NULL) OR (@p__linq__0 IS  NULL)))) OR ((`Extent1`.`GOVID` IS  NULL) AND (@p__linq__0 IS  NULL))) AS `GroupBy1`
+ 
+
+ 记录时间：2017-02-06 09:40:13,882 线程ID:[42] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCIP_NSMONFEE` AS `Extent1`
+ WHERE ((((`Extent1`.`NSID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AND (`Extent1`.`YEARMONTH` >= @p__linq__1)) AND (`Extent1`.`YEARMONTH` <= @p__linq__2)) AS `GroupBy1`
+ 
+
+ 记录时间：2017-02-06 09:40:13,884 线程ID:[45] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Project1`.`NSID`, 
+`Project1`.`NSNO`, 
+`Project1`.`GOVID`, 
+`Project1`.`NSNAME`, 
+`Project1`.`NSTYPE`, 
+`Project1`.`ADDRESS`, 
+`Project1`.`CONTACTOR`, 
+`Project1`.`PHONE`, 
+`Project1`.`CREATEBY`, 
+`Project1`.`CREATETIME`, 
+`Project1`.`UPDATEBY`, 
+`Project1`.`UPDATETIME`, 
+`Project1`.`ISDELETE`
+FROM `NCI_NURSINGHOME` AS `Project1`
+ WHERE ((`Project1`.`GOVID` = @p__linq__0) AND (NOT ((`Project1`.`GOVID` IS  NULL) OR (@p__linq__0 IS  NULL)))) OR ((`Project1`.`GOVID` IS  NULL) AND (@p__linq__0 IS  NULL))
+ ORDER BY 
+`Project1`.`NSID` ASC LIMIT 0,1000
+ 
+
+ 记录时间：2017-02-06 09:40:13,890 线程ID:[42] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Project1`.`NSMONFEEID`, 
+`Project1`.`NCIPAYGRANTID`, 
+`Project1`.`NSID`, 
+`Project1`.`NSNO`, 
+`Project1`.`YEARMONTH`, 
+`Project1`.`TOTALRESIDENT`, 
+`Project1`.`TOTALHOSPDAY`, 
+`Project1`.`TOTALAMOUNT`, 
+`Project1`.`TOTALNCIPAY`, 
+`Project1`.`STATUS`, 
+`Project1`.`CREATORNAME`, 
+`Project1`.`CREATEBY`, 
+`Project1`.`CREATETIME`, 
+`Project1`.`UPDATEBY`, 
+`Project1`.`UPDATETIME`, 
+`Project1`.`ISDELETE`
+FROM `NCIP_NSMONFEE` AS `Project1`
+ WHERE ((((`Project1`.`NSID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((0 = `Project1`.`ISDELETE`) AND (`Project1`.`ISDELETE` IS NOT NULL))) AND (`Project1`.`YEARMONTH` >= @p__linq__1)) AND (`Project1`.`YEARMONTH` <= @p__linq__2)
+ ORDER BY 
+`Project1`.`CREATETIME` DESC LIMIT 0,10
+ 
+
+ 记录时间：2017-02-06 09:40:35,511 线程ID:[42] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ WHERE ((`Extent1`.`GOVID` = @p__linq__0) AND (NOT ((`Extent1`.`GOVID` IS  NULL) OR (@p__linq__0 IS  NULL)))) OR ((`Extent1`.`GOVID` IS  NULL) AND (@p__linq__0 IS  NULL))) AS `GroupBy1`
+ 
+
+ 记录时间：2017-02-06 09:40:35,514 线程ID:[42] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Project1`.`NSID`, 
+`Project1`.`NSNO`, 
+`Project1`.`GOVID`, 
+`Project1`.`NSNAME`, 
+`Project1`.`NSTYPE`, 
+`Project1`.`ADDRESS`, 
+`Project1`.`CONTACTOR`, 
+`Project1`.`PHONE`, 
+`Project1`.`CREATEBY`, 
+`Project1`.`CREATETIME`, 
+`Project1`.`UPDATEBY`, 
+`Project1`.`UPDATETIME`, 
+`Project1`.`ISDELETE`
+FROM `NCI_NURSINGHOME` AS `Project1`
+ WHERE ((`Project1`.`GOVID` = @p__linq__0) AND (NOT ((`Project1`.`GOVID` IS  NULL) OR (@p__linq__0 IS  NULL)))) OR ((`Project1`.`GOVID` IS  NULL) AND (@p__linq__0 IS  NULL))
+ ORDER BY 
+`Project1`.`NSID` ASC LIMIT 0,1000
+ 
+
+ 记录时间：2017-02-06 09:40:36,776 线程ID:[41] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`NSNAME`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ 
+
+ 记录时间：2017-02-06 09:40:36,777 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`NSNAME`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ 
+
+ 记录时间：2017-02-06 09:40:36,824 线程ID:[41] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:36,828 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:36,838 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:36,839 线程ID:[41] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:36,844 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:36,848 线程ID:[41] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:36,854 线程ID:[41] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:36,854 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:36,859 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:36,860 线程ID:[41] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:36,864 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:36,866 线程ID:[41] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:36,875 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:36,876 线程ID:[41] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:36,881 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:36,881 线程ID:[41] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:36,886 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:36,887 线程ID:[41] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:36,894 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:36,895 线程ID:[41] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:36,899 线程ID:[41] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:36,900 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:36,905 线程ID:[41] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:36,906 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:36,911 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:36,912 线程ID:[41] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:36,938 线程ID:[41] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:36,943 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:36,949 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:36,950 线程ID:[41] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:36,975 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:36,975 线程ID:[41] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:36,981 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:36,981 线程ID:[41] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:36,988 线程ID:[41] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:36,989 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:36,994 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:36,995 线程ID:[41] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,000 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,001 线程ID:[41] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,006 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,007 线程ID:[41] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,012 线程ID:[41] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,013 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,017 线程ID:[41] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,018 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,023 线程ID:[41] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,028 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,034 线程ID:[41] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,037 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,042 线程ID:[41] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,048 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,053 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,054 线程ID:[41] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,059 线程ID:[41] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,059 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,069 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,070 线程ID:[41] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,075 线程ID:[41] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,076 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,081 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,083 线程ID:[41] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,098 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,098 线程ID:[41] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,104 线程ID:[41] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,106 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,114 线程ID:[41] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,114 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,119 线程ID:[41] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,119 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,129 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,130 线程ID:[41] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,138 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,142 线程ID:[41] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,147 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,148 线程ID:[41] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,152 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,153 线程ID:[41] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,158 线程ID:[41] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,160 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,164 线程ID:[41] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,165 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,170 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,174 线程ID:[41] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,200 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,202 线程ID:[41] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,208 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,213 线程ID:[41] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,218 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,219 线程ID:[41] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,223 线程ID:[41] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,225 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,229 线程ID:[41] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,231 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,253 线程ID:[41] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,258 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,262 线程ID:[41] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,263 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,271 线程ID:[41] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,272 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,277 线程ID:[41] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:37,278 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:40:38,911 线程ID:[46] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ WHERE ((`Extent1`.`GOVID` = @p__linq__0) AND (NOT ((`Extent1`.`GOVID` IS  NULL) OR (@p__linq__0 IS  NULL)))) OR ((`Extent1`.`GOVID` IS  NULL) AND (@p__linq__0 IS  NULL))) AS `GroupBy1`
+ 
+
+ 记录时间：2017-02-06 09:40:38,916 线程ID:[46] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Project1`.`NSID`, 
+`Project1`.`NSNO`, 
+`Project1`.`GOVID`, 
+`Project1`.`NSNAME`, 
+`Project1`.`NSTYPE`, 
+`Project1`.`ADDRESS`, 
+`Project1`.`CONTACTOR`, 
+`Project1`.`PHONE`, 
+`Project1`.`CREATEBY`, 
+`Project1`.`CREATETIME`, 
+`Project1`.`UPDATEBY`, 
+`Project1`.`UPDATETIME`, 
+`Project1`.`ISDELETE`
+FROM `NCI_NURSINGHOME` AS `Project1`
+ WHERE ((`Project1`.`GOVID` = @p__linq__0) AND (NOT ((`Project1`.`GOVID` IS  NULL) OR (@p__linq__0 IS  NULL)))) OR ((`Project1`.`GOVID` IS  NULL) AND (@p__linq__0 IS  NULL))
+ ORDER BY 
+`Project1`.`NSID` ASC LIMIT 0,1000
+ 
+
+ 记录时间：2017-02-06 09:40:38,927 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCIA_APPHOSP` AS `Extent1`
+ WHERE ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)) AND ((((3 = `Extent1`.`AGENCYRESULT`) AND (`Extent1`.`AGENCYRESULT` IS NOT NULL)) OR ((6 = `Extent1`.`AGENCYRESULT`) AND (`Extent1`.`AGENCYRESULT` IS NOT NULL))) OR ((9 = `Extent1`.`AGENCYRESULT`) AND (`Extent1`.`AGENCYRESULT` IS NOT NULL)))) AS `GroupBy1`
+ 
+
+ 记录时间：2017-02-06 09:40:38,954 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`APPHOSPID`, 
+`Extent1`.`APPCERTID`, 
+`Extent1`.`APPHOSPSN`, 
+`Extent1`.`NSID`, 
+`Extent1`.`NAME`, 
+`Extent1`.`GENDER`, 
+`Extent1`.`AGE`, 
+`Extent1`.`IDNO`, 
+`Extent1`.`SSNO`, 
+`Extent1`.`CARETYPE`, 
+`Extent1`.`DOCTORNAME`, 
+`Extent1`.`ENTRYTIME`, 
+`Extent1`.`FAMILYMEMBERNAME`, 
+`Extent1`.`FAMILYMEMBERPHONE`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`MCTYPE`, 
+`Extent1`.`DISEASE`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`APPREASON`, 
+`Extent1`.`UPLOADFILES`, 
+`Extent1`.`NSCOMMENT`, 
+`Extent1`.`NSOPERATETIME`, 
+`Extent1`.`NSSTAFFNAME`, 
+`Extent1`.`ICRESULT`, 
+`Extent1`.`ICCOMMENT`, 
+`Extent1`.`ICOPERATETIME`, 
+`Extent1`.`ICSTAFFNAME`, 
+`Extent1`.`ICID`, 
+`Extent1`.`AGENCYRESULT`, 
+`Extent1`.`AGENCYCOMMENT`, 
+`Extent1`.`AGENCYOPERATETIME`, 
+`Extent1`.`AGENCYSTAFFNAME`, 
+`Extent1`.`AGENCYID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCIA_APPHOSP` AS `Extent1`
+ WHERE ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)) AND ((((3 = `Extent1`.`AGENCYRESULT`) AND (`Extent1`.`AGENCYRESULT` IS NOT NULL)) OR ((6 = `Extent1`.`AGENCYRESULT`) AND (`Extent1`.`AGENCYRESULT` IS NOT NULL))) OR ((9 = `Extent1`.`AGENCYRESULT`) AND (`Extent1`.`AGENCYRESULT` IS NOT NULL)))
+ ORDER BY 
+`Extent1`.`CREATETIME` DESC LIMIT 0,10
+ 
+
+ 记录时间：2017-02-06 09:40:44,084 线程ID:[42] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ITEMTYPE`, 
+`Extent1`.`ITEMCODE`, 
+`Extent1`.`ITEMNAME`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`ORDERSEQ`, 
+`Extent1`.`UPDATEDATE`, 
+`Extent1`.`UPDATEBY`
+FROM `NCI_CODEDTL` AS `Extent1`
+ WHERE `Extent1`.`ITEMTYPE` IN ( @gp1 )
+ 
+
+ 记录时间：2017-02-06 09:40:51,755 线程ID:[44] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ WHERE ((`Extent1`.`GOVID` = @p__linq__0) AND (NOT ((`Extent1`.`GOVID` IS  NULL) OR (@p__linq__0 IS  NULL)))) OR ((`Extent1`.`GOVID` IS  NULL) AND (@p__linq__0 IS  NULL))) AS `GroupBy1`
+ 
+
+ 记录时间：2017-02-06 09:40:51,758 线程ID:[44] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Project1`.`NSID`, 
+`Project1`.`NSNO`, 
+`Project1`.`GOVID`, 
+`Project1`.`NSNAME`, 
+`Project1`.`NSTYPE`, 
+`Project1`.`ADDRESS`, 
+`Project1`.`CONTACTOR`, 
+`Project1`.`PHONE`, 
+`Project1`.`CREATEBY`, 
+`Project1`.`CREATETIME`, 
+`Project1`.`UPDATEBY`, 
+`Project1`.`UPDATETIME`, 
+`Project1`.`ISDELETE`
+FROM `NCI_NURSINGHOME` AS `Project1`
+ WHERE ((`Project1`.`GOVID` = @p__linq__0) AND (NOT ((`Project1`.`GOVID` IS  NULL) OR (@p__linq__0 IS  NULL)))) OR ((`Project1`.`GOVID` IS  NULL) AND (@p__linq__0 IS  NULL))
+ ORDER BY 
+`Project1`.`NSID` ASC LIMIT 0,1000
+ 
+
+ 记录时间：2017-02-06 09:40:51,792 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCIA_APPCERT` AS `Extent1`
+ WHERE ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)) AND (((3 = `Extent1`.`STATUS`) OR (6 = `Extent1`.`STATUS`)) OR (9 = `Extent1`.`STATUS`))) AS `GroupBy1`
+ 
+
+ 记录时间：2017-02-06 09:40:51,832 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`APPCERTID`, 
+`Extent1`.`BASEAPPCERTIDOFREAPP`, 
+`Extent1`.`AGENCYASSTRECORDID`, 
+`Extent1`.`NSASSTRECORDID`, 
+`Extent1`.`NSID`, 
+`Extent1`.`APPCERTSN`, 
+`Extent1`.`NAME`, 
+`Extent1`.`GENDER`, 
+`Extent1`.`AGE`, 
+`Extent1`.`IDNO`, 
+`Extent1`.`SSNO`, 
+`Extent1`.`NSAPPCARETYPE`, 
+`Extent1`.`MCTYPE`, 
+`Extent1`.`DISEASE`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`AGENCYAPPROVEDCARETYPE`, 
+`Extent1`.`APPREASON`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`UPLOADFILES`, 
+`Extent1`.`NSCOMMENT`, 
+`Extent1`.`NSOPERATETIME`, 
+`Extent1`.`NSUSERID`, 
+`Extent1`.`ICRESULT`, 
+`Extent1`.`ICCOMMENT`, 
+`Extent1`.`ICOPERATETIME`, 
+`Extent1`.`ICUSERID`, 
+`Extent1`.`ICID`, 
+`Extent1`.`AGENCYRESULT`, 
+`Extent1`.`AGENCYCOMMENT`, 
+`Extent1`.`AGENCYOPERATETIME`, 
+`Extent1`.`AGENCYUSERID`, 
+`Extent1`.`AGENCYID`, 
+`Extent1`.`CERTNO`, 
+`Extent1`.`CERTSTARTTIME`, 
+`Extent1`.`CERTEXPIREDTIME`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`, 
+`Extent2`.`TOTALSCORE`
+FROM `NCIA_APPCERT` AS `Extent1` LEFT OUTER JOIN `NCIA_NURSINGHOMEASSTRECORD` AS `Extent2` ON `Extent1`.`NSASSTRECORDID` = `Extent2`.`NSASSTRECORDID`
+ WHERE ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)) AND (((3 = `Extent1`.`STATUS`) OR (6 = `Extent1`.`STATUS`)) OR (9 = `Extent1`.`STATUS`))
+ ORDER BY 
+`Extent1`.`CREATETIME` DESC LIMIT 0,10
+ 
+
+ 记录时间：2017-02-06 09:40:57,844 线程ID:[39] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ WHERE ((`Extent1`.`GOVID` = @p__linq__0) AND (NOT ((`Extent1`.`GOVID` IS  NULL) OR (@p__linq__0 IS  NULL)))) OR ((`Extent1`.`GOVID` IS  NULL) AND (@p__linq__0 IS  NULL))) AS `GroupBy1`
+ 
+
+ 记录时间：2017-02-06 09:40:57,848 线程ID:[39] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Project1`.`NSID`, 
+`Project1`.`NSNO`, 
+`Project1`.`GOVID`, 
+`Project1`.`NSNAME`, 
+`Project1`.`NSTYPE`, 
+`Project1`.`ADDRESS`, 
+`Project1`.`CONTACTOR`, 
+`Project1`.`PHONE`, 
+`Project1`.`CREATEBY`, 
+`Project1`.`CREATETIME`, 
+`Project1`.`UPDATEBY`, 
+`Project1`.`UPDATETIME`, 
+`Project1`.`ISDELETE`
+FROM `NCI_NURSINGHOME` AS `Project1`
+ WHERE ((`Project1`.`GOVID` = @p__linq__0) AND (NOT ((`Project1`.`GOVID` IS  NULL) OR (@p__linq__0 IS  NULL)))) OR ((`Project1`.`GOVID` IS  NULL) AND (@p__linq__0 IS  NULL))
+ ORDER BY 
+`Project1`.`NSID` ASC LIMIT 0,1000
+ 
+
+ 记录时间：2017-02-06 09:40:57,876 线程ID:[30] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`GRANTID`, 
+`Extent1`.`SERVICEDEPOSITID`, 
+`Extent1`.`NSID`, 
+`Extent1`.`GRANTYEAR`, 
+`Extent1`.`TOTALRESIDENT`, 
+`Extent1`.`TOTALHOSPDAY`, 
+`Extent1`.`TOTALAMOUNT`, 
+`Extent1`.`TOTALNCIPAY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`CREATORNAME`, 
+`Extent1`.`ICRESULT`, 
+`Extent1`.`ICCOMMENT`, 
+`Extent1`.`ICOPERATETIME`, 
+`Extent1`.`ICUSERID`, 
+`Extent1`.`ICID`, 
+`Extent1`.`AGENCYRESULT`, 
+`Extent1`.`AGENCYCOMMENT`, 
+`Extent1`.`AGENCYOPERATETIME`, 
+`Extent1`.`AGENCYUSERID`, 
+`Extent1`.`AGENCYID`, 
+`Extent1`.`GRANTTIME`, 
+`Extent1`.`ADJUSTAMOUNT`, 
+`Extent1`.`ADJUSTREASON`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCIP_NCIPAYGRANT` AS `Extent1`
+ WHERE ((((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)) AND ((`Extent1`.`GRANTYEAR` = @p__linq__0) AND (@p__linq__0 IS NOT NULL))) AND ((`Extent1`.`NSID` = @p__linq__1) AND (@p__linq__1 IS NOT NULL))) AND (((`Extent1`.`STATUS` = @p__linq__2) AND (@p__linq__2 IS NOT NULL)) OR ((`Extent1`.`STATUS` = @p__linq__3) AND (@p__linq__3 IS NOT NULL)))
+ 
+
+ 记录时间：2017-02-06 09:40:57,902 线程ID:[30] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Project1`.`NSMONFEEID`, 
+`Project1`.`NCIPAYGRANTID`, 
+`Project1`.`NSID`, 
+`Project1`.`NSNO`, 
+`Project1`.`YEARMONTH`, 
+`Project1`.`TOTALRESIDENT`, 
+`Project1`.`TOTALHOSPDAY`, 
+`Project1`.`TOTALAMOUNT`, 
+`Project1`.`TOTALNCIPAY`, 
+`Project1`.`STATUS`, 
+`Project1`.`CREATORNAME`, 
+`Project1`.`CREATEBY`, 
+`Project1`.`CREATETIME`, 
+`Project1`.`UPDATEBY`, 
+`Project1`.`UPDATETIME`, 
+`Project1`.`ISDELETE`
+FROM `NCIP_NSMONFEE` AS `Project1`
+ WHERE ((0 = `Project1`.`ISDELETE`) AND (`Project1`.`ISDELETE` IS NOT NULL)) AND (((`Project1`.`NCIPAYGRANTID` = @p__linq__0) AND (NOT ((`Project1`.`NCIPAYGRANTID` IS  NULL) OR (@p__linq__0 IS  NULL)))) OR ((`Project1`.`NCIPAYGRANTID` IS  NULL) AND (@p__linq__0 IS  NULL)))
+ ORDER BY 
+`Project1`.`CREATETIME` DESC
+ 
+
+ 记录时间：2017-02-06 09:41:06,346 线程ID:[40] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ WHERE ((`Extent1`.`GOVID` = @p__linq__0) AND (NOT ((`Extent1`.`GOVID` IS  NULL) OR (@p__linq__0 IS  NULL)))) OR ((`Extent1`.`GOVID` IS  NULL) AND (@p__linq__0 IS  NULL))) AS `GroupBy1`
+ 
+
+ 记录时间：2017-02-06 09:41:06,351 线程ID:[40] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Project1`.`NSID`, 
+`Project1`.`NSNO`, 
+`Project1`.`GOVID`, 
+`Project1`.`NSNAME`, 
+`Project1`.`NSTYPE`, 
+`Project1`.`ADDRESS`, 
+`Project1`.`CONTACTOR`, 
+`Project1`.`PHONE`, 
+`Project1`.`CREATEBY`, 
+`Project1`.`CREATETIME`, 
+`Project1`.`UPDATEBY`, 
+`Project1`.`UPDATETIME`, 
+`Project1`.`ISDELETE`
+FROM `NCI_NURSINGHOME` AS `Project1`
+ WHERE ((`Project1`.`GOVID` = @p__linq__0) AND (NOT ((`Project1`.`GOVID` IS  NULL) OR (@p__linq__0 IS  NULL)))) OR ((`Project1`.`GOVID` IS  NULL) AND (@p__linq__0 IS  NULL))
+ ORDER BY 
+`Project1`.`NSID` ASC LIMIT 0,1000
+ 
+
+ 记录时间：2017-02-06 09:41:06,356 线程ID:[47] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCIP_SERVICEDEPOSITGRANT` AS `Extent1`
+ WHERE (0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)) AS `GroupBy1`
+ 
+
+ 记录时间：2017-02-06 09:41:06,360 线程ID:[47] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`SDGRANTID`, 
+`Extent1`.`NSID`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`DUEOFPAY`, 
+`Extent1`.`ACTRUALPAY`, 
+`Extent1`.`DECUT`, 
+`Extent1`.`DECUTREASON`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCIP_SERVICEDEPOSITGRANT` AS `Extent1`
+ WHERE (0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)
+ ORDER BY 
+`Extent1`.`YEAR` ASC LIMIT 0,10
+ 
+
+ 记录时间：2017-02-06 09:41:19,213 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE (((NOT ((1 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AND ((`Extent1`.`ORGTYPE` = @p__linq__0) AND (@p__linq__0 IS NOT NULL))) AND ((`Extent1`.`ORGID` = @p__linq__1) AND (@p__linq__1 IS NOT NULL))) AND (NOT (((`Extent1`.`ROLETYPE` = @p__linq__2) AND (NOT ((`Extent1`.`ROLETYPE` IS  NULL) OR (@p__linq__2 IS  NULL)))) OR ((`Extent1`.`ROLETYPE` IS  NULL) AND (@p__linq__2 IS  NULL))))) AS `GroupBy1`
+ 
+
+ 记录时间：2017-02-06 09:41:19,219 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Project1`.`ROLEID`, 
+`Project1`.`PARENTROLEID`, 
+`Project1`.`ROLENAME`, 
+`Project1`.`ROLETYPE`, 
+`Project1`.`STATUS`, 
+`Project1`.`ORGTYPE`, 
+`Project1`.`ORGID`, 
+`Project1`.`CREATEBY`, 
+`Project1`.`CREATETIME`, 
+`Project1`.`UPDATEBY`, 
+`Project1`.`UPDATETIME`, 
+`Project1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Project1`
+ WHERE (((NOT ((1 = `Project1`.`ISDELETE`) AND (`Project1`.`ISDELETE` IS NOT NULL))) AND ((`Project1`.`ORGTYPE` = @p__linq__0) AND (@p__linq__0 IS NOT NULL))) AND ((`Project1`.`ORGID` = @p__linq__1) AND (@p__linq__1 IS NOT NULL))) AND (NOT (((`Project1`.`ROLETYPE` = @p__linq__2) AND (NOT ((`Project1`.`ROLETYPE` IS  NULL) OR (@p__linq__2 IS  NULL)))) OR ((`Project1`.`ROLETYPE` IS  NULL) AND (@p__linq__2 IS  NULL))))
+ ORDER BY 
+`Project1`.`CREATETIME` DESC LIMIT 0,10
+ 
+
+ 记录时间：2017-02-06 09:41:22,087 线程ID:[40] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_USER` AS `Extent1`
+ WHERE ((NOT ((1 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AND ((`Extent1`.`ORGID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL))) AND ((`Extent1`.`ORGTYPE` = @p__linq__1) AND (@p__linq__1 IS NOT NULL))) AS `GroupBy1`
+ 
+
+ 记录时间：2017-02-06 09:41:22,091 线程ID:[40] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Project1`.`USERID`, 
+`Project1`.`PARENTUSERID`, 
+`Project1`.`ROLEID`, 
+`Project1`.`ORGTYPE`, 
+`Project1`.`ORGID`, 
+`Project1`.`ACCOUNT`, 
+`Project1`.`PASSWORD`, 
+`Project1`.`USERNAME`, 
+`Project1`.`EMAIL`, 
+`Project1`.`IDNO`, 
+`Project1`.`STATUS`, 
+`Project1`.`CREATEBY`, 
+`Project1`.`CREATETIME`, 
+`Project1`.`UPDATEBY`, 
+`Project1`.`UPDATETIME`, 
+`Project1`.`ISDELETE`
+FROM `NCI_USER` AS `Project1`
+ WHERE ((NOT ((1 = `Project1`.`ISDELETE`) AND (`Project1`.`ISDELETE` IS NOT NULL))) AND ((`Project1`.`ORGID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL))) AND ((`Project1`.`ORGTYPE` = @p__linq__1) AND (@p__linq__1 IS NOT NULL))
+ ORDER BY 
+`Project1`.`CREATEBY` DESC LIMIT 0,10
+ 
+
+ 记录时间：2017-02-06 09:41:34,418 线程ID:[33] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ WHERE ((`Extent1`.`GOVID` = @p__linq__0) AND (NOT ((`Extent1`.`GOVID` IS  NULL) OR (@p__linq__0 IS  NULL)))) OR ((`Extent1`.`GOVID` IS  NULL) AND (@p__linq__0 IS  NULL))) AS `GroupBy1`
+ 
+
+ 记录时间：2017-02-06 09:41:34,422 线程ID:[38] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCIA_APPCERT` AS `Extent1`
+ WHERE ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)) AND (((3 = `Extent1`.`STATUS`) OR (6 = `Extent1`.`STATUS`)) OR (9 = `Extent1`.`STATUS`))) AS `GroupBy1`
+ 
+
+ 记录时间：2017-02-06 09:41:34,424 线程ID:[33] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Project1`.`NSID`, 
+`Project1`.`NSNO`, 
+`Project1`.`GOVID`, 
+`Project1`.`NSNAME`, 
+`Project1`.`NSTYPE`, 
+`Project1`.`ADDRESS`, 
+`Project1`.`CONTACTOR`, 
+`Project1`.`PHONE`, 
+`Project1`.`CREATEBY`, 
+`Project1`.`CREATETIME`, 
+`Project1`.`UPDATEBY`, 
+`Project1`.`UPDATETIME`, 
+`Project1`.`ISDELETE`
+FROM `NCI_NURSINGHOME` AS `Project1`
+ WHERE ((`Project1`.`GOVID` = @p__linq__0) AND (NOT ((`Project1`.`GOVID` IS  NULL) OR (@p__linq__0 IS  NULL)))) OR ((`Project1`.`GOVID` IS  NULL) AND (@p__linq__0 IS  NULL))
+ ORDER BY 
+`Project1`.`NSID` ASC LIMIT 0,1000
+ 
+
+ 记录时间：2017-02-06 09:41:34,431 线程ID:[38] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`APPCERTID`, 
+`Extent1`.`BASEAPPCERTIDOFREAPP`, 
+`Extent1`.`AGENCYASSTRECORDID`, 
+`Extent1`.`NSASSTRECORDID`, 
+`Extent1`.`NSID`, 
+`Extent1`.`APPCERTSN`, 
+`Extent1`.`NAME`, 
+`Extent1`.`GENDER`, 
+`Extent1`.`AGE`, 
+`Extent1`.`IDNO`, 
+`Extent1`.`SSNO`, 
+`Extent1`.`NSAPPCARETYPE`, 
+`Extent1`.`MCTYPE`, 
+`Extent1`.`DISEASE`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`AGENCYAPPROVEDCARETYPE`, 
+`Extent1`.`APPREASON`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`UPLOADFILES`, 
+`Extent1`.`NSCOMMENT`, 
+`Extent1`.`NSOPERATETIME`, 
+`Extent1`.`NSUSERID`, 
+`Extent1`.`ICRESULT`, 
+`Extent1`.`ICCOMMENT`, 
+`Extent1`.`ICOPERATETIME`, 
+`Extent1`.`ICUSERID`, 
+`Extent1`.`ICID`, 
+`Extent1`.`AGENCYRESULT`, 
+`Extent1`.`AGENCYCOMMENT`, 
+`Extent1`.`AGENCYOPERATETIME`, 
+`Extent1`.`AGENCYUSERID`, 
+`Extent1`.`AGENCYID`, 
+`Extent1`.`CERTNO`, 
+`Extent1`.`CERTSTARTTIME`, 
+`Extent1`.`CERTEXPIREDTIME`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`, 
+`Extent2`.`TOTALSCORE`
+FROM `NCIA_APPCERT` AS `Extent1` LEFT OUTER JOIN `NCIA_NURSINGHOMEASSTRECORD` AS `Extent2` ON `Extent1`.`NSASSTRECORDID` = `Extent2`.`NSASSTRECORDID`
+ WHERE ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)) AND (((3 = `Extent1`.`STATUS`) OR (6 = `Extent1`.`STATUS`)) OR (9 = `Extent1`.`STATUS`))
+ ORDER BY 
+`Extent1`.`CREATETIME` DESC LIMIT 0,10
+ 
+
+ 记录时间：2017-02-06 09:41:35,873 线程ID:[38] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ WHERE ((`Extent1`.`GOVID` = @p__linq__0) AND (NOT ((`Extent1`.`GOVID` IS  NULL) OR (@p__linq__0 IS  NULL)))) OR ((`Extent1`.`GOVID` IS  NULL) AND (@p__linq__0 IS  NULL))) AS `GroupBy1`
+ 
+
+ 记录时间：2017-02-06 09:41:35,873 线程ID:[30] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCIA_APPHOSP` AS `Extent1`
+ WHERE ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)) AND ((((3 = `Extent1`.`AGENCYRESULT`) AND (`Extent1`.`AGENCYRESULT` IS NOT NULL)) OR ((6 = `Extent1`.`AGENCYRESULT`) AND (`Extent1`.`AGENCYRESULT` IS NOT NULL))) OR ((9 = `Extent1`.`AGENCYRESULT`) AND (`Extent1`.`AGENCYRESULT` IS NOT NULL)))) AS `GroupBy1`
+ 
+
+ 记录时间：2017-02-06 09:41:35,876 线程ID:[38] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Project1`.`NSID`, 
+`Project1`.`NSNO`, 
+`Project1`.`GOVID`, 
+`Project1`.`NSNAME`, 
+`Project1`.`NSTYPE`, 
+`Project1`.`ADDRESS`, 
+`Project1`.`CONTACTOR`, 
+`Project1`.`PHONE`, 
+`Project1`.`CREATEBY`, 
+`Project1`.`CREATETIME`, 
+`Project1`.`UPDATEBY`, 
+`Project1`.`UPDATETIME`, 
+`Project1`.`ISDELETE`
+FROM `NCI_NURSINGHOME` AS `Project1`
+ WHERE ((`Project1`.`GOVID` = @p__linq__0) AND (NOT ((`Project1`.`GOVID` IS  NULL) OR (@p__linq__0 IS  NULL)))) OR ((`Project1`.`GOVID` IS  NULL) AND (@p__linq__0 IS  NULL))
+ ORDER BY 
+`Project1`.`NSID` ASC LIMIT 0,1000
+ 
+
+ 记录时间：2017-02-06 09:41:35,879 线程ID:[30] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`APPHOSPID`, 
+`Extent1`.`APPCERTID`, 
+`Extent1`.`APPHOSPSN`, 
+`Extent1`.`NSID`, 
+`Extent1`.`NAME`, 
+`Extent1`.`GENDER`, 
+`Extent1`.`AGE`, 
+`Extent1`.`IDNO`, 
+`Extent1`.`SSNO`, 
+`Extent1`.`CARETYPE`, 
+`Extent1`.`DOCTORNAME`, 
+`Extent1`.`ENTRYTIME`, 
+`Extent1`.`FAMILYMEMBERNAME`, 
+`Extent1`.`FAMILYMEMBERPHONE`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`MCTYPE`, 
+`Extent1`.`DISEASE`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`APPREASON`, 
+`Extent1`.`UPLOADFILES`, 
+`Extent1`.`NSCOMMENT`, 
+`Extent1`.`NSOPERATETIME`, 
+`Extent1`.`NSSTAFFNAME`, 
+`Extent1`.`ICRESULT`, 
+`Extent1`.`ICCOMMENT`, 
+`Extent1`.`ICOPERATETIME`, 
+`Extent1`.`ICSTAFFNAME`, 
+`Extent1`.`ICID`, 
+`Extent1`.`AGENCYRESULT`, 
+`Extent1`.`AGENCYCOMMENT`, 
+`Extent1`.`AGENCYOPERATETIME`, 
+`Extent1`.`AGENCYSTAFFNAME`, 
+`Extent1`.`AGENCYID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCIA_APPHOSP` AS `Extent1`
+ WHERE ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)) AND ((((3 = `Extent1`.`AGENCYRESULT`) AND (`Extent1`.`AGENCYRESULT` IS NOT NULL)) OR ((6 = `Extent1`.`AGENCYRESULT`) AND (`Extent1`.`AGENCYRESULT` IS NOT NULL))) OR ((9 = `Extent1`.`AGENCYRESULT`) AND (`Extent1`.`AGENCYRESULT` IS NOT NULL)))
+ ORDER BY 
+`Extent1`.`CREATETIME` DESC LIMIT 0,10
+ 
+
+ 记录时间：2017-02-06 09:41:36,798 线程ID:[40] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`NSNAME`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ 
+
+ 记录时间：2017-02-06 09:41:36,800 线程ID:[42] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`NSNAME`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ 
+
+ 记录时间：2017-02-06 09:41:36,805 线程ID:[40] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:36,807 线程ID:[42] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:36,812 线程ID:[40] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:36,814 线程ID:[42] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:36,820 线程ID:[40] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:36,821 线程ID:[42] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:36,825 线程ID:[40] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:36,828 线程ID:[42] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:36,831 线程ID:[40] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:36,835 线程ID:[42] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:36,836 线程ID:[40] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:36,841 线程ID:[40] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:36,841 线程ID:[42] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:36,867 线程ID:[42] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:36,867 线程ID:[40] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:36,873 线程ID:[42] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:36,878 线程ID:[40] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:36,884 线程ID:[42] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:36,885 线程ID:[40] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:36,890 线程ID:[42] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:36,891 线程ID:[40] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:36,895 线程ID:[42] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:36,896 线程ID:[40] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:36,901 线程ID:[42] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:36,902 线程ID:[40] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:36,907 线程ID:[40] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:36,908 线程ID:[42] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:36,912 线程ID:[40] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:36,915 线程ID:[42] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:36,918 线程ID:[40] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:36,920 线程ID:[42] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:36,924 线程ID:[40] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:36,926 线程ID:[42] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:36,930 线程ID:[40] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:36,931 线程ID:[42] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:36,935 线程ID:[40] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:36,936 线程ID:[42] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:36,941 线程ID:[40] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:36,946 线程ID:[42] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:36,951 线程ID:[42] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:36,953 线程ID:[40] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:36,957 线程ID:[42] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:36,961 线程ID:[40] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:36,963 线程ID:[42] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:36,967 线程ID:[40] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:36,972 线程ID:[42] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:36,973 线程ID:[40] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:36,977 线程ID:[42] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:36,978 线程ID:[40] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:36,982 线程ID:[42] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:36,984 线程ID:[40] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:36,988 线程ID:[42] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:36,989 线程ID:[40] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:36,994 线程ID:[40] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:36,995 线程ID:[42] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:37,000 线程ID:[40] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:37,003 线程ID:[42] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:37,009 线程ID:[42] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:37,010 线程ID:[40] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:37,015 线程ID:[40] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:37,018 线程ID:[42] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:37,024 线程ID:[42] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:37,025 线程ID:[40] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:37,030 线程ID:[42] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:37,032 线程ID:[40] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:37,039 线程ID:[42] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:37,040 线程ID:[40] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:37,045 线程ID:[42] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:37,047 线程ID:[40] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:37,053 线程ID:[42] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:37,055 线程ID:[40] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:37,058 线程ID:[42] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:37,064 线程ID:[40] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:37,068 线程ID:[42] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:37,070 线程ID:[40] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:37,074 线程ID:[42] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:37,077 线程ID:[40] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:37,080 线程ID:[42] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:37,081 线程ID:[40] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:37,085 线程ID:[42] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:37,086 线程ID:[40] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:37,091 线程ID:[40] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:37,093 线程ID:[42] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:37,100 线程ID:[42] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:37,101 线程ID:[40] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:37,106 线程ID:[42] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:37,106 线程ID:[40] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:37,133 线程ID:[42] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:37,134 线程ID:[40] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:37,141 线程ID:[40] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:37,141 线程ID:[42] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:37,147 线程ID:[40] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:37,148 线程ID:[42] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:37,153 线程ID:[40] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:37,157 线程ID:[42] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:37,163 线程ID:[42] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:37,169 线程ID:[40] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:37,178 线程ID:[42] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:37,179 线程ID:[40] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:37,184 线程ID:[40] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:37,194 线程ID:[42] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:37,200 线程ID:[42] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`, 
+`Limit1`.`YEAR`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`YEAR`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE ((`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((`Extent1`.`YEAR` = @p__linq__1) AND (@p__linq__1 IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-02-06 09:41:39,048 线程ID:[47] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ WHERE ((`Extent1`.`GOVID` = @p__linq__0) AND (NOT ((`Extent1`.`GOVID` IS  NULL) OR (@p__linq__0 IS  NULL)))) OR ((`Extent1`.`GOVID` IS  NULL) AND (@p__linq__0 IS  NULL))) AS `GroupBy1`
+ 
+
+ 记录时间：2017-02-06 09:41:39,053 线程ID:[47] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Project1`.`NSID`, 
+`Project1`.`NSNO`, 
+`Project1`.`GOVID`, 
+`Project1`.`NSNAME`, 
+`Project1`.`NSTYPE`, 
+`Project1`.`ADDRESS`, 
+`Project1`.`CONTACTOR`, 
+`Project1`.`PHONE`, 
+`Project1`.`CREATEBY`, 
+`Project1`.`CREATETIME`, 
+`Project1`.`UPDATEBY`, 
+`Project1`.`UPDATETIME`, 
+`Project1`.`ISDELETE`
+FROM `NCI_NURSINGHOME` AS `Project1`
+ WHERE ((`Project1`.`GOVID` = @p__linq__0) AND (NOT ((`Project1`.`GOVID` IS  NULL) OR (@p__linq__0 IS  NULL)))) OR ((`Project1`.`GOVID` IS  NULL) AND (@p__linq__0 IS  NULL))
+ ORDER BY 
+`Project1`.`NSID` ASC LIMIT 0,1000
+ 
+
+ 记录时间：2017-02-06 09:41:40,130 线程ID:[35] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ WHERE ((`Extent1`.`GOVID` = @p__linq__0) AND (NOT ((`Extent1`.`GOVID` IS  NULL) OR (@p__linq__0 IS  NULL)))) OR ((`Extent1`.`GOVID` IS  NULL) AND (@p__linq__0 IS  NULL))) AS `GroupBy1`
+ 
+
+ 记录时间：2017-02-06 09:41:40,157 线程ID:[36] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCIP_NSMONFEE` AS `Extent1`
+ WHERE ((((`Extent1`.`NSID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AND (`Extent1`.`YEARMONTH` >= @p__linq__1)) AND (`Extent1`.`YEARMONTH` <= @p__linq__2)) AS `GroupBy1`
+ 
+
+ 记录时间：2017-02-06 09:41:40,159 线程ID:[35] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Project1`.`NSID`, 
+`Project1`.`NSNO`, 
+`Project1`.`GOVID`, 
+`Project1`.`NSNAME`, 
+`Project1`.`NSTYPE`, 
+`Project1`.`ADDRESS`, 
+`Project1`.`CONTACTOR`, 
+`Project1`.`PHONE`, 
+`Project1`.`CREATEBY`, 
+`Project1`.`CREATETIME`, 
+`Project1`.`UPDATEBY`, 
+`Project1`.`UPDATETIME`, 
+`Project1`.`ISDELETE`
+FROM `NCI_NURSINGHOME` AS `Project1`
+ WHERE ((`Project1`.`GOVID` = @p__linq__0) AND (NOT ((`Project1`.`GOVID` IS  NULL) OR (@p__linq__0 IS  NULL)))) OR ((`Project1`.`GOVID` IS  NULL) AND (@p__linq__0 IS  NULL))
+ ORDER BY 
+`Project1`.`NSID` ASC LIMIT 0,1000
+ 
+
+ 记录时间：2017-02-06 09:41:40,166 线程ID:[36] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Project1`.`NSMONFEEID`, 
+`Project1`.`NCIPAYGRANTID`, 
+`Project1`.`NSID`, 
+`Project1`.`NSNO`, 
+`Project1`.`YEARMONTH`, 
+`Project1`.`TOTALRESIDENT`, 
+`Project1`.`TOTALHOSPDAY`, 
+`Project1`.`TOTALAMOUNT`, 
+`Project1`.`TOTALNCIPAY`, 
+`Project1`.`STATUS`, 
+`Project1`.`CREATORNAME`, 
+`Project1`.`CREATEBY`, 
+`Project1`.`CREATETIME`, 
+`Project1`.`UPDATEBY`, 
+`Project1`.`UPDATETIME`, 
+`Project1`.`ISDELETE`
+FROM `NCIP_NSMONFEE` AS `Project1`
+ WHERE ((((`Project1`.`NSID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)) AND ((0 = `Project1`.`ISDELETE`) AND (`Project1`.`ISDELETE` IS NOT NULL))) AND (`Project1`.`YEARMONTH` >= @p__linq__1)) AND (`Project1`.`YEARMONTH` <= @p__linq__2)
+ ORDER BY 
+`Project1`.`CREATETIME` DESC LIMIT 0,10
+ 
+
+ 记录时间：2017-02-06 09:41:41,493 线程ID:[33] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_USER` AS `Extent1`
+ WHERE ((NOT ((1 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AND ((`Extent1`.`ORGID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL))) AND ((`Extent1`.`ORGTYPE` = @p__linq__1) AND (@p__linq__1 IS NOT NULL))) AS `GroupBy1`
+ 
+
+ 记录时间：2017-02-06 09:41:41,497 线程ID:[33] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Project1`.`USERID`, 
+`Project1`.`PARENTUSERID`, 
+`Project1`.`ROLEID`, 
+`Project1`.`ORGTYPE`, 
+`Project1`.`ORGID`, 
+`Project1`.`ACCOUNT`, 
+`Project1`.`PASSWORD`, 
+`Project1`.`USERNAME`, 
+`Project1`.`EMAIL`, 
+`Project1`.`IDNO`, 
+`Project1`.`STATUS`, 
+`Project1`.`CREATEBY`, 
+`Project1`.`CREATETIME`, 
+`Project1`.`UPDATEBY`, 
+`Project1`.`UPDATETIME`, 
+`Project1`.`ISDELETE`
+FROM `NCI_USER` AS `Project1`
+ WHERE ((NOT ((1 = `Project1`.`ISDELETE`) AND (`Project1`.`ISDELETE` IS NOT NULL))) AND ((`Project1`.`ORGID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL))) AND ((`Project1`.`ORGTYPE` = @p__linq__1) AND (@p__linq__1 IS NOT NULL))
+ ORDER BY 
+`Project1`.`CREATEBY` DESC LIMIT 0,10
+ 
+
+ 记录时间：2017-02-06 09:41:42,793 线程ID:[36] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE (((NOT ((1 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AND ((`Extent1`.`ORGTYPE` = @p__linq__0) AND (@p__linq__0 IS NOT NULL))) AND ((`Extent1`.`ORGID` = @p__linq__1) AND (@p__linq__1 IS NOT NULL))) AND (NOT (((`Extent1`.`ROLETYPE` = @p__linq__2) AND (NOT ((`Extent1`.`ROLETYPE` IS  NULL) OR (@p__linq__2 IS  NULL)))) OR ((`Extent1`.`ROLETYPE` IS  NULL) AND (@p__linq__2 IS  NULL))))) AS `GroupBy1`
+ 
+
+ 记录时间：2017-02-06 09:41:42,799 线程ID:[36] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Project1`.`ROLEID`, 
+`Project1`.`PARENTROLEID`, 
+`Project1`.`ROLENAME`, 
+`Project1`.`ROLETYPE`, 
+`Project1`.`STATUS`, 
+`Project1`.`ORGTYPE`, 
+`Project1`.`ORGID`, 
+`Project1`.`CREATEBY`, 
+`Project1`.`CREATETIME`, 
+`Project1`.`UPDATEBY`, 
+`Project1`.`UPDATETIME`, 
+`Project1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Project1`
+ WHERE (((NOT ((1 = `Project1`.`ISDELETE`) AND (`Project1`.`ISDELETE` IS NOT NULL))) AND ((`Project1`.`ORGTYPE` = @p__linq__0) AND (@p__linq__0 IS NOT NULL))) AND ((`Project1`.`ORGID` = @p__linq__1) AND (@p__linq__1 IS NOT NULL))) AND (NOT (((`Project1`.`ROLETYPE` = @p__linq__2) AND (NOT ((`Project1`.`ROLETYPE` IS  NULL) OR (@p__linq__2 IS  NULL)))) OR ((`Project1`.`ROLETYPE` IS  NULL) AND (@p__linq__2 IS  NULL))))
+ ORDER BY 
+`Project1`.`CREATETIME` DESC LIMIT 0,10
+ 
+
+ 记录时间：2017-02-06 09:41:43,895 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ WHERE ((`Extent1`.`GOVID` = @p__linq__0) AND (NOT ((`Extent1`.`GOVID` IS  NULL) OR (@p__linq__0 IS  NULL)))) OR ((`Extent1`.`GOVID` IS  NULL) AND (@p__linq__0 IS  NULL))) AS `GroupBy1`
+ 
+
+ 记录时间：2017-02-06 09:41:43,897 线程ID:[37] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCIP_SERVICEDEPOSIT` AS `Extent1`
+ WHERE ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)) AND (`Extent1`.`YEARMONTH` LIKE @p__linq__0)) AS `GroupBy1`
+ 
+
+ 记录时间：2017-02-06 09:41:43,900 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Project1`.`NSID`, 
+`Project1`.`NSNO`, 
+`Project1`.`GOVID`, 
+`Project1`.`NSNAME`, 
+`Project1`.`NSTYPE`, 
+`Project1`.`ADDRESS`, 
+`Project1`.`CONTACTOR`, 
+`Project1`.`PHONE`, 
+`Project1`.`CREATEBY`, 
+`Project1`.`CREATETIME`, 
+`Project1`.`UPDATEBY`, 
+`Project1`.`UPDATETIME`, 
+`Project1`.`ISDELETE`
+FROM `NCI_NURSINGHOME` AS `Project1`
+ WHERE ((`Project1`.`GOVID` = @p__linq__0) AND (NOT ((`Project1`.`GOVID` IS  NULL) OR (@p__linq__0 IS  NULL)))) OR ((`Project1`.`GOVID` IS  NULL) AND (@p__linq__0 IS  NULL))
+ ORDER BY 
+`Project1`.`NSID` ASC LIMIT 0,1000
+ 
+
+ 记录时间：2017-02-06 09:41:43,904 线程ID:[37] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Project1`.`SERVICEDEPOSITID`, 
+`Project1`.`SDGRANTID`, 
+`Project1`.`NSID`, 
+`Project1`.`YEARMONTH`, 
+`Project1`.`AMOUNT`, 
+`Project1`.`SERVICEDEPOSITDATE`, 
+`Project1`.`STATUS`, 
+`Project1`.`CREATEBY`, 
+`Project1`.`CREATETIME`, 
+`Project1`.`UPDATEBY`, 
+`Project1`.`UPDATETIME`, 
+`Project1`.`ISDELETE`
+FROM `NCIP_SERVICEDEPOSIT` AS `Project1`
+ WHERE ((0 = `Project1`.`ISDELETE`) AND (`Project1`.`ISDELETE` IS NOT NULL)) AND (`Project1`.`YEARMONTH` LIKE @p__linq__0)
+ ORDER BY 
+`Project1`.`YEARMONTH` ASC LIMIT 0,12
+ 

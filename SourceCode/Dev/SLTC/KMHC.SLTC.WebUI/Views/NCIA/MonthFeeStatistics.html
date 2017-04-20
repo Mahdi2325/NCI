@@ -1,0 +1,58 @@
+﻿<div class="row">
+    <div id="content" class="col-lg-12">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="page-header">
+                    <ul class="breadcrumb">
+                        <li>
+                            <i class="fa fa-home"></i>
+                            <a href={{homeUrl}}>首页</a>
+                        </li>
+                        <li>费用申报统计</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="box border primary">
+                    <div class="box-title">
+                        <h4><i class="fa fa-search"></i>查询条件</h4>
+                    </div>
+                    <form class="form-horizontal ng-pristine ng-valid" role="form">
+                        <div class="box-body">
+                            <div class="input-group">
+                                <label class="search-lable">开始月份</label>
+                                <input type="text" class="search-control search-input input-width-sm" ng-model="sDate" date-picker date-fmt="yyyy-MM">
+                                <label class="search-lable">结束月份</label>
+                                <input type="text" class="search-control search-input input-width-sm" ng-model="eDate" date-picker date-fmt="yyyy-MM">
+                                <label class="search-lable">定点机构</label>
+                                <select class="search-control search-input input-width-sm" ng-model="nsId" ng-options="item.NsId as item.NsName for item in OrgData">
+                                    <option value="">所有机构</option>
+                                </select>
+                                <div class="search-btn-div">
+                                    <a class="btn btn-primary btn-sm"  ng-click="init()"><i class="fa fa-search"></i> 查询</a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="box border primary">
+                    <div class="box-title">
+                        <h4><i class="fa fa-bar-chart-o"></i>费用申报统计</h4>
+                    </div>
+                    <div class="box-body">
+                        <div class="row">
+                            <div id="amount" style="height:600px;" class="col-md-12 col-lg-12"></div>
+                            <div id="res" style="height:600px;" class="col-md-12 col-lg-12"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

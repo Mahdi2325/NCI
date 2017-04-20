@@ -1,0 +1,243 @@
+/**---------------------------------------扩展CloudAdmin样式---------------------------------------*/
+/**盒子*/
+.box.seablue{
+}
+
+.box.seablue .box-title{
+    background-color: #0c6dbe!important;
+    height: 45px;
+    line-height: 35px;
+}
+
+.box.seablue .box-title h4{
+    color: #FFF!important;
+}
+
+.box.seablue input,
+.box.seablue select{
+    border-radius: 0;
+}
+
+.box.seablue .box-body{
+    padding: 10px;
+}
+
+/**表格*/
+.table-seablue th,
+.table-seablue td{
+    font-size: 16px;
+    text-align: center;
+    height: 25px!important;
+    line-height: 30px!important;
+}
+
+/**按鈕*/
+.btn-seablue {
+    min-width: 6px;
+    height:35px;
+    line-height:23px!important;
+    font-size:14px!important;
+    color: #FFF!important;
+    background-color: #0c6dbe;
+    border-color: #0c6dbe;
+}
+
+.btn-seablue:hover,
+.btn-seablue:focus,
+.btn-seablue:active,
+.btn-seablue.active,
+.open .dropdown-toggle.btn-seablue {
+    color: #ffffff;
+    background-color: #2886d5;
+    border-color: #2886d5;
+}
+
+.btn-seablue:active,
+.btn-seablue.active,
+.open .dropdown-toggle.btn-seablue {
+    background-image: none;
+}
+
+.btn-seablue.disabled,
+.btn-seablue[disabled],
+fieldset[disabled] .btn-primary,
+.btn-seablue.disabled:hover,
+.btn-seablue[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-seablue.disabled:focus,
+.btn-seablue[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-seablue.disabled:active,
+.btn-seablue[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-seablue.disabled.active,
+.btn-seablue[disabled].active,
+fieldset[disabled] .btn-seablue.active {
+    background-color: #5e87b0;
+    border-color: #507aa4;
+}
+
+.btn-seablue .badge {
+    color: #2886d5;
+    background-color: #fff;
+}
+
+
+
+/**---------------------------------------扩展翻页---------------------------------------*/
+
+div.dataTables_info{
+    padding-top:20px;
+}
+
+div.dataTables_paginate{
+    float:right;margin:0
+}
+
+table.table{
+    clear:both;margin-bottom:6px!important;
+    max-width:none!important
+
+}
+.pagination li.active a, .pagination li.active span, .pagination li.active a:hover, .pagination li.active span:hover, .pagination li.active a:focus, .pagination li.active span:focus {
+    border-color: #2886d5;
+    background-color: #2886d5!important;
+}
+
+select.input-sm {
+    margin: 0 5px;
+}
+
+/**---------------------------------------覆盖BootStrap选项卡 (费用管理)---------------------------------------*/
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+    color: #0091ff!important;
+    background-color: #fff;
+    border-bottom: 3px solid #0090ff!important;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    color: #555555;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-bottom-color: transparent;
+    cursor: default;
+}
+
+.nav-tabs>li>a:hover {
+    border-color: #eee #eee #ddd;
+}
+
+.nav>li>a:hover, .nav>li>a:focus {
+    text-decoration: none;
+    background-color: #eee;
+}
+
+.nav-tabs > li > a:hover {
+    color: #555!important;
+    border-color: #eeeeee #eeeeee #dddddd;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color: #FFF;
+}
+
+.nav-tabs>li>a {
+    color:#000;
+    margin-right: -1px!important;
+    line-height: 1.428571429;
+    border-radius:0!important;
+    background-color: #FFF!important;
+    border: 1px solid #e1e1e1!important;
+    height: 47px!important;
+    line-height: 25px!important;
+}
+
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+
+.nav-tabs > li > a {
+    margin-right: 2px;
+    line-height: 1.428571429;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+}
+
+.nav > li > a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+
+/**---------------------------------------格子 (系统配置)---------------------------------------*/
+.wrapper-grid{
+    height: 100%;
+    padding: 10px;
+    min-height: 600px;
+}
+
+.grid{
+    width: 160px;
+    height: 130px;
+    margin: 5px;
+}
+
+.grid a{
+    height: 100%;
+}
+
+/**---------------------------------------表格 (护理路径)---------------------------------------*/
+.table-style1{
+    width: 100%!important;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    font-size: 16px!important;
+    border:none!important;
+    border-bottom: 0px solid rgba(0,0,0,0,)!important;
+}
+
+.table-style1 th{
+    height: 38px;
+    text-align: center;
+    border: 1px solid #e1e1e1;
+    border-top: none;
+}
+
+.table-style1 th:first-child{
+    border-left:none;
+}
+
+.table-style1 th:last-child{
+    border-right:none;
+}
+
+.table-style1 td {
+    text-align: center;
+    border-color: #e1e1e1!important;
+    /*border-bottom:none!important;*/
+}
+
+/**---------------------------------------个案管理---------------------------------------*/
+.custom-select{
+    /*width: 340px;*/
+    height: 50px;
+    font-size: 16px;
+}
+
+ul.custon-list{
+    padding: 30px;
+}
+
+ul.custon-list li {
+    height: 65px;
+    line-height: 65px;
+    font-size: 16px;
+    border-bottom:1px solid #e6e9ee;
+}
+
+ul.custon-list li label:nth-child(2){
+    font-size: 14px;
+}

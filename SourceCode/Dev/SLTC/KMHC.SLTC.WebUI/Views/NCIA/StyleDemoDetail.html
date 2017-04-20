@@ -1,0 +1,135 @@
+﻿
+<div class="row">
+    <div id="content" class="col-md-12">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="page-header">
+                    <!-- BREADCRUMBS -->
+                    <ul class="breadcrumb">
+                        <li>
+                            <i class="fa fa-home"></i>
+                            <a href="/">首頁</a>
+                        </li>
+
+                        <li>社工服務記錄</li>
+                    </ul>
+                    <!-- /BREADCRUMBS -->
+                    <!--<div class="clearfix"></div>
+                    -->
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <form class="form-horizontal" name="crForm" role="form" novalidate>
+                <div class="col-md-12">
+                    <div class="box border primary">
+                        <div class="box-title">
+                            <h4><i class="fa fa-columns"></i><span class="hidden-inline-mobile">社工服務記錄視窗</span></h4>
+                        </div>
+                        <div class="box-body">
+
+                            <div class="form-group">
+                                <label for="selRecordBy" class="col-md-1 control-label">服務人員<span class="required">*</span></label>
+                                <div class="col-md-2">
+                                    <input type="text" class="form-control" ca-date-picker id="dtRecDate" ng-model="currentItem.RecDate" name="服務日期" required>
+                                </div>
+                                <label for="dtRecDate" class="col-md-1 control-label">服務日期<span class="required">*</span></label>
+                                <div class="col-md-2">
+                                    <input type="text" class="form-control" ca-date-picker id="dtRecDate" ng-model="currentItem.RecDate" name="服務日期" required>
+                                </div>
+
+                            </div>
+                            <div class="form-group">
+                                <label for="selSvrAddress" class="col-md-1 control-label">服務地點<span class="required">*</span></label>
+                                <div class="col-md-2">
+                                    <select class="form-control" id="selSvrAddress" ng-model="currentItem.SvrAddress" select-code="K00.017" name="服務地點" required>
+                                        <option value="">-- 請選擇 --</option>
+                                    </select>
+                                </div>
+                                <label for="txtUnitContactor" class="col-md-1 control-label">服務方式<span class="required">*</span></label>
+                                <div class="col-md-2">
+                                    <select class="form-control" id="selSvrAddress" ng-model="currentItem.SvrType" select-code="E00.215" name="服務方式" required>
+                                        <option value="">-- 請選擇 --</option>
+                                    </select>
+                                </div>
+                                <label for="txtUnitAddress" class="col-md-1 control-label">测试selectItems<span class="required">*</span></label>
+
+                                <div class="col-md-2" id="ContNamediv">
+                                    <input type="text" class="form-control" ng-model="currentItem.RelationType" select-items="测试" ng-maxlength="200" />
+                                </div>
+                                <label for="txtUnitTel" class="col-md-1 control-label">selectMultipleItems<span class="required">*</span></label>
+                                <div class="col-md-2">
+                                    <input type="text" class="form-control" id="A003" ng-model="currentItem.RelationType" select-multiple-items="A003" ng-maxlength="200" />
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label class="control-label col-md-1">問題層面<span class="required">*</span></label>
+                                <div class="col-md-2">
+                                    <select class="form-control" required ng-model="currentItem.QuestionLevel" name="問題層面" ng-change="changeLevel(currentItem.QuestionLevel)" ng-options="item.ItemCode as item.ItemName for item in Data.Level" required></select>
+                                </div>
+                                <label class="control-label col-md-1">問題焦點</label>
+                                <div class="col-md-8">
+                                    <select class="form-control" id="selQuestionFocus" ng-model="currentItem.QuestionFocus" ng-change="changeQuestion(currentItem.QuestionFocus)" ng-options="item.ItemCode as item.ItemName for item in Data.Diag"></select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-md-1">服務焦點說明</label>
+                                <div class="col-md-11">
+                                    <textarea class="form-control" rows="3" ng-model="currentItem.QuestionDesc" select-items="服務焦點說明" ng-maxlength="50" name="服務焦點說明"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-md-1">處理措施</label>
+                                <div class="col-md-11">
+                                    <select class="form-control" id="selRelationType" ng-model="currentItem.ProcessActivity" ng-maxlength="500" name="處理措施" ng-options="item.ItemCode as item.ItemName for item in Data.CarePlanActivityList"></select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-md-1">處理說明</label>
+                                <div class="col-md-11">
+                                    <textarea class="form-control" rows="3" ng-model="currentItem.TreatDesc" select-items="說明與備註" ng-maxlength="500" name="處遇說明"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-md-1">評估結果</label>
+                                <div class="col-md-2">
+                                    <select class="form-control" id="selRelationType" ng-model="currentItem.EvalStatus" select-code="E00.217">
+                                        <option value="">-- 請選擇 --</option>
+                                    </select>
+                                </div>
+                                <label class="control-label col-md-1">服務分鐘</label>
+                                <div class="col-md-2">
+                                    <input type="text" class="form-control" ng-model="currentItem.RelationType" select-items="對象類別" ng-maxlength="200" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-md-1">評估說明</label>
+                                <div class="col-md-11">
+                                    <textarea class="form-control" rows="3" ng-model="currentItem.EvalDesc" select-items="本次服務評估" name="評估說明" ng-maxlength="50"></textarea>
+                                </div>
+
+                            </div>
+                        
+
+                        </div>
+                    </div>
+
+                    <div class="hack hack-border"></div>
+                    <div class="form-group">
+
+                        <div class="col-md-offset-8">
+                           
+                                <button class="btn btn-primary" >保存</button>
+                                <button class="btn btn-success" >提交</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+
+        </div>
+    </div>
+</div>

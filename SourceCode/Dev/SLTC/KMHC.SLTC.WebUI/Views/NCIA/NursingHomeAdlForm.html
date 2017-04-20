@@ -1,0 +1,16 @@
+﻿<div class="box border primary">
+    <div class="box-title">
+        <h4><span class="hidden-inline-mobile">{{QuestionName}}</span></h4>
+    </div>
+    <div class="box-body">
+        <table id="tbContent" border="1" style="line-height:2em;margin:0,auto;width:98%">
+            <tr ng-repeat="Item in MakerItem">
+                <td style="width:40%;padding-left:4px;"><label class="control-label">{{Item.MakeName}}</label></td>
+                <td style="width:60%;padding-left:6px;"><label class="control-label">{{Item.LimitedValueName}}</label></td>
+            </tr>
+        </table>
+        <div style="float:right;padding-right:24px;padding-top:4px;">
+            <h4><span class="hidden-inline-mobile">总分：{{TotalScore}}</span></h4>
+        </div>
+    </div>
+</div>

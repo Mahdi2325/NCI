@@ -1,0 +1,342 @@
+﻿html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, strong, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-family: 微软雅黑,'microsoft yahei',宋体,新宋体,sans-serif;
+}
+
+select {
+    /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+    border: solid 1px #000;
+    /*很关键：将默认的select选择框样式清除*/
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    /*在选择框的最右侧中间显示小箭头图片*/
+    background: url("../../Images/EC/combobox_select1_big.png") no-repeat scroll right center transparent;
+    /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+    padding-right: 14px;
+    min-width:157px;
+}
+
+select:hover {
+    background: url("../../Images/EC/combobox_select2_big.png") no-repeat scroll right center transparent;
+}
+/*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+select::-ms-expand {
+    display: none;
+}
+
+.left {
+    float: left;
+}
+
+input {
+    /*-webkit-appearance: textfield;*/
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    -webkit-user-select: text;
+    cursor: auto;
+    padding: 1px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+
+.input-width-sm {
+    width: 150px;
+}
+
+.input-width-md {
+    width: 220px;
+}
+
+.input-width-lg {
+    width: 300px;
+}
+
+.ec-ui-input {
+    height: 30px;
+    line-height: 20px;
+    border: 1px solid #bfbfbf;
+    margin: 0;
+    padding: 0 1px 0 0;
+    color: #555;
+    text-indent: 4px;
+}
+
+.ec-textRight {
+    text-align: right;
+}
+
+.ec-left {
+    float: left;
+}
+
+.ec-div-span {
+    line-height: 30px;
+}
+
+.maginLeft {
+    margin-left: 10px;
+}
+
+.ec-center {
+    /*border: 1px solid #b5c8eb;*/
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 100%;
+}
+
+.ec-center table {
+    width: 100%;
+    table-layout: fixed;
+    /*border-collapse: separate;*/
+    border-spacing: 0;
+    font-size: 12px;
+}
+
+.table > thead > tr > th {
+    border-bottom: 0px;
+}
+
+
+/*#content .ec-page-header {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-bottom: 1px solid #cdd2d2;
+    color: #000000;
+    margin: 35px -30px 10px;
+    overflow: hidden;
+    padding: 0px;
+    position: relative;
+    opacity: 0.7;
+    text-transform: uppercase;
+}
+
+#content .ec-page-header ul {
+    margin-left: 20px;
+}*/
+
+.box.border, .box.solid {
+    border-radius: 0px;
+}
+
+.btn-group-xs > .btn{
+    /*border-radius: 0px;*/
+}
+
+.column-w50 {
+    width: 50px;
+}
+
+.column-w80 {
+    width: 80px;
+}
+
+.column-w120 {
+    width: 120px;
+}
+
+
+.column-w130 {
+    width: 130px;
+}
+.column-w180 {
+    width: 180px;
+}
+
+.column-w150 {
+    width: 150px;
+}
+
+.column-wp100 {
+    width: 100%;
+}
+
+
+
+/*addby amaya  for  服务申请表样式*/
+.persondiv table {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: DFKai-SB;
+}
+
+
+.persondiv table td {
+    border: 1px solid #000;
+    line-height: 26px;
+    padding: 0 5px 0 8px;
+}
+
+.persondiv {
+    vertical-align: middle;
+}
+
+.persontable {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bottom_blue {
+    border-bottom: 1px solid #4B739A;
+}
+
+.justify {
+    width: 150px;
+    clear: both;
+    padding-left:8px;
+    padding-right:8px;
+    word-spacing: -1em; /*调整文本，以防止使用两端对齐之后字间距过大*/
+    text-align: justify;
+    text-justify: distribute-all-lines; /*ie6-8*/
+    text-align-last: justify; /* ie9*/
+    -moz-text-align-last: justify; /*ff*/
+    -webkit-text-align-last: justify; /*chrome 20+*/
+}
+
+/*清除上边框*/
+.cleartopboreder {
+    border:none;
+}
+
+
+.magic-radio,
+.magic-checkbox {
+    position: absolute;
+    display: none;
+}
+
+.magic-radio[disabled],
+.magic-checkbox[disabled] {
+    cursor: not-allowed;
+}
+
+.magic-radio + label,
+.magic-checkbox + label {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.magic-radio + label:hover:before,
+.magic-checkbox + label:hover:before {
+    animation-duration: 0.4s;
+    animation-fill-mode: both;
+    animation-name: hover-color;
+}
+
+.magic-radio + label:before,
+.magic-checkbox + label:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    content: '';
+    border: 1px solid #c0c0c0;
+}
+
+.magic-radio + label:after,
+.magic-checkbox + label:after {
+    position: absolute;
+    display: none;
+    content: '';
+}
+
+.magic-radio[disabled] + label,
+.magic-checkbox[disabled] + label {
+    cursor: not-allowed;
+    color: #e4e4e4;
+}
+
+.magic-radio[disabled] + label:hover, .magic-radio[disabled] + label:before, .magic-radio[disabled] + label:after,
+.magic-checkbox[disabled] + label:hover,
+.magic-checkbox[disabled] + label:before,
+.magic-checkbox[disabled] + label:after {
+    cursor: not-allowed;
+}
+
+.magic-radio[disabled] + label:hover:before,
+.magic-checkbox[disabled] + label:hover:before {
+    border: 1px solid #e4e4e4;
+    animation-name: none;
+}
+
+.magic-radio[disabled] + label:before,
+.magic-checkbox[disabled] + label:before {
+    border-color: #e4e4e4;
+}
+
+.magic-radio:checked + label:before,
+.magic-checkbox:checked + label:before {
+    animation-name: none;
+}
+
+.magic-radio:checked + label:after,
+.magic-checkbox:checked + label:after {
+    display: block;
+}
+
+.magic-radio + label:before {
+    border-radius: 50%;
+}
+
+.magic-radio + label:after {
+    top: 7px;
+    left: 7px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #3e97eb;
+}
+
+.magic-radio:checked + label:before {
+    border: 1px solid #3e97eb;
+}
+
+.magic-radio:checked[disabled] + label:before {
+    border: 1px solid #c9e2f9;
+}
+
+.magic-radio:checked[disabled] + label:after {
+    background: #c9e2f9;
+}
+
+.magic-checkbox + label:before {
+    border-radius: 3px;
+}
+
+.magic-checkbox + label:after {
+    top: 2px;
+    left: 6.5px;
+    box-sizing: border-box;
+    width: 6px;
+    height: 12px;
+    transform: rotate(45deg);
+    border-width: 2px;
+    border-style: solid;
+    border-color: #fff;
+    border-top: 0;
+    border-left: 0;
+}
+
+.magic-checkbox:checked + label:before {
+    border: #3e97eb;
+    background: #3e97eb;
+}
+
+.magic-checkbox:checked[disabled] + label:before {
+    border: #c9e2f9;
+    background: #c9e2f9;
+}
+
+
+/*addby amaya  for  服务申请表样式*/

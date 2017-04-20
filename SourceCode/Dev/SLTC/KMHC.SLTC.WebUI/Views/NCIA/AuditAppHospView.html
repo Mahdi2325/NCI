@@ -1,0 +1,191 @@
+﻿<link href="../../Content/style/common.css" rel="stylesheet" />
+<style>
+    .width100 {
+        width: 100%;
+    }
+
+    .width98 {
+        width: 98%;
+    }
+
+    .width80 {
+        width: 80%;
+    }
+
+    .width10 {
+        width: 10%;
+    }
+
+    .width20 {
+        width: 20%;
+    }
+
+    .width30 {
+        width: 30%;
+    }
+
+    .mgt15 {
+        margin-top: 15px;
+    }
+
+    .mgl15 {
+        margin-left: 15px;
+    }
+
+    .mgl30 {
+        margin-left: 30px;
+    }
+
+    .mgr100 {
+        margin-right: 190px;
+    }
+
+    .mgtb5 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .pdtb5 {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .spanbgc {
+        background-color: white;
+    }
+
+    .tbCenter {
+        margin: 0,auto;
+    }
+
+    .hCenter {
+        margin: 0,auto;
+    }
+
+    .left {
+        float: left;
+    }
+
+    .pdl15 {
+        padding-left: 15px;
+    }
+
+    .pdt5 {
+        padding-top: 5px;
+    }
+
+    .pdt10 {
+        padding-top: 10px;
+    }
+
+    .pdt15 {
+        padding-top: 15px;
+    }
+</style>
+
+<div class="row">
+    <div id="content" class="col-lg-12">
+        <div class="row">
+            <div class="col-sm-12">
+                <div>
+                    <ul class="breadcrumb">
+                        <li>
+                            <i class="fa fa-home"></i>
+                            <a href={{homeUrl}}>首页</a>
+                        </li>
+                        <li>
+                            <a ui-sref="auditAppHosp">长期护理保险住院申请列表</a>
+                        </li>
+                        <li>长期护理保险住院查看</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="tab-content">
+                    <div class="tab-pane fade in active" id="box_tab1">
+                        <div class="mgl15 center"><h3>长期护理保险住院表</h3></div>
+                        <div class="mgl15">
+                            <table id="tbContent" border="1" style="line-height:2em;margin:0,auto;width:86%">
+                                <tbody>
+                                    <tr>
+                                        <td class="width10 center"><label class="control-label">姓名</label></td>
+                                        <td class="width20 center"><span ng-bind="currentItem.Name"></span></td>
+                                        <td class="width10 center"><label class="control-label">性别</label></td>
+                                        <td class="width20 center"><span ng-bind="currentItem.Gender"></span></td>
+                                        <td class="width10 center"><label class="control-label">年龄</label></td>
+                                        <td class="width30 center"><span ng-bind="currentItem.Age"></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="width10 center"><label class="control-label">社会保障卡号</label></td>
+                                        <td class="width20 center"><span ng-bind="currentItem.SsNO"></span></td>
+                                        <td class="width10 center"><label class="control-label">身份证号</label></td>
+                                        <td class="width20 center"><span ng-bind="currentItem.IdNO"></span></td>
+                                        <td class="width10 center"><label class="control-label">护理形式</label></td>
+                                        <td class="width30 center">{{currentItem.CareType | appcertNsappcareTypeFormat}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="width10 center"><label class="control-label">人员身份</label></td>
+                                        <td class="width30 center"><span select-code="A002" select-value="{{currentItem.Mctype}}"></span></td>
+                                        <td class="width10 center"><label class="control-label">家属姓名</label></td>
+                                        <td class="width30 center"><span ng-bind="currentItem.FamilyMemberName"></span></td>
+                                        <td class="width10 center"><label class="control-label">医师姓名</label></td>
+                                        <td class="width30 center"><span ng-bind="currentItem.DoctorName"></span></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td class="center"><label class="control-label">病种</label></td>
+                                        <td class="center" colspan="2"><input type="text" id="selDisease" class="form-control" ng-model="currentItem.Disease" select-multiple-code="A003" disabled="disabled" name="病种" /></td>
+                                        <td class="center"><label class="control-label">入院日期</label></td>
+                                        <td class="center" colspan="2">
+                                            <span style="font:bolder,12px">{{currentItem.EntryTime | date:'yyyy-MM-dd '}}</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center"><label class="control-label">现住址</label></td>
+                                        <td class="center" colspan="5"><span ng-bind="currentItem.Address"></span> </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center"><label class="control-label">联系电话</label></td>
+                                        <td class="center" colspan="2"><span ng-bind="currentItem.Phone"></span></td>
+                                        <td class="center"><label class="control-label">家属联系电话</label></td>
+                                        <td class="center" colspan="2"><span ng-bind="currentItem.FamilyMemberphone"></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center"><label class="control-label">申请原因</label> </td>
+                                        <td class="center" colspan="5"><span ng-bind="currentItem.AppReason"></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center"><label class="control-label">机构意见</label> </td>
+                                        <td class="center" colspan="5"><span ng-bind="currentItem.NsComment"></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center"><label class="control-label">经办意见</label> </td>
+                                        <td class="center" colspan="5"><span ng-bind="currentItem.AgencyComment"></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center"><label class="control-label">相关材料附件</label> </td>
+                                        <td class="center" colspan="5">
+                                            <span><a ng-href="{{currentItem.UploadFiles | filePathFormat}}" target="_blank">{{currentItem.UploadFiles | fileNameFormat}}</a></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center"><label class="control-label">审核状态</label> </td>
+                                        <td class="center" colspan="5">
+                                            <span style="font:bolder,12px">{{currentItem.AgencyResult | appcertStatsFormat}}</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="center" style="margin-top:10px">
+
+                        <a class="btn btn-primary" ng-click="Print($stateParams.id )">打印</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

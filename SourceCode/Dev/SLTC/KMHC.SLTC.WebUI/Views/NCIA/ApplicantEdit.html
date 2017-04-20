@@ -1,0 +1,226 @@
+﻿<div class="row">
+    <div id="content" class="col-lg-12">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="page-header">
+                    <ul class="breadcrumb">
+                        <li>
+                            <i class="fa fa-home"></i>
+                            <a>首页</a>
+                        </li>
+                        <li><a ui-sref="applicant">参保人信息列表</a></li>
+                        <li>参保人信息录入</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="box border primary">
+                    <div class="box-title">
+                        <h4>
+                            <i class="fa fa-bars"></i>参保人信息录入
+                        </h4>
+                    </div>
+                    <div class="box-body">
+                        <form class="form-horizontal ng-pristine ng-invalid ng-invalid-required ng-valid-maxlength ng-valid-pattern" name="personForm" role="form" ng-submit="save();" novalidate>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">基本信息</div>
+                                <div class="panel-body">
+                                    <div class="form-group">
+                                        <label class="col-md-1 control-label">姓名<span class="required">*</span></label>
+                                        <div class="col-md-2">
+                                            <input type="text" class="form-control " name="姓名" ng-maxlength="50" ng-model="person.Name" required ng-disabled="IsPartInfoDisabled" />
+                                        </div>
+
+                                        <label class="col-md-1 control-label">出生年月<span class="required">*</span></label>
+                                        <div class="col-md-2">
+                                            <input type="text" class="form-control " style="clear: both;" ng-model="person.BirthDate" name="出生年月" ca-date-picker required />
+                                        </div>
+                                        <label class="col-md-1 control-label">身份证号码<span class="required">*</span></label>
+                                        <div class="col-md-2">
+                                            <input type="text" ng-model="person.Idno" class="form-control col-md-10 " ng-blur="Getsex(person.Idno)" name="身份证号码" ng-maxlength="18" ng-minlength="10" ng-pattern="/^(\d{15}$|^[a-zA-Z][0-9]{9}$|^\d{18}$|^\d{17}(\d|X|x))$/" required ng-disabled="IsPartInfoDisabled" />
+                                        </div>
+
+                                        <label class="col-md-1 control-label">社保卡号<span class="required">*</span></label>
+                                        <div class="col-md-2">
+                                            <input type="text" ng-model="person.Ssno" class="form-control col-md-10 " name="社保卡号" ng-maxlength="20" required ng-disabled="IsPartInfoDisabled" />
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-sm-1 control-label">性别<span class="required">*</span></label>
+                                        <div class="col-sm-2">
+                                            <label class="col-md-2 radio-inline"><input type="radio" name="gender" ng-model="person.Gender" id="SexM" value="男"  ng-checked="true" />男</label>
+                                            <label class="col-md-2 radio-inline"><input type="radio" name="gender" ng-model="person.Gender" id="SexF" value="女"  ng-checked="true" />女</label>
+                                        </div>
+
+                                        <label class="col-sm-1 control-label">婚姻状况</label>
+                                        <div class="col-sm-2">
+                                            <select class="form-control col-md-8 " id="marriage" ng-model="person.Maritalstatus" select-code="A004" name="婚姻状况">
+
+                                            </select>
+
+
+                                            <!--<input type="radio" class="magic-radio" name="marriage" ng-model="person.Maritalstatus" id="unmarried" value="未婚"  /><label style="font-weight: normal;" for="unmarried">未婚</label>
+                                            <input type="radio" class="magic-radio" name="marriage" ng-model="person.Maritalstatus" id="married" value="已婚"  /><label style="font-weight: normal;" for="married">已婚</label>
+                                            <br />
+                                            <input type="radio" class="magic-radio" name="marriage" ng-model="person.Maritalstatus" id="Widowed" value="丧偶"  /><label style="font-weight: normal;" for="Widowed">丧偶</label>
+                                            <input type="radio" class="magic-radio" name="marriage" ng-model="person.Maritalstatus" id="divorce" value="离婚"  /><label style="font-weight: normal;" for="divorce">离婚</label>-->
+                                        </div>
+
+                                        <label class="col-sm-1 control-label">曾从事职业</label>
+                                        <div class="col-sm-2">
+                                            <input type="text" class="form-control col-md-8 " name="曾从事职业" ng-maxlength="50" ng-model="person.Occupation" />
+                                        </div>
+
+                                        <label class="col-sm-1 control-label">籍贯</label>
+                                        <div class="col-sm-2">
+                                            <input-area-code callback="PostSelected(item)" id="Nativeplace" value="{{person.Nativeplace}}" />
+
+                                            <!--<input type="text" class="form-control col-md-8 " name="籍贯" ng-maxlength="50" ng-model="person.Nativeplace"  />-->
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-1 control-label">病种<span class="required">*</span></label>
+                                        <div class="col-sm-2">
+                                            <!--<select class="form-control col-md-8 " id="selDisease" ng-model="person.Disease" select-code="A003" name="病种" required></select>-->
+                                            <input type="text" id="selDisease" class="form-control" ng-model="person.Disease" select-multiple-code="A003" name="病种" required />
+                                        </div>
+
+                                        <label class="col-sm-1 control-label">人员身份<span class="required">*</span></label>
+                                        <div class="col-sm-2">
+                                            <select class="form-control col-md-8 " id="selMcType" ng-model="person.McType" select-code="A002" name="人员身份(医保类型)" required ng-disabled="IsPartInfoDisabled"></select>
+                                        </div>
+
+                                        <label class="col-sm-1 control-label">邮编</label>
+                                        <div class="col-sm-2">
+                                            <input type="text" class="form-control col-md-8 " name="邮编" ng-pattern="/^[1-9]\d{5}(?!\d)$/" ng-maxlength="20" ng-model="person.Zip"  />
+                                        </div>
+
+                                        <label class="col-sm-1 control-label">联系电话<span class="required">*</span></label>
+                                        <div class="col-sm-2">
+                                            <input type="text" class="form-control col-md-8 " name="联系电话" ng-maxlength="50" ng-model="person.Phone" required />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-1 control-label">家属姓名<span class="required">*</span></label>
+                                        <div class="col-sm-2">
+                                            <input type="text" class="form-control col-md-8 " name="患者家属姓名" ng-maxlength="50" ng-model="person.FamilyMemberName" required />
+                                        </div>
+
+                                        <label class="col-sm-1 control-label">与申请人关系<span class="required">*</span></label>
+                                        <div class="col-sm-2">
+                                            <input type="text" ng-model="person.Familymemberrelationship" class="form-control col-md-10 " name="与申请人关系" ng-maxlength="20" required />
+                                        </div>
+
+                                        <label class="col-sm-1 control-label">家属联系电话<span class="required">*</span></label>
+                                        <div class="col-sm-2">
+                                            <input type="text" class="form-control col-md-8 " name="家属联系电话" ng-maxlength="50" ng-model="person.Familymemberphone" required />
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-sm-1 control-label">工作单位<span class="required">*</span></label>
+                                        <div class="col-sm-11">
+                                            <input type="text" class="form-control col-md-8 " name="户籍或工作单位" ng-maxlength="100" placeholder="请输入户籍或工作单位" ng-model="person.Residence" required />
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-sm-1 control-label">现住址<span class="required">*</span></label>
+                                        <div class="col-sm-11">
+                                            <input type="text" class="form-control col-md-8 " name="现住址" ng-maxlength="100" ng-model="person.Address" required />
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-sm-1 control-label">病情描述</label>
+                                        <div class="col-sm-11">
+                                            <textarea class="form-control col-md-8" name="病情描述及诊断" ng-model="person.DiseaseDesc" rows="5"></textarea>
+                                        </div>
+                                    </div>
+                                  
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">目前生活状况</div>
+                                <div class="panel-body">
+                                    <div class="form-group">
+                                        <label class="col-sm-1 control-label">目前经济情况</label>
+                                        <div class="col-sm-5">
+                                            <input type="text" ng-show="false" class=" form-control" style="float: left;" ng-model="person.Economystatus" />
+                                            <label class="checkbox-inline">
+                                                <input type="checkbox" class="uniform" name="economicStatus" ng-model="person.EconomyStatus1" id="pension" ng-checked="EconomyStatus1" value="001">退休金
+                                            </label>
+
+                                            <label class="checkbox-inline">
+                                                <input type="checkbox" class="uniform" name="economicStatus" ng-model="person.EconomyStatus2" id="childAllowance" ng-checked="EconomyStatus2" value="002">子女补贴
+                                            </label>
+
+                                            <label class="checkbox-inline">
+                                                <input type="checkbox" class="uniform" name="economicStatus" ng-model="person.EconomyStatus3" id="Subsidize" ng-checked="EconomyStatus3" value="003">亲友资助
+                                            </label>
+
+                                            <label class="checkbox-inline">
+                                                <input type="checkbox" class="uniform" name="economicStatus" ng-model="person.EconomyStatus4" id="OtherSubsidies" ng-checked="EconomyStatus4" value="004">其他补贴
+                                            </label>
+                                        </div>
+
+                                        <label class="col-sm-1 control-label">居住情况</label>
+                                        <div class="col-sm-5">
+                                            <input type="radio" class="magic-radio" name="LivingConditions" ng-model="person.Livecondition" id="SpouseOrChildren" value="与配偶或子女同住"  /><label style="font-weight: normal;" for="SpouseOrChildren">与配偶或子女同住</label>
+                                            <input type="radio" class="magic-radio" name="LivingConditions" ng-model="person.Livecondition" id="relatives" value="与亲戚朋友居住"  /><label style="font-weight: normal;" for="relatives">与亲戚朋友居住</label>
+                                            <input type="radio" class="magic-radio" name="LivingConditions" ng-model="person.Livecondition" id="alone" value="独自居住"  /><label style="font-weight: normal;" for="alone">独自居住</label>
+                                            <input type="radio" class="magic-radio" name="LivingConditions" ng-model="person.Livecondition" id="PensionAgency" value="入住养老机构" /><label style="font-weight: normal;" for="PensionAgency">入住养老机构</label>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <label class="col-sm-1 control-label">住房性质</label>
+                                        <div class="col-sm-5">
+                                            <input type="radio" class="magic-radio" name="HousingProperty" ng-model="person.Housingproperty" id="PropertyHousing" value="产权房"  /><label style="font-weight: normal;" for="PropertyHousing">产权房</label>
+                                            <input type="radio" class="magic-radio" name="HousingProperty" ng-model="person.Housingproperty" id="Rentalhousing" value="租赁房"  /><label style="font-weight: normal;" for="Rentalhousing">租赁房</label>
+                                            <input type="radio" class="magic-radio" name="HousingProperty" ng-model="person.Housingproperty" id="Low-costhousing" value="廉租房" /><label style="font-weight: normal;" for="Low-costhousing">廉租房</label>
+                                            <input type="radio" class="magic-radio" name="HousingProperty" ng-model="person.Housingproperty" id="Private" value="私房" /><label style="font-weight: normal;" for="Private">私房</label>
+                                        </div>
+
+                                        <label class="col-sm-1 control-label">习惯就诊医院</label>
+                                        <div class="col-sm-5">
+                                            <input type="text" ng-show="false" class=" form-control" style="float: left;" ng-model="person.Habithos" />
+                                            <label class="checkbox-inline">
+                                                <input type="checkbox" class="uniform" name="MedicalWay" ng-model="person.MedicalWay1" id="Familyward" ng-checked="MedicalWay1" value="01">家庭病房
+                                            </label>
+                                            <label class="checkbox-inline">
+                                                <input type="checkbox" class="uniform" name="MedicalWay" ng-model="person.MedicalWay2" id="communityHospital" ng-checked="MedicalWay2" value="02">社区医院
+                                            </label>
+                                            <br/>
+                                            <label class="checkbox-inline">
+                                                <input type="checkbox" class="uniform" name="MedicalWay" ng-model="person.MedicalWay3" id="Goout" ng-checked="MedicalWay3" value="03">外出就诊
+                                            </label>
+                                            <label class="checkbox-inline">
+                                                <input type="checkbox" class="uniform" name="MedicalWay" ng-model="person.MedicalWay4" id="MedicalWayOther" ng-checked="MedicalWay4" ng-click="changeHaBithos()" value="04">其他:
+                                            </label>
+                                            <label class="checkbox-inline">
+                                                <input type="text" class="form-control col-md-2" style="height:26px;" ng-disabled="disHaBithos" ng-maxlength="20" ng-model="person.MedicalWay5" />
+                                            </label>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="hack hack-border"></div>
+                            <div class="form-group">
+                                <div class="col-md-offset-8">
+                                    <button class="btn btn-primary" type="submit" id="btnsubmit" ng-disabled="personForm.$invalid">保存</button>
+                                    <button class="btn btn-grey" ui-sref="applicant">取消</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

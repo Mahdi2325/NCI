@@ -1,0 +1,4029 @@
+
+ 记录时间：2017-04-07 10:58:57,860 线程ID:[12] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_AGENCY` AS `Extent1`) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 10:58:57,970 线程ID:[12] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`AGENCYID`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`AGENCYNAME`, 
+`Extent1`.`AGENCYNO`, 
+`Extent1`.`CONTACT`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_AGENCY` AS `Extent1`
+ ORDER BY 
+`Extent1`.`AGENCYID` ASC LIMIT 0,10
+ 
+
+ 记录时间：2017-04-07 11:03:50,976 线程ID:[6] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_AGENCY` AS `Extent1`) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:03:51,070 线程ID:[6] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`AGENCYID`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`AGENCYNAME`, 
+`Extent1`.`AGENCYNO`, 
+`Extent1`.`CONTACT`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_AGENCY` AS `Extent1`
+ ORDER BY 
+`Extent1`.`AGENCYID` ASC LIMIT 0,10
+ 
+
+ 记录时间：2017-04-07 11:03:56,953 线程ID:[6] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_AGENCY` AS `Extent1`) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:03:56,969 线程ID:[6] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`AGENCYID`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`AGENCYNAME`, 
+`Extent1`.`AGENCYNO`, 
+`Extent1`.`CONTACT`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_AGENCY` AS `Extent1`
+ ORDER BY 
+`Extent1`.`AGENCYID` ASC LIMIT 0,10
+ 
+
+ 记录时间：2017-04-07 11:03:57,062 线程ID:[6] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`USERID`, 
+`Extent1`.`PARENTUSERID`, 
+`Extent1`.`ROLEID`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`ACCOUNT`, 
+`Extent1`.`PASSWORD`, 
+`Extent1`.`USERNAME`, 
+`Extent1`.`EMAIL`, 
+`Extent1`.`IDNO`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_USER` AS `Extent1`
+ WHERE (`Extent1`.`ACCOUNT` = 'kmadmin') AND ('kmadmin' IS NOT NULL) LIMIT 1
+ 
+
+ 记录时间：2017-04-07 11:03:57,093 线程ID:[6] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ 
+
+ 记录时间：2017-04-07 11:03:57,125 线程ID:[6] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ 
+
+ 记录时间：2017-04-07 11:04:05,566 线程ID:[6] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`USERID`, 
+`Extent1`.`PARENTUSERID`, 
+`Extent1`.`ROLEID`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`ACCOUNT`, 
+`Extent1`.`PASSWORD`, 
+`Extent1`.`USERNAME`, 
+`Extent1`.`EMAIL`, 
+`Extent1`.`IDNO`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_USER` AS `Extent1`
+ WHERE NOT ((1 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))
+ 
+
+ 记录时间：2017-04-07 11:04:05,597 线程ID:[6] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = '908d2a5ca6'
+ 
+
+ 记录时间：2017-04-07 11:04:05,660 线程ID:[6] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`NSID`, 
+`Extent1`.`NSNO`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`NSNAME`, 
+`Extent1`.`NSTYPE`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`CONTACTOR`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ WHERE `Extent1`.`NSID` = '1' LIMIT 2
+ 
+
+ 记录时间：2017-04-07 11:04:05,675 线程ID:[6] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = '6711bf7723'
+ 
+
+ 记录时间：2017-04-07 11:04:05,691 线程ID:[6] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`NSID`, 
+`Extent1`.`NSNO`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`NSNAME`, 
+`Extent1`.`NSTYPE`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`CONTACTOR`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ WHERE `Extent1`.`NSID` = '2' LIMIT 2
+ 
+
+ 记录时间：2017-04-07 11:04:05,691 线程ID:[6] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = '592d80fcea'
+ 
+
+ 记录时间：2017-04-07 11:04:05,691 线程ID:[6] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`NSID`, 
+`Extent1`.`NSNO`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`NSNAME`, 
+`Extent1`.`NSTYPE`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`CONTACTOR`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ WHERE `Extent1`.`NSID` = '3' LIMIT 2
+ 
+
+ 记录时间：2017-04-07 11:04:05,707 线程ID:[6] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = '2da6744649'
+ 
+
+ 记录时间：2017-04-07 11:04:05,722 线程ID:[6] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = '4109d80614'
+ 
+
+ 记录时间：2017-04-07 11:04:05,738 线程ID:[6] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = '5eeecd976f'
+ 
+
+ 记录时间：2017-04-07 11:04:05,738 线程ID:[6] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`USERID`, 
+`Extent1`.`PARENTUSERID`, 
+`Extent1`.`ROLEID`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`ACCOUNT`, 
+`Extent1`.`PASSWORD`, 
+`Extent1`.`USERNAME`, 
+`Extent1`.`EMAIL`, 
+`Extent1`.`IDNO`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_USER` AS `Extent1`
+ WHERE NOT ((1 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))
+ 
+
+ 记录时间：2017-04-07 11:05:04,447 线程ID:[15] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1`
+ WHERE (1 = `Extent1`.`STATUS`) AND (`Extent1`.`STATUS` IS NOT NULL)
+ 
+
+ 记录时间：2017-04-07 11:05:49,759 线程ID:[6] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_AGENCY` AS `Extent1`) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:05:49,868 线程ID:[6] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`AGENCYID`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`AGENCYNAME`, 
+`Extent1`.`AGENCYNO`, 
+`Extent1`.`CONTACT`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_AGENCY` AS `Extent1`
+ ORDER BY 
+`Extent1`.`AGENCYID` ASC LIMIT 0,10
+ 
+
+ 记录时间：2017-04-07 11:06:28,173 线程ID:[14] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_AGENCY` AS `Extent1`) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:06:28,189 线程ID:[14] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`AGENCYID`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`AGENCYNAME`, 
+`Extent1`.`AGENCYNO`, 
+`Extent1`.`CONTACT`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_AGENCY` AS `Extent1`
+ ORDER BY 
+`Extent1`.`AGENCYID` ASC LIMIT 0,10
+ 
+
+ 记录时间：2017-04-07 11:06:28,251 线程ID:[14] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`USERID`, 
+`Extent1`.`PARENTUSERID`, 
+`Extent1`.`ROLEID`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`ACCOUNT`, 
+`Extent1`.`PASSWORD`, 
+`Extent1`.`USERNAME`, 
+`Extent1`.`EMAIL`, 
+`Extent1`.`IDNO`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_USER` AS `Extent1`
+ WHERE (`Extent1`.`ACCOUNT` = 'kmadmin') AND ('kmadmin' IS NOT NULL) LIMIT 1
+ 
+
+ 记录时间：2017-04-07 11:06:28,283 线程ID:[14] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ 
+
+ 记录时间：2017-04-07 11:06:28,314 线程ID:[14] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ 
+
+ 记录时间：2017-04-07 11:07:06,797 线程ID:[14] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`USERID`, 
+`Extent1`.`PARENTUSERID`, 
+`Extent1`.`ROLEID`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`ACCOUNT`, 
+`Extent1`.`PASSWORD`, 
+`Extent1`.`USERNAME`, 
+`Extent1`.`EMAIL`, 
+`Extent1`.`IDNO`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_USER` AS `Extent1`
+ WHERE NOT ((1 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))
+ 
+
+ 记录时间：2017-04-07 11:07:06,813 线程ID:[14] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = '908d2a5ca6'
+ 
+
+ 记录时间：2017-04-07 11:07:06,860 线程ID:[14] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`NSID`, 
+`Extent1`.`NSNO`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`NSNAME`, 
+`Extent1`.`NSTYPE`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`CONTACTOR`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ WHERE `Extent1`.`NSID` = '1' LIMIT 2
+ 
+
+ 记录时间：2017-04-07 11:07:06,891 线程ID:[14] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = '6711bf7723'
+ 
+
+ 记录时间：2017-04-07 11:07:06,906 线程ID:[14] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`NSID`, 
+`Extent1`.`NSNO`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`NSNAME`, 
+`Extent1`.`NSTYPE`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`CONTACTOR`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ WHERE `Extent1`.`NSID` = '2' LIMIT 2
+ 
+
+ 记录时间：2017-04-07 11:07:06,906 线程ID:[14] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = '592d80fcea'
+ 
+
+ 记录时间：2017-04-07 11:07:06,906 线程ID:[14] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`NSID`, 
+`Extent1`.`NSNO`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`NSNAME`, 
+`Extent1`.`NSTYPE`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`CONTACTOR`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ WHERE `Extent1`.`NSID` = '3' LIMIT 2
+ 
+
+ 记录时间：2017-04-07 11:07:06,906 线程ID:[14] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = '2da6744649'
+ 
+
+ 记录时间：2017-04-07 11:07:06,922 线程ID:[14] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = '4109d80614'
+ 
+
+ 记录时间：2017-04-07 11:07:06,938 线程ID:[14] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = '5eeecd976f'
+ 
+
+ 记录时间：2017-04-07 11:07:14,568 线程ID:[14] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`USERID`, 
+`Extent1`.`PARENTUSERID`, 
+`Extent1`.`ROLEID`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`ACCOUNT`, 
+`Extent1`.`PASSWORD`, 
+`Extent1`.`USERNAME`, 
+`Extent1`.`EMAIL`, 
+`Extent1`.`IDNO`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_USER` AS `Extent1`
+ WHERE NOT ((1 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))
+ 
+
+ 记录时间：2017-04-07 11:15:49,999 线程ID:[22] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1`
+ WHERE (1 = `Extent1`.`STATUS`) AND (`Extent1`.`STATUS` IS NOT NULL)
+ 
+
+ 记录时间：2017-04-07 11:15:50,719 线程ID:[14] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCIA_APPCERT` AS `Extent1`
+ WHERE ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)) AND (6 = `Extent1`.`STATUS`)) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:15:50,815 线程ID:[14] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+SUM(`Extent1`.`TOTALNCIPAY`) AS `A1`
+FROM `NCIP_NSMONFEE` AS `Extent1`
+ WHERE ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)) AND (20 = `Extent1`.`STATUS`)) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:15:50,831 线程ID:[14] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+SUM(`Extent1`.`AMOUNT`) AS `A1`
+FROM `NCIP_SERVICEDEPOSIT` AS `Extent1`
+ WHERE ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)) AND (0 = `Extent1`.`STATUS`)) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:15:51,382 线程ID:[11] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+1 AS `C1`, 
+`GroupBy1`.`A1` AS `C2`, 
+`GroupBy1`.`A2` AS `C3`, 
+`GroupBy1`.`A3` AS `C4`, 
+`GroupBy1`.`K1` AS `YEARMONTH`
+FROM (SELECT
+`Extent1`.`YEARMONTH` AS `K1`, 
+SUM(`Extent1`.`TOTALAMOUNT`) AS `A1`, 
+SUM(`Extent1`.`TOTALNCIPAY`) AS `A2`, 
+SUM(`Extent1`.`TOTALRESIDENT`) AS `A3`
+FROM `NCIP_NSMONFEE` AS `Extent1`
+ WHERE (((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)) AND (`Extent1`.`YEARMONTH` >= '2016-04')) AND (`Extent1`.`YEARMONTH` <= '2017-04')
+ GROUP BY 
+`Extent1`.`YEARMONTH`) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:15:51,816 线程ID:[29] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+1 AS `C1`, 
+`Extent1`.`NSNAME`, 
+`Extent1`.`NSID`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ 
+
+ 记录时间：2017-04-07 11:15:51,832 线程ID:[29] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM (SELECT DISTINCT 
+`Extent1`.`IDNO`
+FROM `NCIA_APPCERT` AS `Extent1`
+ WHERE (((`Extent1`.`NSID` = '1') AND (NOT ((`Extent1`.`NSID` IS  NULL) OR ('1' IS  NULL)))) OR ((`Extent1`.`NSID` IS  NULL) AND ('1' IS  NULL))) AND ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AS `Distinct1`) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:15:51,832 线程ID:[29] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCIA_APPCERT` AS `Extent1`
+ WHERE ((((`Extent1`.`NSID` = '1') AND (NOT ((`Extent1`.`NSID` IS  NULL) OR ('1' IS  NULL)))) OR ((`Extent1`.`NSID` IS  NULL) AND ('1' IS  NULL))) AND ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AND (6 = `Extent1`.`STATUS`)) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:15:51,847 线程ID:[29] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM (SELECT DISTINCT 
+`Extent1`.`IDNO`
+FROM `NCIA_APPCERT` AS `Extent1`
+ WHERE (((`Extent1`.`NSID` = '2') AND (NOT ((`Extent1`.`NSID` IS  NULL) OR ('2' IS  NULL)))) OR ((`Extent1`.`NSID` IS  NULL) AND ('2' IS  NULL))) AND ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AS `Distinct1`) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:15:51,847 线程ID:[29] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCIA_APPCERT` AS `Extent1`
+ WHERE ((((`Extent1`.`NSID` = '2') AND (NOT ((`Extent1`.`NSID` IS  NULL) OR ('2' IS  NULL)))) OR ((`Extent1`.`NSID` IS  NULL) AND ('2' IS  NULL))) AND ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AND (6 = `Extent1`.`STATUS`)) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:15:51,863 线程ID:[29] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM (SELECT DISTINCT 
+`Extent1`.`IDNO`
+FROM `NCIA_APPCERT` AS `Extent1`
+ WHERE (((`Extent1`.`NSID` = '3') AND (NOT ((`Extent1`.`NSID` IS  NULL) OR ('3' IS  NULL)))) OR ((`Extent1`.`NSID` IS  NULL) AND ('3' IS  NULL))) AND ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AS `Distinct1`) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:15:51,863 线程ID:[29] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCIA_APPCERT` AS `Extent1`
+ WHERE ((((`Extent1`.`NSID` = '3') AND (NOT ((`Extent1`.`NSID` IS  NULL) OR ('3' IS  NULL)))) OR ((`Extent1`.`NSID` IS  NULL) AND ('3' IS  NULL))) AND ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AND (6 = `Extent1`.`STATUS`)) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:15:52,344 线程ID:[11] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCIA_APPCERT` AS `Extent1`
+ WHERE ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)) AND (3 = `Extent1`.`STATUS`)) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:15:52,344 线程ID:[11] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCIA_APPHOSP` AS `Extent1`
+ WHERE ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)) AND ((3 = `Extent1`.`AGENCYRESULT`) AND (`Extent1`.`AGENCYRESULT` IS NOT NULL))) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:15:52,360 线程ID:[11] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCIP_NSMONFEE` AS `Extent1`
+ WHERE ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)) AND (10 = `Extent1`.`STATUS`)) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:15:52,360 线程ID:[11] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCIP_NCIPAYGRANT` AS `Extent1`
+ WHERE ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)) AND (20 = `Extent1`.`STATUS`)) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:15:52,840 线程ID:[28] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_AGENCY` AS `Extent1`) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:15:52,840 线程ID:[28] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`AGENCYID`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`AGENCYNAME`, 
+`Extent1`.`AGENCYNO`, 
+`Extent1`.`CONTACT`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_AGENCY` AS `Extent1`
+ ORDER BY 
+`Extent1`.`AGENCYID` ASC LIMIT 0,10
+ 
+
+ 记录时间：2017-04-07 11:15:53,371 线程ID:[11] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+1 AS `C1`, 
+`Extent1`.`NSNAME`, 
+`Extent1`.`NSID`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ 
+
+ 记录时间：2017-04-07 11:15:53,386 线程ID:[11] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`YEARMONTH`
+FROM (SELECT
+`Extent1`.`YEARMONTH`
+FROM `NCIP_NSMONFEE` AS `Extent1`
+ WHERE (((`Extent1`.`NSID` = '1') AND ('1' IS NOT NULL)) AND ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AND ((`Extent1`.`YEARMONTH` = '2017-03') AND ('2017-03' IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-04-07 11:15:53,386 线程ID:[11] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`YEARMONTH`
+FROM (SELECT
+`Extent1`.`YEARMONTH`
+FROM `NCIP_NSMONFEE` AS `Extent1`
+ WHERE (((`Extent1`.`NSID` = '2') AND ('2' IS NOT NULL)) AND ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AND ((`Extent1`.`YEARMONTH` = '2017-03') AND ('2017-03' IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-04-07 11:15:53,402 线程ID:[11] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`YEARMONTH`
+FROM (SELECT
+`Extent1`.`YEARMONTH`
+FROM `NCIP_NSMONFEE` AS `Extent1`
+ WHERE (((`Extent1`.`NSID` = '3') AND ('3' IS NOT NULL)) AND ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AND ((`Extent1`.`YEARMONTH` = '2017-03') AND ('2017-03' IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-04-07 11:15:57,963 线程ID:[14] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_AGENCY` AS `Extent1`) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:15:57,963 线程ID:[14] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`AGENCYID`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`AGENCYNAME`, 
+`Extent1`.`AGENCYNO`, 
+`Extent1`.`CONTACT`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_AGENCY` AS `Extent1`
+ ORDER BY 
+`Extent1`.`AGENCYID` ASC LIMIT 0,10
+ 
+
+ 记录时间：2017-04-07 11:15:57,979 线程ID:[14] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`USERID`, 
+`Extent1`.`PARENTUSERID`, 
+`Extent1`.`ROLEID`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`ACCOUNT`, 
+`Extent1`.`PASSWORD`, 
+`Extent1`.`USERNAME`, 
+`Extent1`.`EMAIL`, 
+`Extent1`.`IDNO`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_USER` AS `Extent1`
+ WHERE (`Extent1`.`ACCOUNT` = 'kmadmin') AND ('kmadmin' IS NOT NULL) LIMIT 1
+ 
+
+ 记录时间：2017-04-07 11:15:57,979 线程ID:[14] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ 
+
+ 记录时间：2017-04-07 11:15:57,979 线程ID:[14] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ 
+
+ 记录时间：2017-04-07 11:16:00,956 线程ID:[14] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`USERID`, 
+`Extent1`.`PARENTUSERID`, 
+`Extent1`.`ROLEID`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`ACCOUNT`, 
+`Extent1`.`PASSWORD`, 
+`Extent1`.`USERNAME`, 
+`Extent1`.`EMAIL`, 
+`Extent1`.`IDNO`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_USER` AS `Extent1`
+ WHERE NOT ((1 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))
+ 
+
+ 记录时间：2017-04-07 11:18:02,182 线程ID:[14] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = '908d2a5ca6'
+ 
+
+ 记录时间：2017-04-07 11:18:12,632 线程ID:[14] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`NSID`, 
+`Extent1`.`NSNO`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`NSNAME`, 
+`Extent1`.`NSTYPE`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`CONTACTOR`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ WHERE `Extent1`.`NSID` = '1' LIMIT 2
+ 
+
+ 记录时间：2017-04-07 11:18:55,492 线程ID:[14] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = '6711bf7723'
+ 
+
+ 记录时间：2017-04-07 11:19:07,558 线程ID:[14] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`NSID`, 
+`Extent1`.`NSNO`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`NSNAME`, 
+`Extent1`.`NSTYPE`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`CONTACTOR`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ WHERE `Extent1`.`NSID` = '2' LIMIT 2
+ 
+
+ 记录时间：2017-04-07 11:19:11,306 线程ID:[14] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = '592d80fcea'
+ 
+
+ 记录时间：2017-04-07 11:19:14,715 线程ID:[14] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`NSID`, 
+`Extent1`.`NSNO`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`NSNAME`, 
+`Extent1`.`NSTYPE`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`CONTACTOR`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ WHERE `Extent1`.`NSID` = '3' LIMIT 2
+ 
+
+ 记录时间：2017-04-07 11:19:14,715 线程ID:[14] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = '2da6744649'
+ 
+
+ 记录时间：2017-04-07 11:19:24,497 线程ID:[14] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = '4109d80614'
+ 
+
+ 记录时间：2017-04-07 11:19:27,641 线程ID:[14] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = '5eeecd976f'
+ 
+
+ 记录时间：2017-04-07 11:19:27,656 线程ID:[14] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`USERID`, 
+`Extent1`.`PARENTUSERID`, 
+`Extent1`.`ROLEID`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`ACCOUNT`, 
+`Extent1`.`PASSWORD`, 
+`Extent1`.`USERNAME`, 
+`Extent1`.`EMAIL`, 
+`Extent1`.`IDNO`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_USER` AS `Extent1`
+ WHERE NOT ((1 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))
+ 
+
+ 记录时间：2017-04-07 11:19:28,429 线程ID:[14] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1`
+ WHERE (1 = `Extent1`.`STATUS`) AND (`Extent1`.`STATUS` IS NOT NULL)
+ 
+
+ 记录时间：2017-04-07 11:19:28,529 线程ID:[18] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCIA_APPCERT` AS `Extent1`
+ WHERE ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)) AND (6 = `Extent1`.`STATUS`)) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:19:28,539 线程ID:[18] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+SUM(`Extent1`.`TOTALNCIPAY`) AS `A1`
+FROM `NCIP_NSMONFEE` AS `Extent1`
+ WHERE ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)) AND (20 = `Extent1`.`STATUS`)) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:19:28,544 线程ID:[18] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+SUM(`Extent1`.`AMOUNT`) AS `A1`
+FROM `NCIP_SERVICEDEPOSIT` AS `Extent1`
+ WHERE ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)) AND (0 = `Extent1`.`STATUS`)) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:19:29,026 线程ID:[18] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+1 AS `C1`, 
+`GroupBy1`.`A1` AS `C2`, 
+`GroupBy1`.`A2` AS `C3`, 
+`GroupBy1`.`A3` AS `C4`, 
+`GroupBy1`.`K1` AS `YEARMONTH`
+FROM (SELECT
+`Extent1`.`YEARMONTH` AS `K1`, 
+SUM(`Extent1`.`TOTALAMOUNT`) AS `A1`, 
+SUM(`Extent1`.`TOTALNCIPAY`) AS `A2`, 
+SUM(`Extent1`.`TOTALRESIDENT`) AS `A3`
+FROM `NCIP_NSMONFEE` AS `Extent1`
+ WHERE (((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)) AND (`Extent1`.`YEARMONTH` >= '2016-04')) AND (`Extent1`.`YEARMONTH` <= '2017-04')
+ GROUP BY 
+`Extent1`.`YEARMONTH`) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:19:29,529 线程ID:[24] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+1 AS `C1`, 
+`Extent1`.`NSNAME`, 
+`Extent1`.`NSID`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ 
+
+ 记录时间：2017-04-07 11:19:29,544 线程ID:[24] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`YEARMONTH`
+FROM (SELECT
+`Extent1`.`YEARMONTH`
+FROM `NCIP_NSMONFEE` AS `Extent1`
+ WHERE (((`Extent1`.`NSID` = '1') AND ('1' IS NOT NULL)) AND ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AND ((`Extent1`.`YEARMONTH` = '2017-03') AND ('2017-03' IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-04-07 11:19:29,544 线程ID:[24] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`YEARMONTH`
+FROM (SELECT
+`Extent1`.`YEARMONTH`
+FROM `NCIP_NSMONFEE` AS `Extent1`
+ WHERE (((`Extent1`.`NSID` = '2') AND ('2' IS NOT NULL)) AND ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AND ((`Extent1`.`YEARMONTH` = '2017-03') AND ('2017-03' IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-04-07 11:19:29,544 线程ID:[24] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`YEARMONTH`
+FROM (SELECT
+`Extent1`.`YEARMONTH`
+FROM `NCIP_NSMONFEE` AS `Extent1`
+ WHERE (((`Extent1`.`NSID` = '3') AND ('3' IS NOT NULL)) AND ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AND ((`Extent1`.`YEARMONTH` = '2017-03') AND ('2017-03' IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-04-07 11:19:30,031 线程ID:[25] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCIA_APPCERT` AS `Extent1`
+ WHERE ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)) AND (3 = `Extent1`.`STATUS`)) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:19:30,046 线程ID:[25] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCIA_APPHOSP` AS `Extent1`
+ WHERE ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)) AND ((3 = `Extent1`.`AGENCYRESULT`) AND (`Extent1`.`AGENCYRESULT` IS NOT NULL))) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:19:30,046 线程ID:[25] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCIP_NSMONFEE` AS `Extent1`
+ WHERE ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)) AND (10 = `Extent1`.`STATUS`)) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:19:30,046 线程ID:[25] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCIP_NCIPAYGRANT` AS `Extent1`
+ WHERE ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)) AND (20 = `Extent1`.`STATUS`)) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:19:30,542 线程ID:[26] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+1 AS `C1`, 
+`Extent1`.`NSNAME`, 
+`Extent1`.`NSID`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ 
+
+ 记录时间：2017-04-07 11:19:30,542 线程ID:[26] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM (SELECT DISTINCT 
+`Extent1`.`IDNO`
+FROM `NCIA_APPCERT` AS `Extent1`
+ WHERE (((`Extent1`.`NSID` = '1') AND (NOT ((`Extent1`.`NSID` IS  NULL) OR ('1' IS  NULL)))) OR ((`Extent1`.`NSID` IS  NULL) AND ('1' IS  NULL))) AND ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AS `Distinct1`) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:19:30,558 线程ID:[26] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCIA_APPCERT` AS `Extent1`
+ WHERE ((((`Extent1`.`NSID` = '1') AND (NOT ((`Extent1`.`NSID` IS  NULL) OR ('1' IS  NULL)))) OR ((`Extent1`.`NSID` IS  NULL) AND ('1' IS  NULL))) AND ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AND (6 = `Extent1`.`STATUS`)) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:19:30,558 线程ID:[26] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM (SELECT DISTINCT 
+`Extent1`.`IDNO`
+FROM `NCIA_APPCERT` AS `Extent1`
+ WHERE (((`Extent1`.`NSID` = '2') AND (NOT ((`Extent1`.`NSID` IS  NULL) OR ('2' IS  NULL)))) OR ((`Extent1`.`NSID` IS  NULL) AND ('2' IS  NULL))) AND ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AS `Distinct1`) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:19:30,558 线程ID:[26] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCIA_APPCERT` AS `Extent1`
+ WHERE ((((`Extent1`.`NSID` = '2') AND (NOT ((`Extent1`.`NSID` IS  NULL) OR ('2' IS  NULL)))) OR ((`Extent1`.`NSID` IS  NULL) AND ('2' IS  NULL))) AND ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AND (6 = `Extent1`.`STATUS`)) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:19:30,573 线程ID:[26] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM (SELECT DISTINCT 
+`Extent1`.`IDNO`
+FROM `NCIA_APPCERT` AS `Extent1`
+ WHERE (((`Extent1`.`NSID` = '3') AND (NOT ((`Extent1`.`NSID` IS  NULL) OR ('3' IS  NULL)))) OR ((`Extent1`.`NSID` IS  NULL) AND ('3' IS  NULL))) AND ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AS `Distinct1`) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:19:30,573 线程ID:[26] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCIA_APPCERT` AS `Extent1`
+ WHERE ((((`Extent1`.`NSID` = '3') AND (NOT ((`Extent1`.`NSID` IS  NULL) OR ('3' IS  NULL)))) OR ((`Extent1`.`NSID` IS  NULL) AND ('3' IS  NULL))) AND ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AND (6 = `Extent1`.`STATUS`)) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:19:32,599 线程ID:[26] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_AGENCY` AS `Extent1`) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:19:32,599 线程ID:[26] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`AGENCYID`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`AGENCYNAME`, 
+`Extent1`.`AGENCYNO`, 
+`Extent1`.`CONTACT`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_AGENCY` AS `Extent1`
+ ORDER BY 
+`Extent1`.`AGENCYID` ASC LIMIT 0,10
+ 
+
+ 记录时间：2017-04-07 11:50:53,257 线程ID:[108] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_AGENCY` AS `Extent1`) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:50:53,257 线程ID:[108] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`AGENCYID`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`AGENCYNAME`, 
+`Extent1`.`AGENCYNO`, 
+`Extent1`.`CONTACT`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_AGENCY` AS `Extent1`
+ ORDER BY 
+`Extent1`.`AGENCYID` ASC LIMIT 0,10
+ 
+
+ 记录时间：2017-04-07 11:50:53,272 线程ID:[108] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`USERID`, 
+`Extent1`.`PARENTUSERID`, 
+`Extent1`.`ROLEID`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`ACCOUNT`, 
+`Extent1`.`PASSWORD`, 
+`Extent1`.`USERNAME`, 
+`Extent1`.`EMAIL`, 
+`Extent1`.`IDNO`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_USER` AS `Extent1`
+ WHERE (`Extent1`.`ACCOUNT` = 'kmadmin') AND ('kmadmin' IS NOT NULL) LIMIT 1
+ 
+
+ 记录时间：2017-04-07 11:50:53,272 线程ID:[108] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ 
+
+ 记录时间：2017-04-07 11:50:53,272 线程ID:[108] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ 
+
+ 记录时间：2017-04-07 11:51:58,605 线程ID:[108] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`USERID`, 
+`Extent1`.`PARENTUSERID`, 
+`Extent1`.`ROLEID`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`ACCOUNT`, 
+`Extent1`.`PASSWORD`, 
+`Extent1`.`USERNAME`, 
+`Extent1`.`EMAIL`, 
+`Extent1`.`IDNO`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_USER` AS `Extent1`
+ WHERE NOT ((1 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))
+ 
+
+ 记录时间：2017-04-07 11:51:58,609 线程ID:[108] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = '908d2a5ca6'
+ 
+
+ 记录时间：2017-04-07 11:51:58,614 线程ID:[108] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`NSID`, 
+`Extent1`.`NSNO`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`NSNAME`, 
+`Extent1`.`NSTYPE`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`CONTACTOR`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ WHERE `Extent1`.`NSID` = '1' LIMIT 2
+ 
+
+ 记录时间：2017-04-07 11:51:58,617 线程ID:[108] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = '6711bf7723'
+ 
+
+ 记录时间：2017-04-07 11:51:58,623 线程ID:[108] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`NSID`, 
+`Extent1`.`NSNO`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`NSNAME`, 
+`Extent1`.`NSTYPE`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`CONTACTOR`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ WHERE `Extent1`.`NSID` = '2' LIMIT 2
+ 
+
+ 记录时间：2017-04-07 11:51:58,626 线程ID:[108] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = '592d80fcea'
+ 
+
+ 记录时间：2017-04-07 11:51:58,632 线程ID:[108] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`NSID`, 
+`Extent1`.`NSNO`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`NSNAME`, 
+`Extent1`.`NSTYPE`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`CONTACTOR`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ WHERE `Extent1`.`NSID` = '3' LIMIT 2
+ 
+
+ 记录时间：2017-04-07 11:51:58,635 线程ID:[108] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = '2da6744649'
+ 
+
+ 记录时间：2017-04-07 11:51:58,652 线程ID:[108] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = '4109d80614'
+ 
+
+ 记录时间：2017-04-07 11:51:58,669 线程ID:[108] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = '5eeecd976f'
+ 
+
+ 记录时间：2017-04-07 11:51:58,679 线程ID:[108] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`USERID`, 
+`Extent1`.`PARENTUSERID`, 
+`Extent1`.`ROLEID`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`ACCOUNT`, 
+`Extent1`.`PASSWORD`, 
+`Extent1`.`USERNAME`, 
+`Extent1`.`EMAIL`, 
+`Extent1`.`IDNO`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_USER` AS `Extent1`
+ WHERE NOT ((1 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))
+ 
+
+ 记录时间：2017-04-07 11:51:59,451 线程ID:[110] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1`
+ WHERE (1 = `Extent1`.`STATUS`) AND (`Extent1`.`STATUS` IS NOT NULL)
+ 
+
+ 记录时间：2017-04-07 11:52:06,104 线程ID:[99] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCIA_APPCERT` AS `Extent1`
+ WHERE ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)) AND (6 = `Extent1`.`STATUS`)) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:52:06,104 线程ID:[99] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+SUM(`Extent1`.`TOTALNCIPAY`) AS `A1`
+FROM `NCIP_NSMONFEE` AS `Extent1`
+ WHERE ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)) AND (20 = `Extent1`.`STATUS`)) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:52:06,120 线程ID:[99] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+SUM(`Extent1`.`AMOUNT`) AS `A1`
+FROM `NCIP_SERVICEDEPOSIT` AS `Extent1`
+ WHERE ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)) AND (0 = `Extent1`.`STATUS`)) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:52:06,265 线程ID:[109] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+1 AS `C1`, 
+`Extent1`.`NSNAME`, 
+`Extent1`.`NSID`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ 
+
+ 记录时间：2017-04-07 11:52:06,281 线程ID:[109] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM (SELECT DISTINCT 
+`Extent1`.`IDNO`
+FROM `NCIA_APPCERT` AS `Extent1`
+ WHERE (((`Extent1`.`NSID` = '1') AND (NOT ((`Extent1`.`NSID` IS  NULL) OR ('1' IS  NULL)))) OR ((`Extent1`.`NSID` IS  NULL) AND ('1' IS  NULL))) AND ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AS `Distinct1`) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:52:06,296 线程ID:[109] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCIA_APPCERT` AS `Extent1`
+ WHERE ((((`Extent1`.`NSID` = '1') AND (NOT ((`Extent1`.`NSID` IS  NULL) OR ('1' IS  NULL)))) OR ((`Extent1`.`NSID` IS  NULL) AND ('1' IS  NULL))) AND ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AND (6 = `Extent1`.`STATUS`)) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:52:06,296 线程ID:[109] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM (SELECT DISTINCT 
+`Extent1`.`IDNO`
+FROM `NCIA_APPCERT` AS `Extent1`
+ WHERE (((`Extent1`.`NSID` = '2') AND (NOT ((`Extent1`.`NSID` IS  NULL) OR ('2' IS  NULL)))) OR ((`Extent1`.`NSID` IS  NULL) AND ('2' IS  NULL))) AND ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AS `Distinct1`) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:52:06,296 线程ID:[109] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCIA_APPCERT` AS `Extent1`
+ WHERE ((((`Extent1`.`NSID` = '2') AND (NOT ((`Extent1`.`NSID` IS  NULL) OR ('2' IS  NULL)))) OR ((`Extent1`.`NSID` IS  NULL) AND ('2' IS  NULL))) AND ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AND (6 = `Extent1`.`STATUS`)) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:52:06,296 线程ID:[109] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM (SELECT DISTINCT 
+`Extent1`.`IDNO`
+FROM `NCIA_APPCERT` AS `Extent1`
+ WHERE (((`Extent1`.`NSID` = '3') AND (NOT ((`Extent1`.`NSID` IS  NULL) OR ('3' IS  NULL)))) OR ((`Extent1`.`NSID` IS  NULL) AND ('3' IS  NULL))) AND ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AS `Distinct1`) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:52:06,313 线程ID:[109] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCIA_APPCERT` AS `Extent1`
+ WHERE ((((`Extent1`.`NSID` = '3') AND (NOT ((`Extent1`.`NSID` IS  NULL) OR ('3' IS  NULL)))) OR ((`Extent1`.`NSID` IS  NULL) AND ('3' IS  NULL))) AND ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AND (6 = `Extent1`.`STATUS`)) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:52:06,621 线程ID:[114] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_AGENCY` AS `Extent1`) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:52:06,637 线程ID:[114] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`AGENCYID`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`AGENCYNAME`, 
+`Extent1`.`AGENCYNO`, 
+`Extent1`.`CONTACT`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_AGENCY` AS `Extent1`
+ ORDER BY 
+`Extent1`.`AGENCYID` ASC LIMIT 0,10
+ 
+
+ 记录时间：2017-04-07 11:52:06,777 线程ID:[102] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+1 AS `C1`, 
+`GroupBy1`.`A1` AS `C2`, 
+`GroupBy1`.`A2` AS `C3`, 
+`GroupBy1`.`A3` AS `C4`, 
+`GroupBy1`.`K1` AS `YEARMONTH`
+FROM (SELECT
+`Extent1`.`YEARMONTH` AS `K1`, 
+SUM(`Extent1`.`TOTALAMOUNT`) AS `A1`, 
+SUM(`Extent1`.`TOTALNCIPAY`) AS `A2`, 
+SUM(`Extent1`.`TOTALRESIDENT`) AS `A3`
+FROM `NCIP_NSMONFEE` AS `Extent1`
+ WHERE (((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)) AND (`Extent1`.`YEARMONTH` >= '2016-04')) AND (`Extent1`.`YEARMONTH` <= '2017-04')
+ GROUP BY 
+`Extent1`.`YEARMONTH`) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:52:07,292 线程ID:[99] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+1 AS `C1`, 
+`Extent1`.`NSNAME`, 
+`Extent1`.`NSID`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ 
+
+ 记录时间：2017-04-07 11:52:07,307 线程ID:[99] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`YEARMONTH`
+FROM (SELECT
+`Extent1`.`YEARMONTH`
+FROM `NCIP_NSMONFEE` AS `Extent1`
+ WHERE (((`Extent1`.`NSID` = '1') AND ('1' IS NOT NULL)) AND ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AND ((`Extent1`.`YEARMONTH` = '2017-03') AND ('2017-03' IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-04-07 11:52:07,307 线程ID:[99] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`YEARMONTH`
+FROM (SELECT
+`Extent1`.`YEARMONTH`
+FROM `NCIP_NSMONFEE` AS `Extent1`
+ WHERE (((`Extent1`.`NSID` = '2') AND ('2' IS NOT NULL)) AND ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AND ((`Extent1`.`YEARMONTH` = '2017-03') AND ('2017-03' IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-04-07 11:52:07,323 线程ID:[99] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`YEARMONTH`
+FROM (SELECT
+`Extent1`.`YEARMONTH`
+FROM `NCIP_NSMONFEE` AS `Extent1`
+ WHERE (((`Extent1`.`NSID` = '3') AND ('3' IS NOT NULL)) AND ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AND ((`Extent1`.`YEARMONTH` = '2017-03') AND ('2017-03' IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-04-07 11:52:07,822 线程ID:[109] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCIA_APPCERT` AS `Extent1`
+ WHERE ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)) AND (3 = `Extent1`.`STATUS`)) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:52:07,822 线程ID:[109] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCIA_APPHOSP` AS `Extent1`
+ WHERE ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)) AND ((3 = `Extent1`.`AGENCYRESULT`) AND (`Extent1`.`AGENCYRESULT` IS NOT NULL))) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:52:07,838 线程ID:[109] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCIP_NSMONFEE` AS `Extent1`
+ WHERE ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)) AND (10 = `Extent1`.`STATUS`)) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:52:07,838 线程ID:[109] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCIP_NCIPAYGRANT` AS `Extent1`
+ WHERE ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)) AND (20 = `Extent1`.`STATUS`)) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:52:11,170 线程ID:[99] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_AGENCY` AS `Extent1`) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:52:11,170 线程ID:[99] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`AGENCYID`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`AGENCYNAME`, 
+`Extent1`.`AGENCYNO`, 
+`Extent1`.`CONTACT`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_AGENCY` AS `Extent1`
+ ORDER BY 
+`Extent1`.`AGENCYID` ASC LIMIT 0,10
+ 
+
+ 记录时间：2017-04-07 11:52:12,438 线程ID:[99] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`USERID`, 
+`Extent1`.`PARENTUSERID`, 
+`Extent1`.`ROLEID`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`ACCOUNT`, 
+`Extent1`.`PASSWORD`, 
+`Extent1`.`USERNAME`, 
+`Extent1`.`EMAIL`, 
+`Extent1`.`IDNO`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_USER` AS `Extent1`
+ WHERE (`Extent1`.`ACCOUNT` = 'kmadmin') AND ('kmadmin' IS NOT NULL) LIMIT 1
+ 
+
+ 记录时间：2017-04-07 11:52:12,438 线程ID:[99] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ 
+
+ 记录时间：2017-04-07 11:52:12,454 线程ID:[99] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ 
+
+ 记录时间：2017-04-07 11:52:16,130 线程ID:[99] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`USERID`, 
+`Extent1`.`PARENTUSERID`, 
+`Extent1`.`ROLEID`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`ACCOUNT`, 
+`Extent1`.`PASSWORD`, 
+`Extent1`.`USERNAME`, 
+`Extent1`.`EMAIL`, 
+`Extent1`.`IDNO`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_USER` AS `Extent1`
+ WHERE NOT ((1 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))
+ 
+
+ 记录时间：2017-04-07 11:52:16,135 线程ID:[99] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = '908d2a5ca6'
+ 
+
+ 记录时间：2017-04-07 11:52:16,141 线程ID:[99] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`NSID`, 
+`Extent1`.`NSNO`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`NSNAME`, 
+`Extent1`.`NSTYPE`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`CONTACTOR`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ WHERE `Extent1`.`NSID` = '1' LIMIT 2
+ 
+
+ 记录时间：2017-04-07 11:52:16,144 线程ID:[99] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = '6711bf7723'
+ 
+
+ 记录时间：2017-04-07 11:52:16,149 线程ID:[99] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`NSID`, 
+`Extent1`.`NSNO`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`NSNAME`, 
+`Extent1`.`NSTYPE`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`CONTACTOR`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ WHERE `Extent1`.`NSID` = '2' LIMIT 2
+ 
+
+ 记录时间：2017-04-07 11:52:16,152 线程ID:[99] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = '592d80fcea'
+ 
+
+ 记录时间：2017-04-07 11:52:16,158 线程ID:[99] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`NSID`, 
+`Extent1`.`NSNO`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`NSNAME`, 
+`Extent1`.`NSTYPE`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`CONTACTOR`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ WHERE `Extent1`.`NSID` = '3' LIMIT 2
+ 
+
+ 记录时间：2017-04-07 11:52:16,161 线程ID:[99] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = '2da6744649'
+ 
+
+ 记录时间：2017-04-07 11:52:16,178 线程ID:[99] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = '4109d80614'
+ 
+
+ 记录时间：2017-04-07 11:52:16,195 线程ID:[99] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = '5eeecd976f'
+ 
+
+ 记录时间：2017-04-07 11:52:16,203 线程ID:[99] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`USERID`, 
+`Extent1`.`PARENTUSERID`, 
+`Extent1`.`ROLEID`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`ACCOUNT`, 
+`Extent1`.`PASSWORD`, 
+`Extent1`.`USERNAME`, 
+`Extent1`.`EMAIL`, 
+`Extent1`.`IDNO`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_USER` AS `Extent1`
+ WHERE NOT ((1 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))
+ 
+
+ 记录时间：2017-04-07 11:52:16,975 线程ID:[125] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1`
+ WHERE (1 = `Extent1`.`STATUS`) AND (`Extent1`.`STATUS` IS NOT NULL)
+ 
+
+ 记录时间：2017-04-07 11:52:17,082 线程ID:[120] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCIA_APPCERT` AS `Extent1`
+ WHERE ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)) AND (6 = `Extent1`.`STATUS`)) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:52:17,090 线程ID:[120] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+SUM(`Extent1`.`TOTALNCIPAY`) AS `A1`
+FROM `NCIP_NSMONFEE` AS `Extent1`
+ WHERE ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)) AND (20 = `Extent1`.`STATUS`)) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:52:17,097 线程ID:[120] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+SUM(`Extent1`.`AMOUNT`) AS `A1`
+FROM `NCIP_SERVICEDEPOSIT` AS `Extent1`
+ WHERE ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)) AND (0 = `Extent1`.`STATUS`)) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:52:17,598 线程ID:[114] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+1 AS `C1`, 
+`Extent1`.`NSNAME`, 
+`Extent1`.`NSID`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ 
+
+ 记录时间：2017-04-07 11:52:17,613 线程ID:[114] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`YEARMONTH`
+FROM (SELECT
+`Extent1`.`YEARMONTH`
+FROM `NCIP_NSMONFEE` AS `Extent1`
+ WHERE (((`Extent1`.`NSID` = '1') AND ('1' IS NOT NULL)) AND ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AND ((`Extent1`.`YEARMONTH` = '2017-03') AND ('2017-03' IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-04-07 11:52:17,629 线程ID:[114] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`YEARMONTH`
+FROM (SELECT
+`Extent1`.`YEARMONTH`
+FROM `NCIP_NSMONFEE` AS `Extent1`
+ WHERE (((`Extent1`.`NSID` = '2') AND ('2' IS NOT NULL)) AND ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AND ((`Extent1`.`YEARMONTH` = '2017-03') AND ('2017-03' IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-04-07 11:52:17,644 线程ID:[114] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`YEARMONTH`
+FROM (SELECT
+`Extent1`.`YEARMONTH`
+FROM `NCIP_NSMONFEE` AS `Extent1`
+ WHERE (((`Extent1`.`NSID` = '3') AND ('3' IS NOT NULL)) AND ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AND ((`Extent1`.`YEARMONTH` = '2017-03') AND ('2017-03' IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-04-07 11:52:18,111 线程ID:[99] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCIA_APPCERT` AS `Extent1`
+ WHERE ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)) AND (3 = `Extent1`.`STATUS`)) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:52:18,126 线程ID:[99] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCIA_APPHOSP` AS `Extent1`
+ WHERE ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)) AND ((3 = `Extent1`.`AGENCYRESULT`) AND (`Extent1`.`AGENCYRESULT` IS NOT NULL))) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:52:18,126 线程ID:[99] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCIP_NSMONFEE` AS `Extent1`
+ WHERE ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)) AND (10 = `Extent1`.`STATUS`)) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:52:18,126 线程ID:[99] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCIP_NCIPAYGRANT` AS `Extent1`
+ WHERE ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)) AND (20 = `Extent1`.`STATUS`)) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:52:18,628 线程ID:[113] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+1 AS `C1`, 
+`GroupBy1`.`A1` AS `C2`, 
+`GroupBy1`.`A2` AS `C3`, 
+`GroupBy1`.`A3` AS `C4`, 
+`GroupBy1`.`K1` AS `YEARMONTH`
+FROM (SELECT
+`Extent1`.`YEARMONTH` AS `K1`, 
+SUM(`Extent1`.`TOTALAMOUNT`) AS `A1`, 
+SUM(`Extent1`.`TOTALNCIPAY`) AS `A2`, 
+SUM(`Extent1`.`TOTALRESIDENT`) AS `A3`
+FROM `NCIP_NSMONFEE` AS `Extent1`
+ WHERE (((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)) AND (`Extent1`.`YEARMONTH` >= '2016-04')) AND (`Extent1`.`YEARMONTH` <= '2017-04')
+ GROUP BY 
+`Extent1`.`YEARMONTH`) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:52:19,132 线程ID:[124] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+1 AS `C1`, 
+`Extent1`.`NSNAME`, 
+`Extent1`.`NSID`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ 
+
+ 记录时间：2017-04-07 11:52:19,147 线程ID:[124] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM (SELECT DISTINCT 
+`Extent1`.`IDNO`
+FROM `NCIA_APPCERT` AS `Extent1`
+ WHERE (((`Extent1`.`NSID` = '1') AND (NOT ((`Extent1`.`NSID` IS  NULL) OR ('1' IS  NULL)))) OR ((`Extent1`.`NSID` IS  NULL) AND ('1' IS  NULL))) AND ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AS `Distinct1`) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:52:19,147 线程ID:[124] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCIA_APPCERT` AS `Extent1`
+ WHERE ((((`Extent1`.`NSID` = '1') AND (NOT ((`Extent1`.`NSID` IS  NULL) OR ('1' IS  NULL)))) OR ((`Extent1`.`NSID` IS  NULL) AND ('1' IS  NULL))) AND ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AND (6 = `Extent1`.`STATUS`)) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:52:19,163 线程ID:[124] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM (SELECT DISTINCT 
+`Extent1`.`IDNO`
+FROM `NCIA_APPCERT` AS `Extent1`
+ WHERE (((`Extent1`.`NSID` = '2') AND (NOT ((`Extent1`.`NSID` IS  NULL) OR ('2' IS  NULL)))) OR ((`Extent1`.`NSID` IS  NULL) AND ('2' IS  NULL))) AND ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AS `Distinct1`) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:52:19,163 线程ID:[124] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCIA_APPCERT` AS `Extent1`
+ WHERE ((((`Extent1`.`NSID` = '2') AND (NOT ((`Extent1`.`NSID` IS  NULL) OR ('2' IS  NULL)))) OR ((`Extent1`.`NSID` IS  NULL) AND ('2' IS  NULL))) AND ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AND (6 = `Extent1`.`STATUS`)) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:52:19,163 线程ID:[124] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM (SELECT DISTINCT 
+`Extent1`.`IDNO`
+FROM `NCIA_APPCERT` AS `Extent1`
+ WHERE (((`Extent1`.`NSID` = '3') AND (NOT ((`Extent1`.`NSID` IS  NULL) OR ('3' IS  NULL)))) OR ((`Extent1`.`NSID` IS  NULL) AND ('3' IS  NULL))) AND ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AS `Distinct1`) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:52:19,179 线程ID:[124] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCIA_APPCERT` AS `Extent1`
+ WHERE ((((`Extent1`.`NSID` = '3') AND (NOT ((`Extent1`.`NSID` IS  NULL) OR ('3' IS  NULL)))) OR ((`Extent1`.`NSID` IS  NULL) AND ('3' IS  NULL))) AND ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AND (6 = `Extent1`.`STATUS`)) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:52:47,087 线程ID:[125] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_AGENCY` AS `Extent1`) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:52:47,087 线程ID:[125] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`AGENCYID`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`AGENCYNAME`, 
+`Extent1`.`AGENCYNO`, 
+`Extent1`.`CONTACT`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_AGENCY` AS `Extent1`
+ ORDER BY 
+`Extent1`.`AGENCYID` ASC LIMIT 0,10
+ 
+
+ 记录时间：2017-04-07 11:53:09,246 线程ID:[125] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_AGENCY` AS `Extent1`) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 11:53:09,246 线程ID:[125] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`AGENCYID`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`AGENCYNAME`, 
+`Extent1`.`AGENCYNO`, 
+`Extent1`.`CONTACT`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_AGENCY` AS `Extent1`
+ ORDER BY 
+`Extent1`.`AGENCYID` ASC LIMIT 0,10
+ 
+
+ 记录时间：2017-04-07 11:54:21,465 线程ID:[125] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`USERID`, 
+`Extent1`.`PARENTUSERID`, 
+`Extent1`.`ROLEID`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`ACCOUNT`, 
+`Extent1`.`PASSWORD`, 
+`Extent1`.`USERNAME`, 
+`Extent1`.`EMAIL`, 
+`Extent1`.`IDNO`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_USER` AS `Extent1`
+ WHERE (`Extent1`.`ACCOUNT` = 'kmadmin') AND ('kmadmin' IS NOT NULL) LIMIT 1
+ 
+
+ 记录时间：2017-04-07 11:54:24,266 线程ID:[125] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ 
+
+ 记录时间：2017-04-07 11:55:05,239 线程ID:[125] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ 
+
+ 记录时间：2017-04-07 11:56:21,699 线程ID:[125] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`USERID`, 
+`Extent1`.`PARENTUSERID`, 
+`Extent1`.`ROLEID`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`ACCOUNT`, 
+`Extent1`.`PASSWORD`, 
+`Extent1`.`USERNAME`, 
+`Extent1`.`EMAIL`, 
+`Extent1`.`IDNO`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_USER` AS `Extent1`
+ WHERE NOT ((1 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))
+ 
+
+ 记录时间：2017-04-07 11:56:21,715 线程ID:[125] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = '908d2a5ca6'
+ 
+
+ 记录时间：2017-04-07 11:56:21,746 线程ID:[125] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`NSID`, 
+`Extent1`.`NSNO`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`NSNAME`, 
+`Extent1`.`NSTYPE`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`CONTACTOR`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ WHERE `Extent1`.`NSID` = '1' LIMIT 2
+ 
+
+ 记录时间：2017-04-07 11:56:21,746 线程ID:[125] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = '6711bf7723'
+ 
+
+ 记录时间：2017-04-07 11:56:21,746 线程ID:[125] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`NSID`, 
+`Extent1`.`NSNO`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`NSNAME`, 
+`Extent1`.`NSTYPE`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`CONTACTOR`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ WHERE `Extent1`.`NSID` = '2' LIMIT 2
+ 
+
+ 记录时间：2017-04-07 11:56:21,761 线程ID:[125] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = '592d80fcea'
+ 
+
+ 记录时间：2017-04-07 11:56:21,761 线程ID:[125] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`NSID`, 
+`Extent1`.`NSNO`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`NSNAME`, 
+`Extent1`.`NSTYPE`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`CONTACTOR`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ WHERE `Extent1`.`NSID` = '3' LIMIT 2
+ 
+
+ 记录时间：2017-04-07 11:56:21,761 线程ID:[125] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = '2da6744649'
+ 
+
+ 记录时间：2017-04-07 11:56:21,777 线程ID:[125] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = '4109d80614'
+ 
+
+ 记录时间：2017-04-07 11:56:21,793 线程ID:[125] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = '5eeecd976f'
+ 
+
+ 记录时间：2017-04-07 11:56:24,667 线程ID:[125] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`USERID`, 
+`Extent1`.`PARENTUSERID`, 
+`Extent1`.`ROLEID`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`ACCOUNT`, 
+`Extent1`.`PASSWORD`, 
+`Extent1`.`USERNAME`, 
+`Extent1`.`EMAIL`, 
+`Extent1`.`IDNO`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_USER` AS `Extent1`
+ WHERE NOT ((1 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))
+ 
+
+ 记录时间：2017-04-07 12:02:08,322 线程ID:[6] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_AGENCY` AS `Extent1`) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 12:02:08,450 线程ID:[6] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`AGENCYID`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`AGENCYNAME`, 
+`Extent1`.`AGENCYNO`, 
+`Extent1`.`CONTACT`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_AGENCY` AS `Extent1`
+ ORDER BY 
+`Extent1`.`AGENCYID` ASC LIMIT 0,10
+ 
+
+ 记录时间：2017-04-07 12:03:15,260 线程ID:[12] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_AGENCY` AS `Extent1`) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 12:03:15,260 线程ID:[12] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`AGENCYID`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`AGENCYNAME`, 
+`Extent1`.`AGENCYNO`, 
+`Extent1`.`CONTACT`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_AGENCY` AS `Extent1`
+ ORDER BY 
+`Extent1`.`AGENCYID` ASC LIMIT 0,10
+ 
+
+ 记录时间：2017-04-07 12:03:16,227 线程ID:[12] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`USERID`, 
+`Extent1`.`PARENTUSERID`, 
+`Extent1`.`ROLEID`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`ACCOUNT`, 
+`Extent1`.`PASSWORD`, 
+`Extent1`.`USERNAME`, 
+`Extent1`.`EMAIL`, 
+`Extent1`.`IDNO`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_USER` AS `Extent1`
+ WHERE (`Extent1`.`ACCOUNT` = 'kiyota') AND ('kiyota' IS NOT NULL) LIMIT 1
+ 
+
+ 记录时间：2017-04-07 12:06:07,564 线程ID:[20] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_AGENCY` AS `Extent1`) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 12:06:07,573 线程ID:[20] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`AGENCYID`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`AGENCYNAME`, 
+`Extent1`.`AGENCYNO`, 
+`Extent1`.`CONTACT`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_AGENCY` AS `Extent1`
+ ORDER BY 
+`Extent1`.`AGENCYID` ASC LIMIT 0,10
+ 
+
+ 记录时间：2017-04-07 12:06:12,371 线程ID:[20] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`USERID`, 
+`Extent1`.`PARENTUSERID`, 
+`Extent1`.`ROLEID`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`ACCOUNT`, 
+`Extent1`.`PASSWORD`, 
+`Extent1`.`USERNAME`, 
+`Extent1`.`EMAIL`, 
+`Extent1`.`IDNO`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_USER` AS `Extent1`
+ WHERE (`Extent1`.`ACCOUNT` = 'kirito') AND ('kirito' IS NOT NULL) LIMIT 1
+ 
+
+ 记录时间：2017-04-07 12:06:26,191 线程ID:[20] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`USERID`, 
+`Extent1`.`PARENTUSERID`, 
+`Extent1`.`ROLEID`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`ACCOUNT`, 
+`Extent1`.`PASSWORD`, 
+`Extent1`.`USERNAME`, 
+`Extent1`.`EMAIL`, 
+`Extent1`.`IDNO`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_USER` AS `Extent1`
+ WHERE NOT ((1 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))
+ 
+
+ 记录时间：2017-04-07 12:06:26,245 线程ID:[20] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = '1'
+ 
+
+ 记录时间：2017-04-07 12:06:26,273 线程ID:[20] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = '908d2a5ca6'
+ 
+
+ 记录时间：2017-04-07 12:06:26,319 线程ID:[20] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`NSID`, 
+`Extent1`.`NSNO`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`NSNAME`, 
+`Extent1`.`NSTYPE`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`CONTACTOR`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ WHERE `Extent1`.`NSID` = '1' LIMIT 2
+ 
+
+ 记录时间：2017-04-07 12:06:26,333 线程ID:[20] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = '6711bf7723'
+ 
+
+ 记录时间：2017-04-07 12:06:26,344 线程ID:[20] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`NSID`, 
+`Extent1`.`NSNO`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`NSNAME`, 
+`Extent1`.`NSTYPE`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`CONTACTOR`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ WHERE `Extent1`.`NSID` = '2' LIMIT 2
+ 
+
+ 记录时间：2017-04-07 12:06:26,348 线程ID:[20] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = '592d80fcea'
+ 
+
+ 记录时间：2017-04-07 12:06:26,355 线程ID:[20] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`NSID`, 
+`Extent1`.`NSNO`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`NSNAME`, 
+`Extent1`.`NSTYPE`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`CONTACTOR`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ WHERE `Extent1`.`NSID` = '3' LIMIT 2
+ 
+
+ 记录时间：2017-04-07 12:06:26,359 线程ID:[20] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = '2da6744649'
+ 
+
+ 记录时间：2017-04-07 12:06:26,366 线程ID:[20] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = '026174e1d0'
+ 
+
+ 记录时间：2017-04-07 12:06:26,383 线程ID:[20] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = '4109d80614'
+ 
+
+ 记录时间：2017-04-07 12:06:26,399 线程ID:[20] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = '5eeecd976f'
+ 
+
+ 记录时间：2017-04-07 12:06:28,156 线程ID:[20] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`USERID`, 
+`Extent1`.`PARENTUSERID`, 
+`Extent1`.`ROLEID`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`ACCOUNT`, 
+`Extent1`.`PASSWORD`, 
+`Extent1`.`USERNAME`, 
+`Extent1`.`EMAIL`, 
+`Extent1`.`IDNO`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_USER` AS `Extent1`
+ WHERE NOT ((1 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))
+ 
+
+ 记录时间：2017-04-07 12:06:47,998 线程ID:[21] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Project1`.`MODULEID`, 
+`Project1`.`MODULENAME`, 
+`Project1`.`URL`, 
+`Project1`.`DESCRIPTION`, 
+`Project1`.`SUPERMODULEID`, 
+`Project1`.`TARGET`, 
+`Project1`.`ICON`, 
+`Project1`.`ROOTORDER`, 
+`Project1`.`ISSYS`, 
+`Project1`.`CREATEDATE`, 
+`Project1`.`CREATEBY`, 
+`Project1`.`STATUS`, 
+`Project1`.`SYSTYPE`
+FROM (SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = '2da6744649') AND ('2da6744649' IS NOT NULL)) AS `Project1`
+ ORDER BY 
+`Project1`.`ROOTORDER` ASC
+ 
+
+ 记录时间：2017-04-07 12:06:48,553 线程ID:[6] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCIA_APPCERT` AS `Extent1`
+ WHERE ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)) AND (6 = `Extent1`.`STATUS`)) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 12:06:48,569 线程ID:[6] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+SUM(`Extent1`.`TOTALNCIPAY`) AS `A1`
+FROM `NCIP_NSMONFEE` AS `Extent1`
+ WHERE ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)) AND (20 = `Extent1`.`STATUS`)) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 12:06:48,583 线程ID:[6] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+SUM(`Extent1`.`AMOUNT`) AS `A1`
+FROM `NCIP_SERVICEDEPOSIT` AS `Extent1`
+ WHERE ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)) AND (0 = `Extent1`.`STATUS`)) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 12:06:48,996 线程ID:[12] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+1 AS `C1`, 
+`GroupBy1`.`A1` AS `C2`, 
+`GroupBy1`.`A2` AS `C3`, 
+`GroupBy1`.`A3` AS `C4`, 
+`GroupBy1`.`K1` AS `YEARMONTH`
+FROM (SELECT
+`Extent1`.`YEARMONTH` AS `K1`, 
+SUM(`Extent1`.`TOTALAMOUNT`) AS `A1`, 
+SUM(`Extent1`.`TOTALNCIPAY`) AS `A2`, 
+SUM(`Extent1`.`TOTALRESIDENT`) AS `A3`
+FROM `NCIP_NSMONFEE` AS `Extent1`
+ WHERE (((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)) AND (`Extent1`.`YEARMONTH` >= '2016-04')) AND (`Extent1`.`YEARMONTH` <= '2017-04')
+ GROUP BY 
+`Extent1`.`YEARMONTH`) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 12:06:49,423 线程ID:[14] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCIA_APPCERT` AS `Extent1`
+ WHERE ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)) AND (3 = `Extent1`.`STATUS`)) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 12:06:49,435 线程ID:[14] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCIA_APPHOSP` AS `Extent1`
+ WHERE ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)) AND ((3 = `Extent1`.`AGENCYRESULT`) AND (`Extent1`.`AGENCYRESULT` IS NOT NULL))) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 12:06:49,444 线程ID:[14] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCIP_NSMONFEE` AS `Extent1`
+ WHERE ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)) AND (10 = `Extent1`.`STATUS`)) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 12:06:49,453 线程ID:[14] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCIP_NCIPAYGRANT` AS `Extent1`
+ WHERE ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)) AND (20 = `Extent1`.`STATUS`)) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 12:06:49,937 线程ID:[12] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+1 AS `C1`, 
+`Extent1`.`NSNAME`, 
+`Extent1`.`NSID`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ 
+
+ 记录时间：2017-04-07 12:06:49,948 线程ID:[12] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`YEARMONTH`
+FROM (SELECT
+`Extent1`.`YEARMONTH`
+FROM `NCIP_NSMONFEE` AS `Extent1`
+ WHERE (((`Extent1`.`NSID` = '1') AND ('1' IS NOT NULL)) AND ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AND ((`Extent1`.`YEARMONTH` = '2017-03') AND ('2017-03' IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-04-07 12:06:49,952 线程ID:[12] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`YEARMONTH`
+FROM (SELECT
+`Extent1`.`YEARMONTH`
+FROM `NCIP_NSMONFEE` AS `Extent1`
+ WHERE (((`Extent1`.`NSID` = '2') AND ('2' IS NOT NULL)) AND ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AND ((`Extent1`.`YEARMONTH` = '2017-03') AND ('2017-03' IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-04-07 12:06:49,957 线程ID:[12] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`YEARMONTH`
+FROM (SELECT
+`Extent1`.`YEARMONTH`
+FROM `NCIP_NSMONFEE` AS `Extent1`
+ WHERE (((`Extent1`.`NSID` = '3') AND ('3' IS NOT NULL)) AND ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AND ((`Extent1`.`YEARMONTH` = '2017-03') AND ('2017-03' IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-04-07 12:06:50,476 线程ID:[20] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+1 AS `C1`, 
+`Extent1`.`NSNAME`, 
+`Extent1`.`NSID`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ 
+
+ 记录时间：2017-04-07 12:06:50,492 线程ID:[20] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM (SELECT DISTINCT 
+`Extent1`.`IDNO`
+FROM `NCIA_APPCERT` AS `Extent1`
+ WHERE (((`Extent1`.`NSID` = '1') AND (NOT ((`Extent1`.`NSID` IS  NULL) OR ('1' IS  NULL)))) OR ((`Extent1`.`NSID` IS  NULL) AND ('1' IS  NULL))) AND ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AS `Distinct1`) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 12:06:50,503 线程ID:[20] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCIA_APPCERT` AS `Extent1`
+ WHERE ((((`Extent1`.`NSID` = '1') AND (NOT ((`Extent1`.`NSID` IS  NULL) OR ('1' IS  NULL)))) OR ((`Extent1`.`NSID` IS  NULL) AND ('1' IS  NULL))) AND ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AND (6 = `Extent1`.`STATUS`)) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 12:06:50,508 线程ID:[20] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM (SELECT DISTINCT 
+`Extent1`.`IDNO`
+FROM `NCIA_APPCERT` AS `Extent1`
+ WHERE (((`Extent1`.`NSID` = '2') AND (NOT ((`Extent1`.`NSID` IS  NULL) OR ('2' IS  NULL)))) OR ((`Extent1`.`NSID` IS  NULL) AND ('2' IS  NULL))) AND ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AS `Distinct1`) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 12:06:50,514 线程ID:[20] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCIA_APPCERT` AS `Extent1`
+ WHERE ((((`Extent1`.`NSID` = '2') AND (NOT ((`Extent1`.`NSID` IS  NULL) OR ('2' IS  NULL)))) OR ((`Extent1`.`NSID` IS  NULL) AND ('2' IS  NULL))) AND ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AND (6 = `Extent1`.`STATUS`)) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 12:06:50,520 线程ID:[20] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM (SELECT DISTINCT 
+`Extent1`.`IDNO`
+FROM `NCIA_APPCERT` AS `Extent1`
+ WHERE (((`Extent1`.`NSID` = '3') AND (NOT ((`Extent1`.`NSID` IS  NULL) OR ('3' IS  NULL)))) OR ((`Extent1`.`NSID` IS  NULL) AND ('3' IS  NULL))) AND ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AS `Distinct1`) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 12:06:50,524 线程ID:[20] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCIA_APPCERT` AS `Extent1`
+ WHERE ((((`Extent1`.`NSID` = '3') AND (NOT ((`Extent1`.`NSID` IS  NULL) OR ('3' IS  NULL)))) OR ((`Extent1`.`NSID` IS  NULL) AND ('3' IS  NULL))) AND ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AND (6 = `Extent1`.`STATUS`)) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 12:07:01,969 线程ID:[16] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_AGENCY` AS `Extent1`) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 12:07:01,974 线程ID:[16] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`AGENCYID`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`AGENCYNAME`, 
+`Extent1`.`AGENCYNO`, 
+`Extent1`.`CONTACT`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_AGENCY` AS `Extent1`
+ ORDER BY 
+`Extent1`.`AGENCYID` ASC LIMIT 0,10
+ 
+
+ 记录时间：2017-04-07 12:08:52,095 线程ID:[9] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_AGENCY` AS `Extent1`) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 12:08:52,197 线程ID:[9] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`AGENCYID`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`AGENCYNAME`, 
+`Extent1`.`AGENCYNO`, 
+`Extent1`.`CONTACT`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_AGENCY` AS `Extent1`
+ ORDER BY 
+`Extent1`.`AGENCYID` ASC LIMIT 0,10
+ 
+
+ 记录时间：2017-04-07 12:09:02,510 线程ID:[6] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_AGENCY` AS `Extent1`) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 12:09:02,516 线程ID:[6] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`AGENCYID`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`AGENCYNAME`, 
+`Extent1`.`AGENCYNO`, 
+`Extent1`.`CONTACT`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_AGENCY` AS `Extent1`
+ ORDER BY 
+`Extent1`.`AGENCYID` ASC LIMIT 0,10
+ 
+
+ 记录时间：2017-04-07 12:09:07,778 线程ID:[6] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`USERID`, 
+`Extent1`.`PARENTUSERID`, 
+`Extent1`.`ROLEID`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`ACCOUNT`, 
+`Extent1`.`PASSWORD`, 
+`Extent1`.`USERNAME`, 
+`Extent1`.`EMAIL`, 
+`Extent1`.`IDNO`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_USER` AS `Extent1`
+ WHERE (`Extent1`.`ACCOUNT` = 'kirito') AND ('kirito' IS NOT NULL) LIMIT 1
+ 
+
+ 记录时间：2017-04-07 12:09:14,752 线程ID:[6] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`USERID`, 
+`Extent1`.`PARENTUSERID`, 
+`Extent1`.`ROLEID`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`ACCOUNT`, 
+`Extent1`.`PASSWORD`, 
+`Extent1`.`USERNAME`, 
+`Extent1`.`EMAIL`, 
+`Extent1`.`IDNO`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_USER` AS `Extent1`
+ WHERE NOT ((1 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))
+ 
+
+ 记录时间：2017-04-07 12:09:14,799 线程ID:[6] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = '1'
+ 
+
+ 记录时间：2017-04-07 12:09:14,830 线程ID:[6] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = '908d2a5ca6'
+ 
+
+ 记录时间：2017-04-07 12:09:14,882 线程ID:[6] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`NSID`, 
+`Extent1`.`NSNO`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`NSNAME`, 
+`Extent1`.`NSTYPE`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`CONTACTOR`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ WHERE `Extent1`.`NSID` = '1' LIMIT 2
+ 
+
+ 记录时间：2017-04-07 12:09:14,904 线程ID:[6] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = '6711bf7723'
+ 
+
+ 记录时间：2017-04-07 12:09:14,922 线程ID:[6] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`NSID`, 
+`Extent1`.`NSNO`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`NSNAME`, 
+`Extent1`.`NSTYPE`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`CONTACTOR`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ WHERE `Extent1`.`NSID` = '2' LIMIT 2
+ 
+
+ 记录时间：2017-04-07 12:09:14,934 线程ID:[6] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = '592d80fcea'
+ 
+
+ 记录时间：2017-04-07 12:09:14,948 线程ID:[6] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`NSID`, 
+`Extent1`.`NSNO`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`NSNAME`, 
+`Extent1`.`NSTYPE`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`CONTACTOR`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ WHERE `Extent1`.`NSID` = '3' LIMIT 2
+ 
+
+ 记录时间：2017-04-07 12:09:14,960 线程ID:[6] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = '2da6744649'
+ 
+
+ 记录时间：2017-04-07 12:09:14,975 线程ID:[6] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = '026174e1d0'
+ 
+
+ 记录时间：2017-04-07 12:09:14,998 线程ID:[6] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = '4109d80614'
+ 
+
+ 记录时间：2017-04-07 12:09:15,022 线程ID:[6] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = '5eeecd976f'
+ 
+
+ 记录时间：2017-04-07 12:09:16,084 线程ID:[6] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`USERID`, 
+`Extent1`.`PARENTUSERID`, 
+`Extent1`.`ROLEID`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`ACCOUNT`, 
+`Extent1`.`PASSWORD`, 
+`Extent1`.`USERNAME`, 
+`Extent1`.`EMAIL`, 
+`Extent1`.`IDNO`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_USER` AS `Extent1`
+ WHERE NOT ((1 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))
+ 
+
+ 记录时间：2017-04-07 12:10:07,487 线程ID:[16] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Project1`.`MODULEID`, 
+`Project1`.`MODULENAME`, 
+`Project1`.`URL`, 
+`Project1`.`DESCRIPTION`, 
+`Project1`.`SUPERMODULEID`, 
+`Project1`.`TARGET`, 
+`Project1`.`ICON`, 
+`Project1`.`ROOTORDER`, 
+`Project1`.`ISSYS`, 
+`Project1`.`CREATEDATE`, 
+`Project1`.`CREATEBY`, 
+`Project1`.`STATUS`, 
+`Project1`.`SYSTYPE`
+FROM (SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = '2da6744649') AND ('2da6744649' IS NOT NULL)) AS `Project1`
+ ORDER BY 
+`Project1`.`ROOTORDER` ASC
+ 
+
+ 记录时间：2017-04-07 12:10:08,005 线程ID:[20] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCIA_APPCERT` AS `Extent1`
+ WHERE ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)) AND (6 = `Extent1`.`STATUS`)) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 12:10:08,034 线程ID:[20] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+SUM(`Extent1`.`TOTALNCIPAY`) AS `A1`
+FROM `NCIP_NSMONFEE` AS `Extent1`
+ WHERE ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)) AND (20 = `Extent1`.`STATUS`)) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 12:10:08,051 线程ID:[20] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+SUM(`Extent1`.`AMOUNT`) AS `A1`
+FROM `NCIP_SERVICEDEPOSIT` AS `Extent1`
+ WHERE ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)) AND (0 = `Extent1`.`STATUS`)) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 12:10:08,443 线程ID:[5] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+1 AS `C1`, 
+`Extent1`.`NSNAME`, 
+`Extent1`.`NSID`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ 
+
+ 记录时间：2017-04-07 12:10:08,456 线程ID:[5] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`YEARMONTH`
+FROM (SELECT
+`Extent1`.`YEARMONTH`
+FROM `NCIP_NSMONFEE` AS `Extent1`
+ WHERE (((`Extent1`.`NSID` = '1') AND ('1' IS NOT NULL)) AND ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AND ((`Extent1`.`YEARMONTH` = '2017-03') AND ('2017-03' IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-04-07 12:10:08,462 线程ID:[5] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`YEARMONTH`
+FROM (SELECT
+`Extent1`.`YEARMONTH`
+FROM `NCIP_NSMONFEE` AS `Extent1`
+ WHERE (((`Extent1`.`NSID` = '2') AND ('2' IS NOT NULL)) AND ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AND ((`Extent1`.`YEARMONTH` = '2017-03') AND ('2017-03' IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-04-07 12:10:08,468 线程ID:[5] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`YEARMONTH`
+FROM (SELECT
+`Extent1`.`YEARMONTH`
+FROM `NCIP_NSMONFEE` AS `Extent1`
+ WHERE (((`Extent1`.`NSID` = '3') AND ('3' IS NOT NULL)) AND ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AND ((`Extent1`.`YEARMONTH` = '2017-03') AND ('2017-03' IS NOT NULL)) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2017-04-07 12:10:09,017 线程ID:[19] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+1 AS `C1`, 
+`GroupBy1`.`A1` AS `C2`, 
+`GroupBy1`.`A2` AS `C3`, 
+`GroupBy1`.`A3` AS `C4`, 
+`GroupBy1`.`K1` AS `YEARMONTH`
+FROM (SELECT
+`Extent1`.`YEARMONTH` AS `K1`, 
+SUM(`Extent1`.`TOTALAMOUNT`) AS `A1`, 
+SUM(`Extent1`.`TOTALNCIPAY`) AS `A2`, 
+SUM(`Extent1`.`TOTALRESIDENT`) AS `A3`
+FROM `NCIP_NSMONFEE` AS `Extent1`
+ WHERE (((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)) AND (`Extent1`.`YEARMONTH` >= '2016-04')) AND (`Extent1`.`YEARMONTH` <= '2017-04')
+ GROUP BY 
+`Extent1`.`YEARMONTH`) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 12:10:09,464 线程ID:[18] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCIA_APPCERT` AS `Extent1`
+ WHERE ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)) AND (3 = `Extent1`.`STATUS`)) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 12:10:09,475 线程ID:[18] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCIA_APPHOSP` AS `Extent1`
+ WHERE ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)) AND ((3 = `Extent1`.`AGENCYRESULT`) AND (`Extent1`.`AGENCYRESULT` IS NOT NULL))) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 12:10:09,483 线程ID:[18] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCIP_NSMONFEE` AS `Extent1`
+ WHERE ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)) AND (10 = `Extent1`.`STATUS`)) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 12:10:09,494 线程ID:[18] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCIP_NCIPAYGRANT` AS `Extent1`
+ WHERE ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL)) AND (20 = `Extent1`.`STATUS`)) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 12:10:09,973 线程ID:[16] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+1 AS `C1`, 
+`Extent1`.`NSNAME`, 
+`Extent1`.`NSID`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ 
+
+ 记录时间：2017-04-07 12:10:09,992 线程ID:[16] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM (SELECT DISTINCT 
+`Extent1`.`IDNO`
+FROM `NCIA_APPCERT` AS `Extent1`
+ WHERE (((`Extent1`.`NSID` = '1') AND (NOT ((`Extent1`.`NSID` IS  NULL) OR ('1' IS  NULL)))) OR ((`Extent1`.`NSID` IS  NULL) AND ('1' IS  NULL))) AND ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AS `Distinct1`) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 12:10:10,004 线程ID:[16] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCIA_APPCERT` AS `Extent1`
+ WHERE ((((`Extent1`.`NSID` = '1') AND (NOT ((`Extent1`.`NSID` IS  NULL) OR ('1' IS  NULL)))) OR ((`Extent1`.`NSID` IS  NULL) AND ('1' IS  NULL))) AND ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AND (6 = `Extent1`.`STATUS`)) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 12:10:10,011 线程ID:[16] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM (SELECT DISTINCT 
+`Extent1`.`IDNO`
+FROM `NCIA_APPCERT` AS `Extent1`
+ WHERE (((`Extent1`.`NSID` = '2') AND (NOT ((`Extent1`.`NSID` IS  NULL) OR ('2' IS  NULL)))) OR ((`Extent1`.`NSID` IS  NULL) AND ('2' IS  NULL))) AND ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AS `Distinct1`) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 12:10:10,019 线程ID:[16] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCIA_APPCERT` AS `Extent1`
+ WHERE ((((`Extent1`.`NSID` = '2') AND (NOT ((`Extent1`.`NSID` IS  NULL) OR ('2' IS  NULL)))) OR ((`Extent1`.`NSID` IS  NULL) AND ('2' IS  NULL))) AND ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AND (6 = `Extent1`.`STATUS`)) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 12:10:10,025 线程ID:[16] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM (SELECT DISTINCT 
+`Extent1`.`IDNO`
+FROM `NCIA_APPCERT` AS `Extent1`
+ WHERE (((`Extent1`.`NSID` = '3') AND (NOT ((`Extent1`.`NSID` IS  NULL) OR ('3' IS  NULL)))) OR ((`Extent1`.`NSID` IS  NULL) AND ('3' IS  NULL))) AND ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AS `Distinct1`) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 12:10:10,038 线程ID:[16] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCIA_APPCERT` AS `Extent1`
+ WHERE ((((`Extent1`.`NSID` = '3') AND (NOT ((`Extent1`.`NSID` IS  NULL) OR ('3' IS  NULL)))) OR ((`Extent1`.`NSID` IS  NULL) AND ('3' IS  NULL))) AND ((0 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))) AND (6 = `Extent1`.`STATUS`)) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 12:10:11,846 线程ID:[10] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_AGENCY` AS `Extent1`) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 12:10:11,853 线程ID:[10] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`AGENCYID`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`AGENCYNAME`, 
+`Extent1`.`AGENCYNO`, 
+`Extent1`.`CONTACT`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_AGENCY` AS `Extent1`
+ ORDER BY 
+`Extent1`.`AGENCYID` ASC LIMIT 0,10
+ 
+
+ 记录时间：2017-04-07 12:10:18,505 线程ID:[20] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_AGENCY` AS `Extent1`) AS `GroupBy1`
+ 
+
+ 记录时间：2017-04-07 12:10:18,510 线程ID:[20] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`AGENCYID`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`AGENCYNAME`, 
+`Extent1`.`AGENCYNO`, 
+`Extent1`.`CONTACT`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_AGENCY` AS `Extent1`
+ ORDER BY 
+`Extent1`.`AGENCYID` ASC LIMIT 0,10
+ 
+
+ 记录时间：2017-04-07 12:10:19,112 线程ID:[20] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`USERID`, 
+`Extent1`.`PARENTUSERID`, 
+`Extent1`.`ROLEID`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`ACCOUNT`, 
+`Extent1`.`PASSWORD`, 
+`Extent1`.`USERNAME`, 
+`Extent1`.`EMAIL`, 
+`Extent1`.`IDNO`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_USER` AS `Extent1`
+ WHERE (`Extent1`.`ACCOUNT` = 'kmadmin') AND ('kmadmin' IS NOT NULL) LIMIT 1
+ 
+
+ 记录时间：2017-04-07 12:10:19,125 线程ID:[20] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ 
+
+ 记录时间：2017-04-07 12:10:19,138 线程ID:[20] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ 
+
+ 记录时间：2017-04-07 12:10:26,699 线程ID:[20] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`USERID`, 
+`Extent1`.`PARENTUSERID`, 
+`Extent1`.`ROLEID`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`ACCOUNT`, 
+`Extent1`.`PASSWORD`, 
+`Extent1`.`USERNAME`, 
+`Extent1`.`EMAIL`, 
+`Extent1`.`IDNO`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_USER` AS `Extent1`
+ WHERE NOT ((1 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))
+ 
+
+ 记录时间：2017-04-07 12:10:26,704 线程ID:[20] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = '908d2a5ca6'
+ 
+
+ 记录时间：2017-04-07 12:10:26,710 线程ID:[20] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`NSID`, 
+`Extent1`.`NSNO`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`NSNAME`, 
+`Extent1`.`NSTYPE`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`CONTACTOR`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ WHERE `Extent1`.`NSID` = '1' LIMIT 2
+ 
+
+ 记录时间：2017-04-07 12:10:26,714 线程ID:[20] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = '6711bf7723'
+ 
+
+ 记录时间：2017-04-07 12:10:26,720 线程ID:[20] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`NSID`, 
+`Extent1`.`NSNO`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`NSNAME`, 
+`Extent1`.`NSTYPE`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`CONTACTOR`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ WHERE `Extent1`.`NSID` = '2' LIMIT 2
+ 
+
+ 记录时间：2017-04-07 12:10:26,723 线程ID:[20] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = '592d80fcea'
+ 
+
+ 记录时间：2017-04-07 12:10:26,730 线程ID:[20] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`NSID`, 
+`Extent1`.`NSNO`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`NSNAME`, 
+`Extent1`.`NSTYPE`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`CONTACTOR`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ WHERE `Extent1`.`NSID` = '3' LIMIT 2
+ 
+
+ 记录时间：2017-04-07 12:10:26,734 线程ID:[20] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = '2da6744649'
+ 
+
+ 记录时间：2017-04-07 12:10:26,751 线程ID:[20] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = '4109d80614'
+ 
+
+ 记录时间：2017-04-07 12:10:26,767 线程ID:[20] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ROLEID`, 
+`Extent1`.`PARENTROLEID`, 
+`Extent1`.`ROLENAME`, 
+`Extent1`.`ROLETYPE`, 
+`Extent1`.`DESC`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_ROLE` AS `Extent1`
+ WHERE `Extent1`.`ROLEID` = '5eeecd976f'
+ 
+
+ 记录时间：2017-04-07 12:10:27,565 线程ID:[20] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`USERID`, 
+`Extent1`.`PARENTUSERID`, 
+`Extent1`.`ROLEID`, 
+`Extent1`.`ORGTYPE`, 
+`Extent1`.`ORGID`, 
+`Extent1`.`ACCOUNT`, 
+`Extent1`.`PASSWORD`, 
+`Extent1`.`USERNAME`, 
+`Extent1`.`EMAIL`, 
+`Extent1`.`IDNO`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_USER` AS `Extent1`
+ WHERE NOT ((1 = `Extent1`.`ISDELETE`) AND (`Extent1`.`ISDELETE` IS NOT NULL))
+ 

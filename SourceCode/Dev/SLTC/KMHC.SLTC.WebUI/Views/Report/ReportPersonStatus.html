@@ -1,0 +1,264 @@
+﻿<style>
+    #reportListTab>table>thead>tr>th,#reportListTab>table>tbody>tr>td,#reportListTab>table>tfoot>tr>td{
+        word-wrap: break-word;
+        word-break: break-all;
+        text-align: center;
+        vertical-align: middle;
+    }
+    #reportListTab>tbody>tr>td{
+        min-width: 100px;
+    }
+</style>
+<div class="row">
+    <div id="content" class="col-sm-12">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="page-header">
+                    <ul class="breadcrumb">
+                        <li>
+                            <i class="fa fa-home"></i>
+                            <a href={{homeUrl}}>首页</a>
+                        </li>
+                        <li>报表管理</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="box border primary">
+                    <div class="box-title">
+                        <h4><i class="fa fa-search"></i>查询条件</h4>
+                    </div>
+                    <form class="form-horizontal ng-pristine ng-valid" role="form">
+                        <div class="box-body">
+                            <div class="form-group">
+                                <label class="search-lable">开始时间</label>
+                                <input type="text" id="startDate" class="search-control search-input input-width-sm" ng-model="sDate" ca-date-picker ng-change="checkstartTime()" />
+                                <label class="search-lable">结束时间</label>
+                                <input type="text" id="endDate" class="search-control search-input input-width-sm" ng-model="eDate" ca-date-picker ng-change="checkstartTime()" />
+                                <!--<label class="search-lable">报表名称</label>
+                                <select class="search-control search-input input-width-sm" ng-model="reportType">
+                                    <option value="" selected>请选择报表类型</option>
+                                    <option value="careType">按护理形式</option>
+                                    <option value="disease">按病种</option>
+                                    <option value="ns">按医疗机构</option>
+                                    <option value="govArea">按行政区域</option>
+                                    <option value="lvl">按级别</option>
+                                    <option value="feeDtl">医疗机构明细汇总</option>
+                                    <option value="feeTreat">费用汇总表</option>
+                                    <option value="feeApproval">费用汇总报批表</option>
+                                </select>-->
+
+                                <div class="search-btn-div">
+                                    <a class="btn btn-primary btn-sm" ng-click="Search()"><i class="fa fa-search"></i> 查询</a>
+                                </div>
+                                    <a class="btn btn-primary btn-sm" ng-click="exportRecort()"><i class="glyphicon glyphicon-share"></i> 导出</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12" id="reportListTab">
+
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+<script id="FeeByZige" type="text/x-handlebars-template">
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th colspan="13">资格证待遇申请统计</th>
+        </tr>
+        <tr>
+            <th rowspan="2">项目</th>
+            <th colspan="4">截止2016年年12月31日</th>
+            <th colspan="4">截止2017年3月31日</th>
+            <th colspan="4">查询期间</th>
+        </tr>
+        <tr>
+            <th>申请数量</th>
+            <th>通过数量</th>
+            <th>未通过数量</th>
+            <th>取消数量</th>
+            <th>申请数量</th>
+            <th>通过数量</th>
+            <th>未通过数量</th>
+            <th>取消数量</th>
+            <th>申请数量</th>
+            <th>通过数量</th>
+            <th>未通过数量</th>
+            <th>取消数量</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>巨鹿县福缘居老年医养中心</td>
+            <td>{{AppCertlastYearNum.XyyNum}}</td>
+            <td>{{ByCertlastYearNum.XyyNum}}</td>
+            <td>{{UnAppCertlastYearNum.XyyNum}}</td>
+            <td>{{CancelCertlastYearNum.XyyNum}}</td>
+            <td>{{AppCertYearNum.XyyNum}}</td>
+            <td>{{ByCertYearNum.XyyNum}}</td>
+            <td>{{UnAppCertYearNum.XyyNum}}</td>
+            <td>{{CancelCertYearNum.XyyNum}}</td>
+            <td>{{AppCertSearchYearNum.XyyNum}}</td>
+            <td>{{ByCertSearchYearNum.XyyNum}}</td>
+            <td>{{UnAppCertSearchYearNum.XyyNum}}</td>
+            <td>{{CancelCertSearchYearNum.XyyNum}}</td>
+        </tr>
+        <tr>
+            <td>巨鹿县祁康养老院</td>
+            <td>{{AppCertlastYearNum.QkyyNum}}</td>
+            <td>{{ByCertlastYearNum.QkyyNum}}</td>
+            <td>{{UnAppCertlastYearNum.QkyyNum}}</td>
+            <td>{{CancelCertlastYearNum.QkyyNum}}</td>
+            <td>{{AppCertYearNum.QkyyNum}}</td>
+            <td>{{ByCertYearNum.QkyyNum}}</td>
+            <td>{{UnAppCertYearNum.QkyyNum}}</td>
+            <td>{{CancelCertYearNum.QkyyNum}}</td>
+            <td>{{AppCertSearchYearNum.QkyyNum}}</td>
+            <td>{{ByCertSearchYearNum.QkyyNum}}</td>
+            <td>{{UnAppCertSearchYearNum.QkyyNum}}</td>
+            <td>{{CancelCertSearchYearNum.QkyyNum}}</td>
+        </tr>
+        <tr>
+            <td>巨鹿县健民福利院</td>
+            <td>{{AppCertlastYearNum.JmyyNum}}</td>
+            <td>{{ByCertlastYearNum.JmyyNum}}</td>
+            <td>{{UnAppCertlastYearNum.JmyyNum}}</td>
+            <td>{{CancelCertlastYearNum.JmyyNum}}</td>
+            <td>{{AppCertYearNum.JmyyNum}}</td>
+            <td>{{ByCertYearNum.JmyyNum}}</td>
+            <td>{{UnAppCertYearNum.JmyyNum}}</td>
+            <td>{{CancelCertYearNum.JmyyNum}}</td>
+            <td>{{AppCertSearchYearNum.JmyyNum}}</td>
+            <td>{{ByCertSearchYearNum.JmyyNum}}</td>
+            <td>{{UnAppCertSearchYearNum.JmyyNum}}</td>
+            <td>{{CancelCertSearchYearNum.JmyyNum}}</td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td >合计</td>
+            <td>{{AppCertlastYearNum.TotalNum}}</td>
+            <td>{{ByCertlastYearNum.TotalNum}}</td>
+            <td>{{UnAppCertlastYearNum.TotalNum}}</td>
+            <td>{{CancelCertlastYearNum.TotalNum}}</td>
+            <td>{{AppCertYearNum.TotalNum}}</td>
+            <td>{{ByCertYearNum.TotalNum}}</td>
+            <td>{{UnAppCertYearNum.TotalNum}}</td>
+            <td>{{CancelCertYearNum.TotalNum}}</td>
+            <td>{{AppCertSearchYearNum.TotalNum}}</td>
+            <td>{{ByCertSearchYearNum.TotalNum}}</td>
+            <td>{{UnAppCertSearchYearNum.TotalNum}}</td>
+            <td>{{CancelCertSearchYearNum.TotalNum}}</td>
+        </tr>
+        </tfoot>
+    </table>
+
+    <table class="table table-bordered mt20">
+        <thead>
+        <tr>
+            <th colspan="5">操作数据（周）</th>
+        </tr>
+        <tr>
+            <th width="30%">项目</th>
+            <th>药品导入数</th>
+            <th>护理计划</th>
+            <th>账单数量</th>
+            <th>总费用</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>巨鹿县福缘居老年医养中心</td>
+            <td>{{DrugEntryNum.XyyNum}}</td>
+            <td>{{NSCPLNum.XyyNum}}</td>
+            <td>{{BillV2Num.XyyNum}}</td>
+            <td>{{CostNum.XyyNum}}</td>
+        </tr>
+        <tr>
+            <td>巨鹿县祁康养老院</td>
+            <td>{{DrugEntryNum.QkyyNum}}</td>
+            <td>{{NSCPLNum.QkyyNum}}</td>
+            <td>{{BillV2Num.QkyyNum}}</td>
+            <td>{{CostNum.QkyyNum}}</td>
+        </tr>
+        <tr>
+            <td>巨鹿县健民福利院</td>
+            <td>{{DrugEntryNum.JmyyNum}}</td>
+            <td>{{NSCPLNum.JmyyNum}}</td>
+            <td>{{BillV2Num.JmyyNum}}</td>
+            <td>{{CostNum.JmyyNum}}</td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td >总计</td>
+            <td>{{DrugEntryNum.TotalNum}}</td>
+            <td>{{NSCPLNum.TotalNum}}</td>
+            <td>{{BillV2Num.TotalNum}}</td>
+            <td>{{CostNum.TotalNum}}</td>
+        </tr>
+        </tfoot>
+    </table>
+
+    <table class="table table-bordered mt20">
+        <thead>
+        <tr>
+            <th colspan="5">在院/不在院情况统计</th>
+        </tr>
+        <tr>
+            <th rowspan="2" width="30%">项目</th>
+            <th rowspan="2">在院人数</th>
+            <th colspan="2">出院人数</th>
+            <th rowspan="2">请假</th>
+        </tr>
+        <tr>
+            <th>其他</th>
+            <th>死亡</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>巨鹿县福缘居老年医养中心</td>
+            <td>{{InHospNum.XyyNum}}</td>
+            <td>{{OutHospOfOtherNum.XyyNum}}</td>
+            <td>{{OutHospOfDeadNum.XyyNum}}</td>
+            <td>{{LeaveHospNum.XyyNum}}</td>
+        </tr>
+        <tr>
+            <td>巨鹿县祁康养老院</td>
+            <td>{{InHospNum.QkyyNum}}</td>
+            <td>{{OutHospOfOtherNum.QkyyNum}}</td>
+            <td>{{OutHospOfDeadNum.QkyyNum}}</td>
+            <td>{{LeaveHospNum.QkyyNum}}</td>
+        </tr>
+        <tr>
+            <td>巨鹿县健民福利院</td>
+            <td>{{InHospNum.JmyyNum}}</td>
+            <td>{{OutHospOfOtherNum.JmyyNum}}</td>
+            <td>{{OutHospOfDeadNum.JmyyNum}}</td>
+            <td>{{LeaveHospNum.JmyyNum}}</td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td >合计</td>
+            <td>{{InHospNum.TotalNum}}</td>
+            <td>{{OutHospOfOtherNum.TotalNum}}</td>
+            <td>{{OutHospOfDeadNum.TotalNum}}</td>
+            <td>{{LeaveHospNum.TotalNum}}</td>
+        </tr>
+        </tfoot>
+    </table>
+</script>

@@ -1,0 +1,104 @@
+<style type="text/css">
+    a:hover {
+        text-decoration: none;
+    }
+</style>
+<div class="row">
+    <div id="content">
+        <div class="hlx-container">
+            <div class="mt10">
+                <div class="col-md-12 hlx-wrap">
+                    <ul>
+                        <li>
+                            <a href="/NCIA/auditAppcertList">
+                                <div class="hlx-head btn-primary">
+                                    <h4>护理险资格人数</h4>
+                                    <p>{{data.headMsg.appCertedResNum}}&nbsp;</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/NCIP/RegInHosStatusList">
+                                <div class="hlx-head btn-info">
+                                    <h4>在院人数</h4>
+                                    <p>{{data.headMsg.totalResNum}}&nbsp;</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/NCIP/RegInHosStatusList">
+                                <div class="hlx-head btn-success">
+                                    <h4>请假</h4>
+                                    <p>{{data.headMsg.leaveResNum}}&nbsp;</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="hlx-head btn-danger">
+                                <h4>待结算费用</h4>
+                                <p>{{data.headMsg.settleAmount}}&nbsp;</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="hlx-head btn-primary">
+                                <h4>待拨付保证金</h4>
+                                <p>{{data.headMsg.dispatchAmount}}&nbsp;</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt20">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="echart-tit border-bot mb10"><h4>资格申请统计</h4></div>
+                            <div id="main" style="height:400px"></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="echart-tit border-bot mb10"><h4>本月申报状态</h4></div>
+                            <div class="row">
+                                <ul class="hlx-list" ng-repeat="item in data.declareState">
+                                    <li class="col-sm-4">{{item.orgName}}</li>
+                                    <li class="col-sm-4">{{item.declareTime?"已申报":"未申报"}}</li>
+                                    <li class="col-sm-4">{{item.declareTime}}</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="echart-tit border-bot mb10"><h4>申报费用</h4></div>
+                            <div id="mainfee" style="height:400px"></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="echart-tit border-bot mb10"><h4>待审批事项</h4></div>
+                            <div class="row">
+                                <ul class="hlx-list">
+                                    <li class="col-sm-6"><h5>事项</h5></li>
+                                    <li class="col-sm-6"><h5>数量</h5></li>
+                                </ul>
+                                <ul class="hlx-list">
+                                    <li class="col-sm-6">资格审批</li>
+                                    <li class="col-sm-6"><a href="/NCIA/auditAppcertList">{{data.requireAppItem.appcert}}&nbsp;</a></li>
+                                </ul>
+                                <ul class="hlx-list">
+                                    <li class="col-sm-6">入院审批</li>
+                                    <li class="col-sm-6"><a href="/NCIA/auditAppHosp">{{data.requireAppItem.apphosp}}&nbsp;</a></li>
+                                </ul>
+                                <ul class="hlx-list">
+                                    <li class="col-sm-6">月申报审批</li>
+                                    <li class="col-sm-6"><a href="/NCIP/monFeeList">{{data.requireAppItem.monthFee}}&nbsp;</a></li>
+                                </ul>
+                                <ul class="hlx-list">
+                                    <li class="col-sm-6">拨款审批</li>
+                                    <li class="col-sm-6"><a href="/NCIP/payGrantList">{{data.requireAppItem.appropriation}}&nbsp;</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

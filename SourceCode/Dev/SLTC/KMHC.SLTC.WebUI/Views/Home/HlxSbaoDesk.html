@@ -1,0 +1,57 @@
+﻿<style type="text/css">
+    a:hover {
+        text-decoration: none;
+    }
+</style>
+<div class="row">
+    <div id="content">
+        <div class="hlx-container">
+            <div class="mt10">
+                <div class="col-md-12 hlx-wrap">
+                    <ul>
+                        <li>
+                            <div class="hlx-head btn-primary">
+                                <h4>护理险资格人数</h4>
+                                <p>{{data.headMsg.appCertedResNum}}&nbsp;</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="hlx-head btn-info">
+                                <h4>护理险资格待审核人数</h4>
+                                <p>{{data.headMsg.appCertingResNum}}&nbsp;</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="hlx-head btn-success">
+                                <h4>入院申请通过人数</h4>
+                                <p>{{data.headMsg.appHospedResNum}}&nbsp;</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="hlx-head btn-danger">
+                                <h4>资格审核不通过人数</h4>
+                                <p>{{data.headMsg.appCertNoResNum}}&nbsp;</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt20">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="echart-tit border-bot mb10"><h4>资格申请统计</h4></div>
+                            <div id="main" style="height:400px"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="echart-tit border-bot mb10"><h4>申报费用</h4></div>
+                            <div id="mainfee" style="height:400px"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

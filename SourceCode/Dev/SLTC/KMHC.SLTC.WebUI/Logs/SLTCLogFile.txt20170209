@@ -1,0 +1,154 @@
+
+ 记录时间：2017-02-09 15:28:10,685 线程ID:[11] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_AGENCY` AS `Extent1`) AS `GroupBy1`
+ 
+
+ 记录时间：2017-02-09 15:28:10,975 线程ID:[11] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`AGENCYID`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`AGENCYNAME`, 
+`Extent1`.`AGENCYNO`, 
+`Extent1`.`CONTACT`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_AGENCY` AS `Extent1`
+ ORDER BY 
+`Extent1`.`AGENCYID` ASC LIMIT 0,10
+ 
+
+ 记录时间：2017-02-09 15:28:39,544 线程ID:[9] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_NURSINGHOME` AS `Extent1`) AS `GroupBy1`
+ 
+
+ 记录时间：2017-02-09 15:28:39,563 线程ID:[9] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`NSID`, 
+`Extent1`.`NSNO`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`NSNAME`, 
+`Extent1`.`NSTYPE`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`CONTACTOR`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ ORDER BY 
+`Extent1`.`NSID` ASC LIMIT 0,10
+ 
+
+ 记录时间：2017-02-09 15:29:36,926 线程ID:[12] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_NURSINGHOME` AS `Extent1`) AS `GroupBy1`
+ 
+
+ 记录时间：2017-02-09 15:29:36,936 线程ID:[12] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`NSID`, 
+`Extent1`.`NSNO`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`NSNAME`, 
+`Extent1`.`NSTYPE`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`CONTACTOR`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ ORDER BY 
+`Extent1`.`NSID` ASC LIMIT 0,10
+ 
+
+ 记录时间：2017-02-09 15:32:44,762 线程ID:[6] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_AGENCY` AS `Extent1`) AS `GroupBy1`
+ 
+
+ 记录时间：2017-02-09 15:32:44,862 线程ID:[6] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`AGENCYID`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`AGENCYNAME`, 
+`Extent1`.`AGENCYNO`, 
+`Extent1`.`CONTACT`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_AGENCY` AS `Extent1`
+ ORDER BY 
+`Extent1`.`AGENCYID` ASC LIMIT 0,10
+ 
+
+ 记录时间：2017-02-09 15:33:19,952 线程ID:[10] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_NURSINGHOME` AS `Extent1`) AS `GroupBy1`
+ 
+
+ 记录时间：2017-02-09 15:33:19,972 线程ID:[10] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`NSID`, 
+`Extent1`.`NSNO`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`NSNAME`, 
+`Extent1`.`NSTYPE`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`CONTACTOR`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ ORDER BY 
+`Extent1`.`NSID` ASC LIMIT 0,10
+ 
+
+ 记录时间：2017-02-09 15:36:08,107 线程ID:[11] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_NURSINGHOME` AS `Extent1`) AS `GroupBy1`
+ 
+
+ 记录时间：2017-02-09 15:36:08,249 线程ID:[11] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`NSID`, 
+`Extent1`.`NSNO`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`NSNAME`, 
+`Extent1`.`NSTYPE`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`CONTACTOR`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ ORDER BY 
+`Extent1`.`NSID` ASC LIMIT 0,10
+ 

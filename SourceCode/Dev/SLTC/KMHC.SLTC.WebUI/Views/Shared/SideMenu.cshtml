@@ -1,0 +1,44 @@
+﻿@{
+    var currentUser = KMHC.Infrastructure.SecurityHelper.CurrentPrincipal;
+
+}
+<div class="sidebar">
+
+    <div class="sidebar-collapse" ng-controller="ECmenuCtr">
+        <div class="sidebar-header t-center">
+            <div class="outer" align="center"><img class="text-logo image-circle" src="~/Content/CI/img/ltc.jpg" /></div>
+            <div class="desc"><span>@( currentUser == null ? string.Empty : currentUser.UserName) </span></div>
+            <div class="headerbottom"><button type="submit" ng-click="logout()" class="btn btn-info">退出</button></div><!--<span>高级会员</span><a href="@Url.Action("LoginOut", "Home")" style="margin-left: 20px;">退出</a>-->
+
+            <!--<div class="col-md-6 col-xs-6 follow line desc" align="center">
+                <p>Candice</p>
+            </div>
+            <div class="col-md-6 col-xs-6 follow line" align="center"><img src="~/boostrap/img/vip.png" /></div>-->
+        </div>
+        <div class="sidebar-menu" >
+            <ul class="nav nav-sidebar">
+                @*<li ng-class="{true: 'active', false: ''}[active(menu)]" ng-repeat="menu in menus | filter:{SuperModuleId:'00'}:true">
+                    <div class="linkcontainer">
+                        <a href="javascript:;" ng-click="subMenuClick($event,menu.Url,menu.Target)"><img ng-src="{{menu.Icon}}" /><span class="text" ng-bind="menu.ModuleName">健康体检报告</span></a>
+                    </div>
+                </li>*@
+                @if (ViewBag.Menus != null)
+                {
+                    foreach (var item in ViewBag.Menus)
+                    {
+                        <li ng-class="{true: 'active', false: ''}[active({Url:'@item.Url',ModuleId:'@item.ModuleId'})]">
+                            <div class="linkcontainer">
+
+                                    <a href="javascript:;" ng-click="subMenuClick($event,'@item.Url','@item.Target')"><img src="@item.Icon" /><span class="text">@item.ModuleName</span></a>
+                            </div>
+                        </li>
+                    }
+                }
+                
+
+
+            </ul>
+        </div>
+
+    </div>
+</div>

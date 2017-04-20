@@ -1,0 +1,3107 @@
+
+ 记录时间：2016-12-28 16:34:59,614 线程ID:[6] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_AGENCY` AS `Extent1`) AS `GroupBy1`
+ 
+
+ 记录时间：2016-12-28 16:34:59,716 线程ID:[6] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`AGENCYID`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`AGENCYNAME`, 
+`Extent1`.`AGENCYNO`, 
+`Extent1`.`CONTACT`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_AGENCY` AS `Extent1`
+ ORDER BY 
+`Extent1`.`AGENCYID` ASC LIMIT 0,10
+ 
+
+ 记录时间：2016-12-28 16:35:30,496 线程ID:[14] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_AGENCY` AS `Extent1`) AS `GroupBy1`
+ 
+
+ 记录时间：2016-12-28 16:35:30,512 线程ID:[14] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`AGENCYID`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`AGENCYNAME`, 
+`Extent1`.`AGENCYNO`, 
+`Extent1`.`CONTACT`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_AGENCY` AS `Extent1`
+ ORDER BY 
+`Extent1`.`AGENCYID` ASC LIMIT 0,10
+ 
+
+ 记录时间：2016-12-28 16:35:30,637 线程ID:[14] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Project1`.`ROLEID1` AS `ROLEID`, 
+`Project1`.`USERID`, 
+`Project1`.`ACCOUNT`, 
+`Project1`.`PASSWORD`, 
+`Project1`.`ROLENAME`, 
+`Project1`.`ROLETYPE`, 
+`Project1`.`ROLECATEGORY`, 
+`Project1`.`STATUS1` AS `STATUS`, 
+`Project1`.`ORGID`, 
+`Project1`.`CREATEBY`, 
+`Project1`.`CREATETIME`, 
+`Project1`.`UPDATEBY`, 
+`Project1`.`UPDATETIME`, 
+`Project1`.`ISDELETE`, 
+`Project1`.`USERNAME`, 
+`Project1`.`ROLEID` AS `ROLEID1`, 
+`Project1`.`STATUS` AS `STATUS1`, 
+`Project1`.`C1`, 
+`Project1`.`ICSTAFFID`, 
+`Project1`.`USERID1`, 
+`Project1`.`AGENCYID`, 
+`Project1`.`DEPARTMENT`, 
+`Project1`.`CREATEBY1`, 
+`Project1`.`CREATETIME1`, 
+`Project1`.`UPDATEBY1`, 
+`Project1`.`UPDATETIME1`, 
+`Project1`.`ISDELETE1`
+FROM (SELECT
+`Extent1`.`USERID`, 
+`Extent1`.`ROLEID`, 
+`Extent1`.`ACCOUNT`, 
+`Extent1`.`PASSWORD`, 
+`Extent1`.`USERNAME`, 
+`Extent1`.`STATUS`, 
+`Extent2`.`ROLEID` AS `ROLEID1`, 
+`Extent2`.`ROLENAME`, 
+`Extent2`.`ROLETYPE`, 
+`Extent2`.`ROLECATEGORY`, 
+`Extent2`.`STATUS` AS `STATUS1`, 
+`Extent2`.`ORGID`, 
+`Extent2`.`CREATEBY`, 
+`Extent2`.`CREATETIME`, 
+`Extent2`.`UPDATEBY`, 
+`Extent2`.`UPDATETIME`, 
+`Extent2`.`ISDELETE`, 
+`Extent3`.`ICSTAFFID`, 
+`Extent3`.`USERID` AS `USERID1`, 
+`Extent3`.`AGENCYID`, 
+`Extent3`.`DEPARTMENT`, 
+`Extent3`.`CREATEBY` AS `CREATEBY1`, 
+`Extent3`.`CREATETIME` AS `CREATETIME1`, 
+`Extent3`.`UPDATEBY` AS `UPDATEBY1`, 
+`Extent3`.`UPDATETIME` AS `UPDATETIME1`, 
+`Extent3`.`ISDELETE` AS `ISDELETE1`, 
+CASE WHEN (`Extent3`.`ICSTAFFID` IS  NULL) THEN (NULL)  ELSE (1) END AS `C1`
+FROM `NCI_USER` AS `Extent1` LEFT OUTER JOIN `NCI_ROLE` AS `Extent2` ON `Extent1`.`ROLEID` = `Extent2`.`ROLEID` LEFT OUTER JOIN `NCI_AGENCYSTAFF` AS `Extent3` ON `Extent1`.`USERID` = `Extent3`.`USERID`) AS `Project1`
+ ORDER BY 
+`Project1`.`ROLEID1` ASC, 
+`Project1`.`USERID` ASC, 
+`Project1`.`C1` ASC
+ 
+
+ 记录时间：2016-12-28 16:35:30,652 线程ID:[14] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Project1`.`ROLEID1` AS `ROLEID`, 
+`Project1`.`USERID`, 
+`Project1`.`ACCOUNT`, 
+`Project1`.`PASSWORD`, 
+`Project1`.`ROLENAME`, 
+`Project1`.`ROLETYPE`, 
+`Project1`.`ROLECATEGORY`, 
+`Project1`.`STATUS1` AS `STATUS`, 
+`Project1`.`ORGID`, 
+`Project1`.`CREATEBY`, 
+`Project1`.`CREATETIME`, 
+`Project1`.`UPDATEBY`, 
+`Project1`.`UPDATETIME`, 
+`Project1`.`ISDELETE`, 
+`Project1`.`USERNAME`, 
+`Project1`.`ROLEID` AS `ROLEID1`, 
+`Project1`.`STATUS` AS `STATUS1`, 
+`Project1`.`C1`, 
+`Project1`.`ICSTAFFID`, 
+`Project1`.`USERID1`, 
+`Project1`.`AGENCYID`, 
+`Project1`.`DEPARTMENT`, 
+`Project1`.`CREATEBY1`, 
+`Project1`.`CREATETIME1`, 
+`Project1`.`UPDATEBY1`, 
+`Project1`.`UPDATETIME1`, 
+`Project1`.`ISDELETE1`
+FROM (SELECT
+`Extent1`.`USERID`, 
+`Extent1`.`ROLEID`, 
+`Extent1`.`ACCOUNT`, 
+`Extent1`.`PASSWORD`, 
+`Extent1`.`USERNAME`, 
+`Extent1`.`STATUS`, 
+`Extent2`.`ROLEID` AS `ROLEID1`, 
+`Extent2`.`ROLENAME`, 
+`Extent2`.`ROLETYPE`, 
+`Extent2`.`ROLECATEGORY`, 
+`Extent2`.`STATUS` AS `STATUS1`, 
+`Extent2`.`ORGID`, 
+`Extent2`.`CREATEBY`, 
+`Extent2`.`CREATETIME`, 
+`Extent2`.`UPDATEBY`, 
+`Extent2`.`UPDATETIME`, 
+`Extent2`.`ISDELETE`, 
+`Extent3`.`ICSTAFFID`, 
+`Extent3`.`USERID` AS `USERID1`, 
+`Extent3`.`AGENCYID`, 
+`Extent3`.`DEPARTMENT`, 
+`Extent3`.`CREATEBY` AS `CREATEBY1`, 
+`Extent3`.`CREATETIME` AS `CREATETIME1`, 
+`Extent3`.`UPDATEBY` AS `UPDATEBY1`, 
+`Extent3`.`UPDATETIME` AS `UPDATETIME1`, 
+`Extent3`.`ISDELETE` AS `ISDELETE1`, 
+CASE WHEN (`Extent3`.`ICSTAFFID` IS  NULL) THEN (NULL)  ELSE (1) END AS `C1`
+FROM `NCI_USER` AS `Extent1` LEFT OUTER JOIN `NCI_ROLE` AS `Extent2` ON `Extent1`.`ROLEID` = `Extent2`.`ROLEID` LEFT OUTER JOIN `NCI_AGENCYSTAFF` AS `Extent3` ON `Extent1`.`USERID` = `Extent3`.`USERID`) AS `Project1`
+ ORDER BY 
+`Project1`.`ROLEID1` ASC, 
+`Project1`.`USERID` ASC, 
+`Project1`.`C1` ASC
+ 
+
+ 记录时间：2016-12-28 16:35:35,165 线程ID:[14] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 16:35:56,596 线程ID:[11] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`NSNAME`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ 
+
+ 记录时间：2016-12-28 16:35:56,614 线程ID:[11] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE (`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2016-12-28 16:35:56,614 线程ID:[11] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE (`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2016-12-28 16:35:56,614 线程ID:[11] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE (`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2016-12-28 16:35:56,630 线程ID:[11] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE (`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2016-12-28 16:35:56,645 线程ID:[16] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`NSNAME`
+FROM `NCI_NURSINGHOME` AS `Extent1`
+ 
+
+ 记录时间：2016-12-28 16:35:56,645 线程ID:[11] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE (`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2016-12-28 16:35:56,661 线程ID:[11] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE (`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2016-12-28 16:35:56,661 线程ID:[16] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE (`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2016-12-28 16:35:56,661 线程ID:[11] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE (`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2016-12-28 16:35:56,677 线程ID:[11] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE (`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2016-12-28 16:35:56,677 线程ID:[16] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE (`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2016-12-28 16:35:56,692 线程ID:[16] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE (`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2016-12-28 16:35:56,692 线程ID:[11] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPCERTRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE (`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2016-12-28 16:35:56,723 线程ID:[16] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE (`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2016-12-28 16:35:56,723 线程ID:[16] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE (`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2016-12-28 16:35:56,723 线程ID:[16] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE (`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2016-12-28 16:35:56,739 线程ID:[16] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE (`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2016-12-28 16:35:56,739 线程ID:[16] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE (`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2016-12-28 16:35:56,755 线程ID:[16] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Limit1`.`C1`, 
+`Limit1`.`NSNAME`, 
+`Limit1`.`PASSRATE`, 
+`Limit1`.`PASSPEOPLE`, 
+`Limit1`.`TOTALPEOPLE`
+FROM (SELECT
+`Extent1`.`PASSRATE`, 
+`Extent1`.`TOTALPEOPLE`, 
+`Extent1`.`PASSPEOPLE`, 
+`Extent2`.`NSNAME`, 
+1 AS `C1`
+FROM `NCIA_NSAPPHOSPRATE` AS `Extent1` INNER JOIN `NCI_NURSINGHOME` AS `Extent2` ON `Extent1`.`NSID` = `Extent2`.`NSID`
+ WHERE (`Extent2`.`NSNAME` = @p__linq__0) AND (@p__linq__0 IS NOT NULL) LIMIT 1) AS `Limit1`
+ 
+
+ 记录时间：2016-12-28 16:36:02,398 线程ID:[10] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ITEMTYPE`, 
+`Extent1`.`ITEMCODE`, 
+`Extent1`.`ITEMNAME`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`ORDERSEQ`, 
+`Extent1`.`UPDATEDATE`, 
+`Extent1`.`UPDATEBY`
+FROM `NCI_CODEDTL` AS `Extent1`
+ WHERE `Extent1`.`ITEMTYPE` IN ( @gp1,@gp2,@gp3 )
+ 
+
+ 记录时间：2016-12-28 16:36:02,414 线程ID:[6] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ID`, 
+`Extent1`.`TYPECODE`, 
+`Extent1`.`TYPENAME`, 
+`Extent1`.`ITEMNAME`, 
+`Extent1`.`ORGID`
+FROM `LTC_COMMFILE` AS `Extent1`
+ WHERE (TRIM(`Extent1`.`TYPENAME`) IN ( @gp1,@gp2,@gp3,@gp4 )) AND (TRIM(`Extent1`.`TYPENAME`) IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 16:44:31,011 线程ID:[6] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_AGENCY` AS `Extent1`) AS `GroupBy1`
+ 
+
+ 记录时间：2016-12-28 16:44:31,089 线程ID:[6] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`AGENCYID`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`AGENCYNAME`, 
+`Extent1`.`AGENCYNO`, 
+`Extent1`.`CONTACT`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_AGENCY` AS `Extent1`
+ ORDER BY 
+`Extent1`.`AGENCYID` ASC LIMIT 0,10
+ 
+
+ 记录时间：2016-12-28 16:44:32,634 线程ID:[7] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_AGENCY` AS `Extent1`) AS `GroupBy1`
+ 
+
+ 记录时间：2016-12-28 16:44:32,634 线程ID:[7] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`AGENCYID`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`AGENCYNAME`, 
+`Extent1`.`AGENCYNO`, 
+`Extent1`.`CONTACT`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_AGENCY` AS `Extent1`
+ ORDER BY 
+`Extent1`.`AGENCYID` ASC LIMIT 0,10
+ 
+
+ 记录时间：2016-12-28 16:44:34,849 线程ID:[6] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_AGENCY` AS `Extent1`) AS `GroupBy1`
+ 
+
+ 记录时间：2016-12-28 16:44:34,849 线程ID:[6] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`AGENCYID`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`AGENCYNAME`, 
+`Extent1`.`AGENCYNO`, 
+`Extent1`.`CONTACT`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_AGENCY` AS `Extent1`
+ ORDER BY 
+`Extent1`.`AGENCYID` ASC LIMIT 0,10
+ 
+
+ 记录时间：2016-12-28 16:44:34,974 线程ID:[6] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Project1`.`ROLEID1` AS `ROLEID`, 
+`Project1`.`USERID`, 
+`Project1`.`ACCOUNT`, 
+`Project1`.`PASSWORD`, 
+`Project1`.`ROLENAME`, 
+`Project1`.`ROLETYPE`, 
+`Project1`.`ROLECATEGORY`, 
+`Project1`.`STATUS1` AS `STATUS`, 
+`Project1`.`ORGID`, 
+`Project1`.`CREATEBY`, 
+`Project1`.`CREATETIME`, 
+`Project1`.`UPDATEBY`, 
+`Project1`.`UPDATETIME`, 
+`Project1`.`ISDELETE`, 
+`Project1`.`USERNAME`, 
+`Project1`.`ROLEID` AS `ROLEID1`, 
+`Project1`.`STATUS` AS `STATUS1`, 
+`Project1`.`C1`, 
+`Project1`.`ICSTAFFID`, 
+`Project1`.`USERID1`, 
+`Project1`.`AGENCYID`, 
+`Project1`.`DEPARTMENT`, 
+`Project1`.`CREATEBY1`, 
+`Project1`.`CREATETIME1`, 
+`Project1`.`UPDATEBY1`, 
+`Project1`.`UPDATETIME1`, 
+`Project1`.`ISDELETE1`
+FROM (SELECT
+`Extent1`.`USERID`, 
+`Extent1`.`ROLEID`, 
+`Extent1`.`ACCOUNT`, 
+`Extent1`.`PASSWORD`, 
+`Extent1`.`USERNAME`, 
+`Extent1`.`STATUS`, 
+`Extent2`.`ROLEID` AS `ROLEID1`, 
+`Extent2`.`ROLENAME`, 
+`Extent2`.`ROLETYPE`, 
+`Extent2`.`ROLECATEGORY`, 
+`Extent2`.`STATUS` AS `STATUS1`, 
+`Extent2`.`ORGID`, 
+`Extent2`.`CREATEBY`, 
+`Extent2`.`CREATETIME`, 
+`Extent2`.`UPDATEBY`, 
+`Extent2`.`UPDATETIME`, 
+`Extent2`.`ISDELETE`, 
+`Extent3`.`ICSTAFFID`, 
+`Extent3`.`USERID` AS `USERID1`, 
+`Extent3`.`AGENCYID`, 
+`Extent3`.`DEPARTMENT`, 
+`Extent3`.`CREATEBY` AS `CREATEBY1`, 
+`Extent3`.`CREATETIME` AS `CREATETIME1`, 
+`Extent3`.`UPDATEBY` AS `UPDATEBY1`, 
+`Extent3`.`UPDATETIME` AS `UPDATETIME1`, 
+`Extent3`.`ISDELETE` AS `ISDELETE1`, 
+CASE WHEN (`Extent3`.`ICSTAFFID` IS  NULL) THEN (NULL)  ELSE (1) END AS `C1`
+FROM `NCI_USER` AS `Extent1` LEFT OUTER JOIN `NCI_ROLE` AS `Extent2` ON `Extent1`.`ROLEID` = `Extent2`.`ROLEID` LEFT OUTER JOIN `NCI_AGENCYSTAFF` AS `Extent3` ON `Extent1`.`USERID` = `Extent3`.`USERID`) AS `Project1`
+ ORDER BY 
+`Project1`.`ROLEID1` ASC, 
+`Project1`.`USERID` ASC, 
+`Project1`.`C1` ASC
+ 
+
+ 记录时间：2016-12-28 16:44:34,989 线程ID:[6] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Project1`.`ROLEID1` AS `ROLEID`, 
+`Project1`.`USERID`, 
+`Project1`.`ACCOUNT`, 
+`Project1`.`PASSWORD`, 
+`Project1`.`ROLENAME`, 
+`Project1`.`ROLETYPE`, 
+`Project1`.`ROLECATEGORY`, 
+`Project1`.`STATUS1` AS `STATUS`, 
+`Project1`.`ORGID`, 
+`Project1`.`CREATEBY`, 
+`Project1`.`CREATETIME`, 
+`Project1`.`UPDATEBY`, 
+`Project1`.`UPDATETIME`, 
+`Project1`.`ISDELETE`, 
+`Project1`.`USERNAME`, 
+`Project1`.`ROLEID` AS `ROLEID1`, 
+`Project1`.`STATUS` AS `STATUS1`, 
+`Project1`.`C1`, 
+`Project1`.`ICSTAFFID`, 
+`Project1`.`USERID1`, 
+`Project1`.`AGENCYID`, 
+`Project1`.`DEPARTMENT`, 
+`Project1`.`CREATEBY1`, 
+`Project1`.`CREATETIME1`, 
+`Project1`.`UPDATEBY1`, 
+`Project1`.`UPDATETIME1`, 
+`Project1`.`ISDELETE1`
+FROM (SELECT
+`Extent1`.`USERID`, 
+`Extent1`.`ROLEID`, 
+`Extent1`.`ACCOUNT`, 
+`Extent1`.`PASSWORD`, 
+`Extent1`.`USERNAME`, 
+`Extent1`.`STATUS`, 
+`Extent2`.`ROLEID` AS `ROLEID1`, 
+`Extent2`.`ROLENAME`, 
+`Extent2`.`ROLETYPE`, 
+`Extent2`.`ROLECATEGORY`, 
+`Extent2`.`STATUS` AS `STATUS1`, 
+`Extent2`.`ORGID`, 
+`Extent2`.`CREATEBY`, 
+`Extent2`.`CREATETIME`, 
+`Extent2`.`UPDATEBY`, 
+`Extent2`.`UPDATETIME`, 
+`Extent2`.`ISDELETE`, 
+`Extent3`.`ICSTAFFID`, 
+`Extent3`.`USERID` AS `USERID1`, 
+`Extent3`.`AGENCYID`, 
+`Extent3`.`DEPARTMENT`, 
+`Extent3`.`CREATEBY` AS `CREATEBY1`, 
+`Extent3`.`CREATETIME` AS `CREATETIME1`, 
+`Extent3`.`UPDATEBY` AS `UPDATEBY1`, 
+`Extent3`.`UPDATETIME` AS `UPDATETIME1`, 
+`Extent3`.`ISDELETE` AS `ISDELETE1`, 
+CASE WHEN (`Extent3`.`ICSTAFFID` IS  NULL) THEN (NULL)  ELSE (1) END AS `C1`
+FROM `NCI_USER` AS `Extent1` LEFT OUTER JOIN `NCI_ROLE` AS `Extent2` ON `Extent1`.`ROLEID` = `Extent2`.`ROLEID` LEFT OUTER JOIN `NCI_AGENCYSTAFF` AS `Extent3` ON `Extent1`.`USERID` = `Extent3`.`USERID`) AS `Project1`
+ ORDER BY 
+`Project1`.`ROLEID1` ASC, 
+`Project1`.`USERID` ASC, 
+`Project1`.`C1` ASC
+ 
+
+ 记录时间：2016-12-28 16:44:39,390 线程ID:[8] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 16:45:21,951 线程ID:[22] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 16:45:33,905 线程ID:[22] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ID`, 
+`Extent1`.`TYPECODE`, 
+`Extent1`.`TYPENAME`, 
+`Extent1`.`ITEMNAME`, 
+`Extent1`.`ORGID`
+FROM `LTC_COMMFILE` AS `Extent1`
+ WHERE (TRIM(`Extent1`.`TYPENAME`) IN ( @gp1,@gp2,@gp3,@gp4 )) AND (TRIM(`Extent1`.`TYPENAME`) IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 16:45:33,921 线程ID:[10] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ITEMTYPE`, 
+`Extent1`.`ITEMCODE`, 
+`Extent1`.`ITEMNAME`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`ORDERSEQ`, 
+`Extent1`.`UPDATEDATE`, 
+`Extent1`.`UPDATEBY`
+FROM `NCI_CODEDTL` AS `Extent1`
+ WHERE `Extent1`.`ITEMTYPE` IN ( @gp1 )
+ 
+
+ 记录时间：2016-12-28 16:45:56,065 线程ID:[6] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 16:45:56,270 线程ID:[13] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ITEMTYPE`, 
+`Extent1`.`ITEMCODE`, 
+`Extent1`.`ITEMNAME`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`ORDERSEQ`, 
+`Extent1`.`UPDATEDATE`, 
+`Extent1`.`UPDATEBY`
+FROM `NCI_CODEDTL` AS `Extent1`
+ WHERE `Extent1`.`ITEMTYPE` IN ( @gp1,@gp2,@gp3 )
+ 
+
+ 记录时间：2016-12-28 16:46:00,045 线程ID:[12] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 16:46:04,563 线程ID:[22] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 16:48:50,413 线程ID:[17] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 16:50:11,740 线程ID:[15] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 16:50:28,057 线程ID:[18] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_AGENCY` AS `Extent1`) AS `GroupBy1`
+ 
+
+ 记录时间：2016-12-28 16:50:28,062 线程ID:[18] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`AGENCYID`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`AGENCYNAME`, 
+`Extent1`.`AGENCYNO`, 
+`Extent1`.`CONTACT`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_AGENCY` AS `Extent1`
+ ORDER BY 
+`Extent1`.`AGENCYID` ASC LIMIT 0,10
+ 
+
+ 记录时间：2016-12-28 16:50:29,515 线程ID:[25] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_AGENCY` AS `Extent1`) AS `GroupBy1`
+ 
+
+ 记录时间：2016-12-28 16:50:29,519 线程ID:[25] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`AGENCYID`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`AGENCYNAME`, 
+`Extent1`.`AGENCYNO`, 
+`Extent1`.`CONTACT`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_AGENCY` AS `Extent1`
+ ORDER BY 
+`Extent1`.`AGENCYID` ASC LIMIT 0,10
+ 
+
+ 记录时间：2016-12-28 16:50:29,530 线程ID:[25] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Project1`.`ROLEID1` AS `ROLEID`, 
+`Project1`.`USERID`, 
+`Project1`.`ACCOUNT`, 
+`Project1`.`PASSWORD`, 
+`Project1`.`ROLENAME`, 
+`Project1`.`ROLETYPE`, 
+`Project1`.`ROLECATEGORY`, 
+`Project1`.`STATUS1` AS `STATUS`, 
+`Project1`.`ORGID`, 
+`Project1`.`CREATEBY`, 
+`Project1`.`CREATETIME`, 
+`Project1`.`UPDATEBY`, 
+`Project1`.`UPDATETIME`, 
+`Project1`.`ISDELETE`, 
+`Project1`.`USERNAME`, 
+`Project1`.`ROLEID` AS `ROLEID1`, 
+`Project1`.`STATUS` AS `STATUS1`, 
+`Project1`.`C1`, 
+`Project1`.`ICSTAFFID`, 
+`Project1`.`USERID1`, 
+`Project1`.`AGENCYID`, 
+`Project1`.`DEPARTMENT`, 
+`Project1`.`CREATEBY1`, 
+`Project1`.`CREATETIME1`, 
+`Project1`.`UPDATEBY1`, 
+`Project1`.`UPDATETIME1`, 
+`Project1`.`ISDELETE1`
+FROM (SELECT
+`Extent1`.`USERID`, 
+`Extent1`.`ROLEID`, 
+`Extent1`.`ACCOUNT`, 
+`Extent1`.`PASSWORD`, 
+`Extent1`.`USERNAME`, 
+`Extent1`.`STATUS`, 
+`Extent2`.`ROLEID` AS `ROLEID1`, 
+`Extent2`.`ROLENAME`, 
+`Extent2`.`ROLETYPE`, 
+`Extent2`.`ROLECATEGORY`, 
+`Extent2`.`STATUS` AS `STATUS1`, 
+`Extent2`.`ORGID`, 
+`Extent2`.`CREATEBY`, 
+`Extent2`.`CREATETIME`, 
+`Extent2`.`UPDATEBY`, 
+`Extent2`.`UPDATETIME`, 
+`Extent2`.`ISDELETE`, 
+`Extent3`.`ICSTAFFID`, 
+`Extent3`.`USERID` AS `USERID1`, 
+`Extent3`.`AGENCYID`, 
+`Extent3`.`DEPARTMENT`, 
+`Extent3`.`CREATEBY` AS `CREATEBY1`, 
+`Extent3`.`CREATETIME` AS `CREATETIME1`, 
+`Extent3`.`UPDATEBY` AS `UPDATEBY1`, 
+`Extent3`.`UPDATETIME` AS `UPDATETIME1`, 
+`Extent3`.`ISDELETE` AS `ISDELETE1`, 
+CASE WHEN (`Extent3`.`ICSTAFFID` IS  NULL) THEN (NULL)  ELSE (1) END AS `C1`
+FROM `NCI_USER` AS `Extent1` LEFT OUTER JOIN `NCI_ROLE` AS `Extent2` ON `Extent1`.`ROLEID` = `Extent2`.`ROLEID` LEFT OUTER JOIN `NCI_AGENCYSTAFF` AS `Extent3` ON `Extent1`.`USERID` = `Extent3`.`USERID`) AS `Project1`
+ ORDER BY 
+`Project1`.`ROLEID1` ASC, 
+`Project1`.`USERID` ASC, 
+`Project1`.`C1` ASC
+ 
+
+ 记录时间：2016-12-28 16:50:29,534 线程ID:[25] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Project1`.`ROLEID1` AS `ROLEID`, 
+`Project1`.`USERID`, 
+`Project1`.`ACCOUNT`, 
+`Project1`.`PASSWORD`, 
+`Project1`.`ROLENAME`, 
+`Project1`.`ROLETYPE`, 
+`Project1`.`ROLECATEGORY`, 
+`Project1`.`STATUS1` AS `STATUS`, 
+`Project1`.`ORGID`, 
+`Project1`.`CREATEBY`, 
+`Project1`.`CREATETIME`, 
+`Project1`.`UPDATEBY`, 
+`Project1`.`UPDATETIME`, 
+`Project1`.`ISDELETE`, 
+`Project1`.`USERNAME`, 
+`Project1`.`ROLEID` AS `ROLEID1`, 
+`Project1`.`STATUS` AS `STATUS1`, 
+`Project1`.`C1`, 
+`Project1`.`ICSTAFFID`, 
+`Project1`.`USERID1`, 
+`Project1`.`AGENCYID`, 
+`Project1`.`DEPARTMENT`, 
+`Project1`.`CREATEBY1`, 
+`Project1`.`CREATETIME1`, 
+`Project1`.`UPDATEBY1`, 
+`Project1`.`UPDATETIME1`, 
+`Project1`.`ISDELETE1`
+FROM (SELECT
+`Extent1`.`USERID`, 
+`Extent1`.`ROLEID`, 
+`Extent1`.`ACCOUNT`, 
+`Extent1`.`PASSWORD`, 
+`Extent1`.`USERNAME`, 
+`Extent1`.`STATUS`, 
+`Extent2`.`ROLEID` AS `ROLEID1`, 
+`Extent2`.`ROLENAME`, 
+`Extent2`.`ROLETYPE`, 
+`Extent2`.`ROLECATEGORY`, 
+`Extent2`.`STATUS` AS `STATUS1`, 
+`Extent2`.`ORGID`, 
+`Extent2`.`CREATEBY`, 
+`Extent2`.`CREATETIME`, 
+`Extent2`.`UPDATEBY`, 
+`Extent2`.`UPDATETIME`, 
+`Extent2`.`ISDELETE`, 
+`Extent3`.`ICSTAFFID`, 
+`Extent3`.`USERID` AS `USERID1`, 
+`Extent3`.`AGENCYID`, 
+`Extent3`.`DEPARTMENT`, 
+`Extent3`.`CREATEBY` AS `CREATEBY1`, 
+`Extent3`.`CREATETIME` AS `CREATETIME1`, 
+`Extent3`.`UPDATEBY` AS `UPDATEBY1`, 
+`Extent3`.`UPDATETIME` AS `UPDATETIME1`, 
+`Extent3`.`ISDELETE` AS `ISDELETE1`, 
+CASE WHEN (`Extent3`.`ICSTAFFID` IS  NULL) THEN (NULL)  ELSE (1) END AS `C1`
+FROM `NCI_USER` AS `Extent1` LEFT OUTER JOIN `NCI_ROLE` AS `Extent2` ON `Extent1`.`ROLEID` = `Extent2`.`ROLEID` LEFT OUTER JOIN `NCI_AGENCYSTAFF` AS `Extent3` ON `Extent1`.`USERID` = `Extent3`.`USERID`) AS `Project1`
+ ORDER BY 
+`Project1`.`ROLEID1` ASC, 
+`Project1`.`USERID` ASC, 
+`Project1`.`C1` ASC
+ 
+
+ 记录时间：2016-12-28 16:50:31,067 线程ID:[16] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 16:51:48,655 线程ID:[28] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 17:08:16,832 线程ID:[15] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 17:10:27,977 线程ID:[46] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_AGENCY` AS `Extent1`) AS `GroupBy1`
+ 
+
+ 记录时间：2016-12-28 17:10:27,982 线程ID:[46] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`AGENCYID`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`AGENCYNAME`, 
+`Extent1`.`AGENCYNO`, 
+`Extent1`.`CONTACT`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_AGENCY` AS `Extent1`
+ ORDER BY 
+`Extent1`.`AGENCYID` ASC LIMIT 0,10
+ 
+
+ 记录时间：2016-12-28 17:10:29,712 线程ID:[53] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_AGENCY` AS `Extent1`) AS `GroupBy1`
+ 
+
+ 记录时间：2016-12-28 17:10:29,718 线程ID:[53] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`AGENCYID`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`AGENCYNAME`, 
+`Extent1`.`AGENCYNO`, 
+`Extent1`.`CONTACT`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_AGENCY` AS `Extent1`
+ ORDER BY 
+`Extent1`.`AGENCYID` ASC LIMIT 0,10
+ 
+
+ 记录时间：2016-12-28 17:10:29,729 线程ID:[53] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Project1`.`ROLEID1` AS `ROLEID`, 
+`Project1`.`USERID`, 
+`Project1`.`ACCOUNT`, 
+`Project1`.`PASSWORD`, 
+`Project1`.`ROLENAME`, 
+`Project1`.`ROLETYPE`, 
+`Project1`.`ROLECATEGORY`, 
+`Project1`.`STATUS1` AS `STATUS`, 
+`Project1`.`ORGID`, 
+`Project1`.`CREATEBY`, 
+`Project1`.`CREATETIME`, 
+`Project1`.`UPDATEBY`, 
+`Project1`.`UPDATETIME`, 
+`Project1`.`ISDELETE`, 
+`Project1`.`USERNAME`, 
+`Project1`.`ROLEID` AS `ROLEID1`, 
+`Project1`.`STATUS` AS `STATUS1`, 
+`Project1`.`C1`, 
+`Project1`.`ICSTAFFID`, 
+`Project1`.`USERID1`, 
+`Project1`.`AGENCYID`, 
+`Project1`.`DEPARTMENT`, 
+`Project1`.`CREATEBY1`, 
+`Project1`.`CREATETIME1`, 
+`Project1`.`UPDATEBY1`, 
+`Project1`.`UPDATETIME1`, 
+`Project1`.`ISDELETE1`
+FROM (SELECT
+`Extent1`.`USERID`, 
+`Extent1`.`ROLEID`, 
+`Extent1`.`ACCOUNT`, 
+`Extent1`.`PASSWORD`, 
+`Extent1`.`USERNAME`, 
+`Extent1`.`STATUS`, 
+`Extent2`.`ROLEID` AS `ROLEID1`, 
+`Extent2`.`ROLENAME`, 
+`Extent2`.`ROLETYPE`, 
+`Extent2`.`ROLECATEGORY`, 
+`Extent2`.`STATUS` AS `STATUS1`, 
+`Extent2`.`ORGID`, 
+`Extent2`.`CREATEBY`, 
+`Extent2`.`CREATETIME`, 
+`Extent2`.`UPDATEBY`, 
+`Extent2`.`UPDATETIME`, 
+`Extent2`.`ISDELETE`, 
+`Extent3`.`ICSTAFFID`, 
+`Extent3`.`USERID` AS `USERID1`, 
+`Extent3`.`AGENCYID`, 
+`Extent3`.`DEPARTMENT`, 
+`Extent3`.`CREATEBY` AS `CREATEBY1`, 
+`Extent3`.`CREATETIME` AS `CREATETIME1`, 
+`Extent3`.`UPDATEBY` AS `UPDATEBY1`, 
+`Extent3`.`UPDATETIME` AS `UPDATETIME1`, 
+`Extent3`.`ISDELETE` AS `ISDELETE1`, 
+CASE WHEN (`Extent3`.`ICSTAFFID` IS  NULL) THEN (NULL)  ELSE (1) END AS `C1`
+FROM `NCI_USER` AS `Extent1` LEFT OUTER JOIN `NCI_ROLE` AS `Extent2` ON `Extent1`.`ROLEID` = `Extent2`.`ROLEID` LEFT OUTER JOIN `NCI_AGENCYSTAFF` AS `Extent3` ON `Extent1`.`USERID` = `Extent3`.`USERID`) AS `Project1`
+ ORDER BY 
+`Project1`.`ROLEID1` ASC, 
+`Project1`.`USERID` ASC, 
+`Project1`.`C1` ASC
+ 
+
+ 记录时间：2016-12-28 17:10:29,734 线程ID:[53] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Project1`.`ROLEID1` AS `ROLEID`, 
+`Project1`.`USERID`, 
+`Project1`.`ACCOUNT`, 
+`Project1`.`PASSWORD`, 
+`Project1`.`ROLENAME`, 
+`Project1`.`ROLETYPE`, 
+`Project1`.`ROLECATEGORY`, 
+`Project1`.`STATUS1` AS `STATUS`, 
+`Project1`.`ORGID`, 
+`Project1`.`CREATEBY`, 
+`Project1`.`CREATETIME`, 
+`Project1`.`UPDATEBY`, 
+`Project1`.`UPDATETIME`, 
+`Project1`.`ISDELETE`, 
+`Project1`.`USERNAME`, 
+`Project1`.`ROLEID` AS `ROLEID1`, 
+`Project1`.`STATUS` AS `STATUS1`, 
+`Project1`.`C1`, 
+`Project1`.`ICSTAFFID`, 
+`Project1`.`USERID1`, 
+`Project1`.`AGENCYID`, 
+`Project1`.`DEPARTMENT`, 
+`Project1`.`CREATEBY1`, 
+`Project1`.`CREATETIME1`, 
+`Project1`.`UPDATEBY1`, 
+`Project1`.`UPDATETIME1`, 
+`Project1`.`ISDELETE1`
+FROM (SELECT
+`Extent1`.`USERID`, 
+`Extent1`.`ROLEID`, 
+`Extent1`.`ACCOUNT`, 
+`Extent1`.`PASSWORD`, 
+`Extent1`.`USERNAME`, 
+`Extent1`.`STATUS`, 
+`Extent2`.`ROLEID` AS `ROLEID1`, 
+`Extent2`.`ROLENAME`, 
+`Extent2`.`ROLETYPE`, 
+`Extent2`.`ROLECATEGORY`, 
+`Extent2`.`STATUS` AS `STATUS1`, 
+`Extent2`.`ORGID`, 
+`Extent2`.`CREATEBY`, 
+`Extent2`.`CREATETIME`, 
+`Extent2`.`UPDATEBY`, 
+`Extent2`.`UPDATETIME`, 
+`Extent2`.`ISDELETE`, 
+`Extent3`.`ICSTAFFID`, 
+`Extent3`.`USERID` AS `USERID1`, 
+`Extent3`.`AGENCYID`, 
+`Extent3`.`DEPARTMENT`, 
+`Extent3`.`CREATEBY` AS `CREATEBY1`, 
+`Extent3`.`CREATETIME` AS `CREATETIME1`, 
+`Extent3`.`UPDATEBY` AS `UPDATEBY1`, 
+`Extent3`.`UPDATETIME` AS `UPDATETIME1`, 
+`Extent3`.`ISDELETE` AS `ISDELETE1`, 
+CASE WHEN (`Extent3`.`ICSTAFFID` IS  NULL) THEN (NULL)  ELSE (1) END AS `C1`
+FROM `NCI_USER` AS `Extent1` LEFT OUTER JOIN `NCI_ROLE` AS `Extent2` ON `Extent1`.`ROLEID` = `Extent2`.`ROLEID` LEFT OUTER JOIN `NCI_AGENCYSTAFF` AS `Extent3` ON `Extent1`.`USERID` = `Extent3`.`USERID`) AS `Project1`
+ ORDER BY 
+`Project1`.`ROLEID1` ASC, 
+`Project1`.`USERID` ASC, 
+`Project1`.`C1` ASC
+ 
+
+ 记录时间：2016-12-28 17:10:32,254 线程ID:[52] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 17:11:08,046 线程ID:[15] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 17:32:51,700 线程ID:[6] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_AGENCY` AS `Extent1`) AS `GroupBy1`
+ 
+
+ 记录时间：2016-12-28 17:32:51,793 线程ID:[6] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`AGENCYID`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`AGENCYNAME`, 
+`Extent1`.`AGENCYNO`, 
+`Extent1`.`CONTACT`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_AGENCY` AS `Extent1`
+ ORDER BY 
+`Extent1`.`AGENCYID` ASC LIMIT 0,10
+ 
+
+ 记录时间：2016-12-28 17:33:17,117 线程ID:[13] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_AGENCY` AS `Extent1`) AS `GroupBy1`
+ 
+
+ 记录时间：2016-12-28 17:33:17,133 线程ID:[13] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`AGENCYID`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`AGENCYNAME`, 
+`Extent1`.`AGENCYNO`, 
+`Extent1`.`CONTACT`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_AGENCY` AS `Extent1`
+ ORDER BY 
+`Extent1`.`AGENCYID` ASC LIMIT 0,10
+ 
+
+ 记录时间：2016-12-28 17:33:17,242 线程ID:[13] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Project1`.`ROLEID1` AS `ROLEID`, 
+`Project1`.`USERID`, 
+`Project1`.`ACCOUNT`, 
+`Project1`.`PASSWORD`, 
+`Project1`.`ROLENAME`, 
+`Project1`.`ROLETYPE`, 
+`Project1`.`ROLECATEGORY`, 
+`Project1`.`STATUS1` AS `STATUS`, 
+`Project1`.`ORGID`, 
+`Project1`.`CREATEBY`, 
+`Project1`.`CREATETIME`, 
+`Project1`.`UPDATEBY`, 
+`Project1`.`UPDATETIME`, 
+`Project1`.`ISDELETE`, 
+`Project1`.`USERNAME`, 
+`Project1`.`ROLEID` AS `ROLEID1`, 
+`Project1`.`STATUS` AS `STATUS1`, 
+`Project1`.`C1`, 
+`Project1`.`ICSTAFFID`, 
+`Project1`.`USERID1`, 
+`Project1`.`AGENCYID`, 
+`Project1`.`DEPARTMENT`, 
+`Project1`.`CREATEBY1`, 
+`Project1`.`CREATETIME1`, 
+`Project1`.`UPDATEBY1`, 
+`Project1`.`UPDATETIME1`, 
+`Project1`.`ISDELETE1`
+FROM (SELECT
+`Extent1`.`USERID`, 
+`Extent1`.`ROLEID`, 
+`Extent1`.`ACCOUNT`, 
+`Extent1`.`PASSWORD`, 
+`Extent1`.`USERNAME`, 
+`Extent1`.`STATUS`, 
+`Extent2`.`ROLEID` AS `ROLEID1`, 
+`Extent2`.`ROLENAME`, 
+`Extent2`.`ROLETYPE`, 
+`Extent2`.`ROLECATEGORY`, 
+`Extent2`.`STATUS` AS `STATUS1`, 
+`Extent2`.`ORGID`, 
+`Extent2`.`CREATEBY`, 
+`Extent2`.`CREATETIME`, 
+`Extent2`.`UPDATEBY`, 
+`Extent2`.`UPDATETIME`, 
+`Extent2`.`ISDELETE`, 
+`Extent3`.`ICSTAFFID`, 
+`Extent3`.`USERID` AS `USERID1`, 
+`Extent3`.`AGENCYID`, 
+`Extent3`.`DEPARTMENT`, 
+`Extent3`.`CREATEBY` AS `CREATEBY1`, 
+`Extent3`.`CREATETIME` AS `CREATETIME1`, 
+`Extent3`.`UPDATEBY` AS `UPDATEBY1`, 
+`Extent3`.`UPDATETIME` AS `UPDATETIME1`, 
+`Extent3`.`ISDELETE` AS `ISDELETE1`, 
+CASE WHEN (`Extent3`.`ICSTAFFID` IS  NULL) THEN (NULL)  ELSE (1) END AS `C1`
+FROM `NCI_USER` AS `Extent1` LEFT OUTER JOIN `NCI_ROLE` AS `Extent2` ON `Extent1`.`ROLEID` = `Extent2`.`ROLEID` LEFT OUTER JOIN `NCI_AGENCYSTAFF` AS `Extent3` ON `Extent1`.`USERID` = `Extent3`.`USERID`) AS `Project1`
+ ORDER BY 
+`Project1`.`ROLEID1` ASC, 
+`Project1`.`USERID` ASC, 
+`Project1`.`C1` ASC
+ 
+
+ 记录时间：2016-12-28 17:33:17,258 线程ID:[13] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Project1`.`ROLEID1` AS `ROLEID`, 
+`Project1`.`USERID`, 
+`Project1`.`ACCOUNT`, 
+`Project1`.`PASSWORD`, 
+`Project1`.`ROLENAME`, 
+`Project1`.`ROLETYPE`, 
+`Project1`.`ROLECATEGORY`, 
+`Project1`.`STATUS1` AS `STATUS`, 
+`Project1`.`ORGID`, 
+`Project1`.`CREATEBY`, 
+`Project1`.`CREATETIME`, 
+`Project1`.`UPDATEBY`, 
+`Project1`.`UPDATETIME`, 
+`Project1`.`ISDELETE`, 
+`Project1`.`USERNAME`, 
+`Project1`.`ROLEID` AS `ROLEID1`, 
+`Project1`.`STATUS` AS `STATUS1`, 
+`Project1`.`C1`, 
+`Project1`.`ICSTAFFID`, 
+`Project1`.`USERID1`, 
+`Project1`.`AGENCYID`, 
+`Project1`.`DEPARTMENT`, 
+`Project1`.`CREATEBY1`, 
+`Project1`.`CREATETIME1`, 
+`Project1`.`UPDATEBY1`, 
+`Project1`.`UPDATETIME1`, 
+`Project1`.`ISDELETE1`
+FROM (SELECT
+`Extent1`.`USERID`, 
+`Extent1`.`ROLEID`, 
+`Extent1`.`ACCOUNT`, 
+`Extent1`.`PASSWORD`, 
+`Extent1`.`USERNAME`, 
+`Extent1`.`STATUS`, 
+`Extent2`.`ROLEID` AS `ROLEID1`, 
+`Extent2`.`ROLENAME`, 
+`Extent2`.`ROLETYPE`, 
+`Extent2`.`ROLECATEGORY`, 
+`Extent2`.`STATUS` AS `STATUS1`, 
+`Extent2`.`ORGID`, 
+`Extent2`.`CREATEBY`, 
+`Extent2`.`CREATETIME`, 
+`Extent2`.`UPDATEBY`, 
+`Extent2`.`UPDATETIME`, 
+`Extent2`.`ISDELETE`, 
+`Extent3`.`ICSTAFFID`, 
+`Extent3`.`USERID` AS `USERID1`, 
+`Extent3`.`AGENCYID`, 
+`Extent3`.`DEPARTMENT`, 
+`Extent3`.`CREATEBY` AS `CREATEBY1`, 
+`Extent3`.`CREATETIME` AS `CREATETIME1`, 
+`Extent3`.`UPDATEBY` AS `UPDATEBY1`, 
+`Extent3`.`UPDATETIME` AS `UPDATETIME1`, 
+`Extent3`.`ISDELETE` AS `ISDELETE1`, 
+CASE WHEN (`Extent3`.`ICSTAFFID` IS  NULL) THEN (NULL)  ELSE (1) END AS `C1`
+FROM `NCI_USER` AS `Extent1` LEFT OUTER JOIN `NCI_ROLE` AS `Extent2` ON `Extent1`.`ROLEID` = `Extent2`.`ROLEID` LEFT OUTER JOIN `NCI_AGENCYSTAFF` AS `Extent3` ON `Extent1`.`USERID` = `Extent3`.`USERID`) AS `Project1`
+ ORDER BY 
+`Project1`.`ROLEID1` ASC, 
+`Project1`.`USERID` ASC, 
+`Project1`.`C1` ASC
+ 
+
+ 记录时间：2016-12-28 17:33:21,549 线程ID:[7] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 17:33:24,931 线程ID:[17] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ID`, 
+`Extent1`.`TYPECODE`, 
+`Extent1`.`TYPENAME`, 
+`Extent1`.`ITEMNAME`, 
+`Extent1`.`ORGID`
+FROM `LTC_COMMFILE` AS `Extent1`
+ WHERE (TRIM(`Extent1`.`TYPENAME`) IN ( @gp1,@gp2,@gp3,@gp4 )) AND (TRIM(`Extent1`.`TYPENAME`) IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 17:33:24,966 线程ID:[15] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ITEMTYPE`, 
+`Extent1`.`ITEMCODE`, 
+`Extent1`.`ITEMNAME`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`ORDERSEQ`, 
+`Extent1`.`UPDATEDATE`, 
+`Extent1`.`UPDATEBY`
+FROM `NCI_CODEDTL` AS `Extent1`
+ WHERE `Extent1`.`ITEMTYPE` IN ( @gp1 )
+ 
+
+ 记录时间：2016-12-28 17:33:47,764 线程ID:[7] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 17:34:35,220 线程ID:[22] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 17:37:50,541 线程ID:[26] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 17:44:55,296 线程ID:[30] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 17:45:24,599 线程ID:[31] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_AGENCY` AS `Extent1`) AS `GroupBy1`
+ 
+
+ 记录时间：2016-12-28 17:45:24,599 线程ID:[31] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`AGENCYID`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`AGENCYNAME`, 
+`Extent1`.`AGENCYNO`, 
+`Extent1`.`CONTACT`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_AGENCY` AS `Extent1`
+ ORDER BY 
+`Extent1`.`AGENCYID` ASC LIMIT 0,10
+ 
+
+ 记录时间：2016-12-28 17:45:26,241 线程ID:[31] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_AGENCY` AS `Extent1`) AS `GroupBy1`
+ 
+
+ 记录时间：2016-12-28 17:45:26,241 线程ID:[31] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`AGENCYID`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`AGENCYNAME`, 
+`Extent1`.`AGENCYNO`, 
+`Extent1`.`CONTACT`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_AGENCY` AS `Extent1`
+ ORDER BY 
+`Extent1`.`AGENCYID` ASC LIMIT 0,10
+ 
+
+ 记录时间：2016-12-28 17:45:26,241 线程ID:[31] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Project1`.`ROLEID1` AS `ROLEID`, 
+`Project1`.`USERID`, 
+`Project1`.`ACCOUNT`, 
+`Project1`.`PASSWORD`, 
+`Project1`.`ROLENAME`, 
+`Project1`.`ROLETYPE`, 
+`Project1`.`ROLECATEGORY`, 
+`Project1`.`STATUS1` AS `STATUS`, 
+`Project1`.`ORGID`, 
+`Project1`.`CREATEBY`, 
+`Project1`.`CREATETIME`, 
+`Project1`.`UPDATEBY`, 
+`Project1`.`UPDATETIME`, 
+`Project1`.`ISDELETE`, 
+`Project1`.`USERNAME`, 
+`Project1`.`ROLEID` AS `ROLEID1`, 
+`Project1`.`STATUS` AS `STATUS1`, 
+`Project1`.`C1`, 
+`Project1`.`ICSTAFFID`, 
+`Project1`.`USERID1`, 
+`Project1`.`AGENCYID`, 
+`Project1`.`DEPARTMENT`, 
+`Project1`.`CREATEBY1`, 
+`Project1`.`CREATETIME1`, 
+`Project1`.`UPDATEBY1`, 
+`Project1`.`UPDATETIME1`, 
+`Project1`.`ISDELETE1`
+FROM (SELECT
+`Extent1`.`USERID`, 
+`Extent1`.`ROLEID`, 
+`Extent1`.`ACCOUNT`, 
+`Extent1`.`PASSWORD`, 
+`Extent1`.`USERNAME`, 
+`Extent1`.`STATUS`, 
+`Extent2`.`ROLEID` AS `ROLEID1`, 
+`Extent2`.`ROLENAME`, 
+`Extent2`.`ROLETYPE`, 
+`Extent2`.`ROLECATEGORY`, 
+`Extent2`.`STATUS` AS `STATUS1`, 
+`Extent2`.`ORGID`, 
+`Extent2`.`CREATEBY`, 
+`Extent2`.`CREATETIME`, 
+`Extent2`.`UPDATEBY`, 
+`Extent2`.`UPDATETIME`, 
+`Extent2`.`ISDELETE`, 
+`Extent3`.`ICSTAFFID`, 
+`Extent3`.`USERID` AS `USERID1`, 
+`Extent3`.`AGENCYID`, 
+`Extent3`.`DEPARTMENT`, 
+`Extent3`.`CREATEBY` AS `CREATEBY1`, 
+`Extent3`.`CREATETIME` AS `CREATETIME1`, 
+`Extent3`.`UPDATEBY` AS `UPDATEBY1`, 
+`Extent3`.`UPDATETIME` AS `UPDATETIME1`, 
+`Extent3`.`ISDELETE` AS `ISDELETE1`, 
+CASE WHEN (`Extent3`.`ICSTAFFID` IS  NULL) THEN (NULL)  ELSE (1) END AS `C1`
+FROM `NCI_USER` AS `Extent1` LEFT OUTER JOIN `NCI_ROLE` AS `Extent2` ON `Extent1`.`ROLEID` = `Extent2`.`ROLEID` LEFT OUTER JOIN `NCI_AGENCYSTAFF` AS `Extent3` ON `Extent1`.`USERID` = `Extent3`.`USERID`) AS `Project1`
+ ORDER BY 
+`Project1`.`ROLEID1` ASC, 
+`Project1`.`USERID` ASC, 
+`Project1`.`C1` ASC
+ 
+
+ 记录时间：2016-12-28 17:45:26,257 线程ID:[31] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Project1`.`ROLEID1` AS `ROLEID`, 
+`Project1`.`USERID`, 
+`Project1`.`ACCOUNT`, 
+`Project1`.`PASSWORD`, 
+`Project1`.`ROLENAME`, 
+`Project1`.`ROLETYPE`, 
+`Project1`.`ROLECATEGORY`, 
+`Project1`.`STATUS1` AS `STATUS`, 
+`Project1`.`ORGID`, 
+`Project1`.`CREATEBY`, 
+`Project1`.`CREATETIME`, 
+`Project1`.`UPDATEBY`, 
+`Project1`.`UPDATETIME`, 
+`Project1`.`ISDELETE`, 
+`Project1`.`USERNAME`, 
+`Project1`.`ROLEID` AS `ROLEID1`, 
+`Project1`.`STATUS` AS `STATUS1`, 
+`Project1`.`C1`, 
+`Project1`.`ICSTAFFID`, 
+`Project1`.`USERID1`, 
+`Project1`.`AGENCYID`, 
+`Project1`.`DEPARTMENT`, 
+`Project1`.`CREATEBY1`, 
+`Project1`.`CREATETIME1`, 
+`Project1`.`UPDATEBY1`, 
+`Project1`.`UPDATETIME1`, 
+`Project1`.`ISDELETE1`
+FROM (SELECT
+`Extent1`.`USERID`, 
+`Extent1`.`ROLEID`, 
+`Extent1`.`ACCOUNT`, 
+`Extent1`.`PASSWORD`, 
+`Extent1`.`USERNAME`, 
+`Extent1`.`STATUS`, 
+`Extent2`.`ROLEID` AS `ROLEID1`, 
+`Extent2`.`ROLENAME`, 
+`Extent2`.`ROLETYPE`, 
+`Extent2`.`ROLECATEGORY`, 
+`Extent2`.`STATUS` AS `STATUS1`, 
+`Extent2`.`ORGID`, 
+`Extent2`.`CREATEBY`, 
+`Extent2`.`CREATETIME`, 
+`Extent2`.`UPDATEBY`, 
+`Extent2`.`UPDATETIME`, 
+`Extent2`.`ISDELETE`, 
+`Extent3`.`ICSTAFFID`, 
+`Extent3`.`USERID` AS `USERID1`, 
+`Extent3`.`AGENCYID`, 
+`Extent3`.`DEPARTMENT`, 
+`Extent3`.`CREATEBY` AS `CREATEBY1`, 
+`Extent3`.`CREATETIME` AS `CREATETIME1`, 
+`Extent3`.`UPDATEBY` AS `UPDATEBY1`, 
+`Extent3`.`UPDATETIME` AS `UPDATETIME1`, 
+`Extent3`.`ISDELETE` AS `ISDELETE1`, 
+CASE WHEN (`Extent3`.`ICSTAFFID` IS  NULL) THEN (NULL)  ELSE (1) END AS `C1`
+FROM `NCI_USER` AS `Extent1` LEFT OUTER JOIN `NCI_ROLE` AS `Extent2` ON `Extent1`.`ROLEID` = `Extent2`.`ROLEID` LEFT OUTER JOIN `NCI_AGENCYSTAFF` AS `Extent3` ON `Extent1`.`USERID` = `Extent3`.`USERID`) AS `Project1`
+ ORDER BY 
+`Project1`.`ROLEID1` ASC, 
+`Project1`.`USERID` ASC, 
+`Project1`.`C1` ASC
+ 
+
+ 记录时间：2016-12-28 17:45:27,267 线程ID:[31] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 17:46:33,362 线程ID:[37] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 17:50:00,768 线程ID:[39] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 17:50:44,687 线程ID:[31] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 17:53:33,807 线程ID:[28] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 17:53:53,256 线程ID:[37] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 17:54:17,583 线程ID:[31] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_AGENCY` AS `Extent1`) AS `GroupBy1`
+ 
+
+ 记录时间：2016-12-28 17:54:17,587 线程ID:[31] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`AGENCYID`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`AGENCYNAME`, 
+`Extent1`.`AGENCYNO`, 
+`Extent1`.`CONTACT`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_AGENCY` AS `Extent1`
+ ORDER BY 
+`Extent1`.`AGENCYID` ASC LIMIT 0,10
+ 
+
+ 记录时间：2016-12-28 17:54:18,990 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_AGENCY` AS `Extent1`) AS `GroupBy1`
+ 
+
+ 记录时间：2016-12-28 17:54:18,994 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`AGENCYID`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`AGENCYNAME`, 
+`Extent1`.`AGENCYNO`, 
+`Extent1`.`CONTACT`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_AGENCY` AS `Extent1`
+ ORDER BY 
+`Extent1`.`AGENCYID` ASC LIMIT 0,10
+ 
+
+ 记录时间：2016-12-28 17:54:19,010 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Project1`.`ROLEID1` AS `ROLEID`, 
+`Project1`.`USERID`, 
+`Project1`.`ACCOUNT`, 
+`Project1`.`PASSWORD`, 
+`Project1`.`ROLENAME`, 
+`Project1`.`ROLETYPE`, 
+`Project1`.`ROLECATEGORY`, 
+`Project1`.`STATUS1` AS `STATUS`, 
+`Project1`.`ORGID`, 
+`Project1`.`CREATEBY`, 
+`Project1`.`CREATETIME`, 
+`Project1`.`UPDATEBY`, 
+`Project1`.`UPDATETIME`, 
+`Project1`.`ISDELETE`, 
+`Project1`.`USERNAME`, 
+`Project1`.`ROLEID` AS `ROLEID1`, 
+`Project1`.`STATUS` AS `STATUS1`, 
+`Project1`.`C1`, 
+`Project1`.`ICSTAFFID`, 
+`Project1`.`USERID1`, 
+`Project1`.`AGENCYID`, 
+`Project1`.`DEPARTMENT`, 
+`Project1`.`CREATEBY1`, 
+`Project1`.`CREATETIME1`, 
+`Project1`.`UPDATEBY1`, 
+`Project1`.`UPDATETIME1`, 
+`Project1`.`ISDELETE1`
+FROM (SELECT
+`Extent1`.`USERID`, 
+`Extent1`.`ROLEID`, 
+`Extent1`.`ACCOUNT`, 
+`Extent1`.`PASSWORD`, 
+`Extent1`.`USERNAME`, 
+`Extent1`.`STATUS`, 
+`Extent2`.`ROLEID` AS `ROLEID1`, 
+`Extent2`.`ROLENAME`, 
+`Extent2`.`ROLETYPE`, 
+`Extent2`.`ROLECATEGORY`, 
+`Extent2`.`STATUS` AS `STATUS1`, 
+`Extent2`.`ORGID`, 
+`Extent2`.`CREATEBY`, 
+`Extent2`.`CREATETIME`, 
+`Extent2`.`UPDATEBY`, 
+`Extent2`.`UPDATETIME`, 
+`Extent2`.`ISDELETE`, 
+`Extent3`.`ICSTAFFID`, 
+`Extent3`.`USERID` AS `USERID1`, 
+`Extent3`.`AGENCYID`, 
+`Extent3`.`DEPARTMENT`, 
+`Extent3`.`CREATEBY` AS `CREATEBY1`, 
+`Extent3`.`CREATETIME` AS `CREATETIME1`, 
+`Extent3`.`UPDATEBY` AS `UPDATEBY1`, 
+`Extent3`.`UPDATETIME` AS `UPDATETIME1`, 
+`Extent3`.`ISDELETE` AS `ISDELETE1`, 
+CASE WHEN (`Extent3`.`ICSTAFFID` IS  NULL) THEN (NULL)  ELSE (1) END AS `C1`
+FROM `NCI_USER` AS `Extent1` LEFT OUTER JOIN `NCI_ROLE` AS `Extent2` ON `Extent1`.`ROLEID` = `Extent2`.`ROLEID` LEFT OUTER JOIN `NCI_AGENCYSTAFF` AS `Extent3` ON `Extent1`.`USERID` = `Extent3`.`USERID`) AS `Project1`
+ ORDER BY 
+`Project1`.`ROLEID1` ASC, 
+`Project1`.`USERID` ASC, 
+`Project1`.`C1` ASC
+ 
+
+ 记录时间：2016-12-28 17:54:19,014 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Project1`.`ROLEID1` AS `ROLEID`, 
+`Project1`.`USERID`, 
+`Project1`.`ACCOUNT`, 
+`Project1`.`PASSWORD`, 
+`Project1`.`ROLENAME`, 
+`Project1`.`ROLETYPE`, 
+`Project1`.`ROLECATEGORY`, 
+`Project1`.`STATUS1` AS `STATUS`, 
+`Project1`.`ORGID`, 
+`Project1`.`CREATEBY`, 
+`Project1`.`CREATETIME`, 
+`Project1`.`UPDATEBY`, 
+`Project1`.`UPDATETIME`, 
+`Project1`.`ISDELETE`, 
+`Project1`.`USERNAME`, 
+`Project1`.`ROLEID` AS `ROLEID1`, 
+`Project1`.`STATUS` AS `STATUS1`, 
+`Project1`.`C1`, 
+`Project1`.`ICSTAFFID`, 
+`Project1`.`USERID1`, 
+`Project1`.`AGENCYID`, 
+`Project1`.`DEPARTMENT`, 
+`Project1`.`CREATEBY1`, 
+`Project1`.`CREATETIME1`, 
+`Project1`.`UPDATEBY1`, 
+`Project1`.`UPDATETIME1`, 
+`Project1`.`ISDELETE1`
+FROM (SELECT
+`Extent1`.`USERID`, 
+`Extent1`.`ROLEID`, 
+`Extent1`.`ACCOUNT`, 
+`Extent1`.`PASSWORD`, 
+`Extent1`.`USERNAME`, 
+`Extent1`.`STATUS`, 
+`Extent2`.`ROLEID` AS `ROLEID1`, 
+`Extent2`.`ROLENAME`, 
+`Extent2`.`ROLETYPE`, 
+`Extent2`.`ROLECATEGORY`, 
+`Extent2`.`STATUS` AS `STATUS1`, 
+`Extent2`.`ORGID`, 
+`Extent2`.`CREATEBY`, 
+`Extent2`.`CREATETIME`, 
+`Extent2`.`UPDATEBY`, 
+`Extent2`.`UPDATETIME`, 
+`Extent2`.`ISDELETE`, 
+`Extent3`.`ICSTAFFID`, 
+`Extent3`.`USERID` AS `USERID1`, 
+`Extent3`.`AGENCYID`, 
+`Extent3`.`DEPARTMENT`, 
+`Extent3`.`CREATEBY` AS `CREATEBY1`, 
+`Extent3`.`CREATETIME` AS `CREATETIME1`, 
+`Extent3`.`UPDATEBY` AS `UPDATEBY1`, 
+`Extent3`.`UPDATETIME` AS `UPDATETIME1`, 
+`Extent3`.`ISDELETE` AS `ISDELETE1`, 
+CASE WHEN (`Extent3`.`ICSTAFFID` IS  NULL) THEN (NULL)  ELSE (1) END AS `C1`
+FROM `NCI_USER` AS `Extent1` LEFT OUTER JOIN `NCI_ROLE` AS `Extent2` ON `Extent1`.`ROLEID` = `Extent2`.`ROLEID` LEFT OUTER JOIN `NCI_AGENCYSTAFF` AS `Extent3` ON `Extent1`.`USERID` = `Extent3`.`USERID`) AS `Project1`
+ ORDER BY 
+`Project1`.`ROLEID1` ASC, 
+`Project1`.`USERID` ASC, 
+`Project1`.`C1` ASC
+ 
+
+ 记录时间：2016-12-28 17:54:20,614 线程ID:[46] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 17:56:10,532 线程ID:[28] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 17:57:50,496 线程ID:[32] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 17:58:14,903 线程ID:[37] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 17:58:24,937 线程ID:[45] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 18:03:49,268 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 18:03:52,580 线程ID:[19] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 18:08:02,978 线程ID:[33] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 18:10:46,312 线程ID:[50] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 18:10:50,282 线程ID:[45] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 18:12:00,946 线程ID:[42] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 18:12:01,095 线程ID:[45] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ID`, 
+`Extent1`.`TYPECODE`, 
+`Extent1`.`TYPENAME`, 
+`Extent1`.`ITEMNAME`, 
+`Extent1`.`ORGID`
+FROM `LTC_COMMFILE` AS `Extent1`
+ WHERE (TRIM(`Extent1`.`TYPENAME`) IN ( @gp1,@gp2,@gp3 )) AND (TRIM(`Extent1`.`TYPENAME`) IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 18:13:44,738 线程ID:[43] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 18:14:39,611 线程ID:[25] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 18:15:10,553 线程ID:[50] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 18:16:10,374 线程ID:[42] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 18:17:00,765 线程ID:[28] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 18:22:47,000 线程ID:[42] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 18:24:56,699 线程ID:[45] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 18:25:07,709 线程ID:[20] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 18:27:59,793 线程ID:[45] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 18:29:31,471 线程ID:[18] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 18:30:42,773 线程ID:[18] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_AGENCY` AS `Extent1`) AS `GroupBy1`
+ 
+
+ 记录时间：2016-12-28 18:30:42,776 线程ID:[18] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`AGENCYID`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`AGENCYNAME`, 
+`Extent1`.`AGENCYNO`, 
+`Extent1`.`CONTACT`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_AGENCY` AS `Extent1`
+ ORDER BY 
+`Extent1`.`AGENCYID` ASC LIMIT 0,10
+ 
+
+ 记录时间：2016-12-28 18:30:44,353 线程ID:[60] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_AGENCY` AS `Extent1`) AS `GroupBy1`
+ 
+
+ 记录时间：2016-12-28 18:30:44,358 线程ID:[60] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`AGENCYID`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`AGENCYNAME`, 
+`Extent1`.`AGENCYNO`, 
+`Extent1`.`CONTACT`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_AGENCY` AS `Extent1`
+ ORDER BY 
+`Extent1`.`AGENCYID` ASC LIMIT 0,10
+ 
+
+ 记录时间：2016-12-28 18:30:44,369 线程ID:[60] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Project1`.`ROLEID1` AS `ROLEID`, 
+`Project1`.`USERID`, 
+`Project1`.`ACCOUNT`, 
+`Project1`.`PASSWORD`, 
+`Project1`.`ROLENAME`, 
+`Project1`.`ROLETYPE`, 
+`Project1`.`ROLECATEGORY`, 
+`Project1`.`STATUS1` AS `STATUS`, 
+`Project1`.`ORGID`, 
+`Project1`.`CREATEBY`, 
+`Project1`.`CREATETIME`, 
+`Project1`.`UPDATEBY`, 
+`Project1`.`UPDATETIME`, 
+`Project1`.`ISDELETE`, 
+`Project1`.`USERNAME`, 
+`Project1`.`ROLEID` AS `ROLEID1`, 
+`Project1`.`STATUS` AS `STATUS1`, 
+`Project1`.`C1`, 
+`Project1`.`ICSTAFFID`, 
+`Project1`.`USERID1`, 
+`Project1`.`AGENCYID`, 
+`Project1`.`DEPARTMENT`, 
+`Project1`.`CREATEBY1`, 
+`Project1`.`CREATETIME1`, 
+`Project1`.`UPDATEBY1`, 
+`Project1`.`UPDATETIME1`, 
+`Project1`.`ISDELETE1`
+FROM (SELECT
+`Extent1`.`USERID`, 
+`Extent1`.`ROLEID`, 
+`Extent1`.`ACCOUNT`, 
+`Extent1`.`PASSWORD`, 
+`Extent1`.`USERNAME`, 
+`Extent1`.`STATUS`, 
+`Extent2`.`ROLEID` AS `ROLEID1`, 
+`Extent2`.`ROLENAME`, 
+`Extent2`.`ROLETYPE`, 
+`Extent2`.`ROLECATEGORY`, 
+`Extent2`.`STATUS` AS `STATUS1`, 
+`Extent2`.`ORGID`, 
+`Extent2`.`CREATEBY`, 
+`Extent2`.`CREATETIME`, 
+`Extent2`.`UPDATEBY`, 
+`Extent2`.`UPDATETIME`, 
+`Extent2`.`ISDELETE`, 
+`Extent3`.`ICSTAFFID`, 
+`Extent3`.`USERID` AS `USERID1`, 
+`Extent3`.`AGENCYID`, 
+`Extent3`.`DEPARTMENT`, 
+`Extent3`.`CREATEBY` AS `CREATEBY1`, 
+`Extent3`.`CREATETIME` AS `CREATETIME1`, 
+`Extent3`.`UPDATEBY` AS `UPDATEBY1`, 
+`Extent3`.`UPDATETIME` AS `UPDATETIME1`, 
+`Extent3`.`ISDELETE` AS `ISDELETE1`, 
+CASE WHEN (`Extent3`.`ICSTAFFID` IS  NULL) THEN (NULL)  ELSE (1) END AS `C1`
+FROM `NCI_USER` AS `Extent1` LEFT OUTER JOIN `NCI_ROLE` AS `Extent2` ON `Extent1`.`ROLEID` = `Extent2`.`ROLEID` LEFT OUTER JOIN `NCI_AGENCYSTAFF` AS `Extent3` ON `Extent1`.`USERID` = `Extent3`.`USERID`) AS `Project1`
+ ORDER BY 
+`Project1`.`ROLEID1` ASC, 
+`Project1`.`USERID` ASC, 
+`Project1`.`C1` ASC
+ 
+
+ 记录时间：2016-12-28 18:30:44,373 线程ID:[60] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Project1`.`ROLEID1` AS `ROLEID`, 
+`Project1`.`USERID`, 
+`Project1`.`ACCOUNT`, 
+`Project1`.`PASSWORD`, 
+`Project1`.`ROLENAME`, 
+`Project1`.`ROLETYPE`, 
+`Project1`.`ROLECATEGORY`, 
+`Project1`.`STATUS1` AS `STATUS`, 
+`Project1`.`ORGID`, 
+`Project1`.`CREATEBY`, 
+`Project1`.`CREATETIME`, 
+`Project1`.`UPDATEBY`, 
+`Project1`.`UPDATETIME`, 
+`Project1`.`ISDELETE`, 
+`Project1`.`USERNAME`, 
+`Project1`.`ROLEID` AS `ROLEID1`, 
+`Project1`.`STATUS` AS `STATUS1`, 
+`Project1`.`C1`, 
+`Project1`.`ICSTAFFID`, 
+`Project1`.`USERID1`, 
+`Project1`.`AGENCYID`, 
+`Project1`.`DEPARTMENT`, 
+`Project1`.`CREATEBY1`, 
+`Project1`.`CREATETIME1`, 
+`Project1`.`UPDATEBY1`, 
+`Project1`.`UPDATETIME1`, 
+`Project1`.`ISDELETE1`
+FROM (SELECT
+`Extent1`.`USERID`, 
+`Extent1`.`ROLEID`, 
+`Extent1`.`ACCOUNT`, 
+`Extent1`.`PASSWORD`, 
+`Extent1`.`USERNAME`, 
+`Extent1`.`STATUS`, 
+`Extent2`.`ROLEID` AS `ROLEID1`, 
+`Extent2`.`ROLENAME`, 
+`Extent2`.`ROLETYPE`, 
+`Extent2`.`ROLECATEGORY`, 
+`Extent2`.`STATUS` AS `STATUS1`, 
+`Extent2`.`ORGID`, 
+`Extent2`.`CREATEBY`, 
+`Extent2`.`CREATETIME`, 
+`Extent2`.`UPDATEBY`, 
+`Extent2`.`UPDATETIME`, 
+`Extent2`.`ISDELETE`, 
+`Extent3`.`ICSTAFFID`, 
+`Extent3`.`USERID` AS `USERID1`, 
+`Extent3`.`AGENCYID`, 
+`Extent3`.`DEPARTMENT`, 
+`Extent3`.`CREATEBY` AS `CREATEBY1`, 
+`Extent3`.`CREATETIME` AS `CREATETIME1`, 
+`Extent3`.`UPDATEBY` AS `UPDATEBY1`, 
+`Extent3`.`UPDATETIME` AS `UPDATETIME1`, 
+`Extent3`.`ISDELETE` AS `ISDELETE1`, 
+CASE WHEN (`Extent3`.`ICSTAFFID` IS  NULL) THEN (NULL)  ELSE (1) END AS `C1`
+FROM `NCI_USER` AS `Extent1` LEFT OUTER JOIN `NCI_ROLE` AS `Extent2` ON `Extent1`.`ROLEID` = `Extent2`.`ROLEID` LEFT OUTER JOIN `NCI_AGENCYSTAFF` AS `Extent3` ON `Extent1`.`USERID` = `Extent3`.`USERID`) AS `Project1`
+ ORDER BY 
+`Project1`.`ROLEID1` ASC, 
+`Project1`.`USERID` ASC, 
+`Project1`.`C1` ASC
+ 
+
+ 记录时间：2016-12-28 18:30:45,790 线程ID:[60] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 18:31:29,647 线程ID:[18] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 18:31:38,161 线程ID:[42] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 18:32:01,082 线程ID:[61] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 18:32:10,776 线程ID:[56] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 18:35:12,925 线程ID:[6] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_AGENCY` AS `Extent1`) AS `GroupBy1`
+ 
+
+ 记录时间：2016-12-28 18:35:13,159 线程ID:[6] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`AGENCYID`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`AGENCYNAME`, 
+`Extent1`.`AGENCYNO`, 
+`Extent1`.`CONTACT`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_AGENCY` AS `Extent1`
+ ORDER BY 
+`Extent1`.`AGENCYID` ASC LIMIT 0,10
+ 
+
+ 记录时间：2016-12-28 18:35:14,992 线程ID:[6] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `NCI_AGENCY` AS `Extent1`) AS `GroupBy1`
+ 
+
+ 记录时间：2016-12-28 18:35:14,992 线程ID:[6] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`AGENCYID`, 
+`Extent1`.`GOVID`, 
+`Extent1`.`AGENCYNAME`, 
+`Extent1`.`AGENCYNO`, 
+`Extent1`.`CONTACT`, 
+`Extent1`.`ADDRESS`, 
+`Extent1`.`PHONE`, 
+`Extent1`.`CREATBY`, 
+`Extent1`.`CREATETIME`, 
+`Extent1`.`UPDATEBY`, 
+`Extent1`.`UPDATETIME`, 
+`Extent1`.`ISDELETE`
+FROM `NCI_AGENCY` AS `Extent1`
+ ORDER BY 
+`Extent1`.`AGENCYID` ASC LIMIT 0,10
+ 
+
+ 记录时间：2016-12-28 18:35:15,117 线程ID:[6] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Project1`.`ROLEID1` AS `ROLEID`, 
+`Project1`.`USERID`, 
+`Project1`.`ACCOUNT`, 
+`Project1`.`PASSWORD`, 
+`Project1`.`ROLENAME`, 
+`Project1`.`ROLETYPE`, 
+`Project1`.`ROLECATEGORY`, 
+`Project1`.`STATUS1` AS `STATUS`, 
+`Project1`.`ORGID`, 
+`Project1`.`CREATEBY`, 
+`Project1`.`CREATETIME`, 
+`Project1`.`UPDATEBY`, 
+`Project1`.`UPDATETIME`, 
+`Project1`.`ISDELETE`, 
+`Project1`.`USERNAME`, 
+`Project1`.`ROLEID` AS `ROLEID1`, 
+`Project1`.`STATUS` AS `STATUS1`, 
+`Project1`.`C1`, 
+`Project1`.`ICSTAFFID`, 
+`Project1`.`USERID1`, 
+`Project1`.`AGENCYID`, 
+`Project1`.`DEPARTMENT`, 
+`Project1`.`CREATEBY1`, 
+`Project1`.`CREATETIME1`, 
+`Project1`.`UPDATEBY1`, 
+`Project1`.`UPDATETIME1`, 
+`Project1`.`ISDELETE1`
+FROM (SELECT
+`Extent1`.`USERID`, 
+`Extent1`.`ROLEID`, 
+`Extent1`.`ACCOUNT`, 
+`Extent1`.`PASSWORD`, 
+`Extent1`.`USERNAME`, 
+`Extent1`.`STATUS`, 
+`Extent2`.`ROLEID` AS `ROLEID1`, 
+`Extent2`.`ROLENAME`, 
+`Extent2`.`ROLETYPE`, 
+`Extent2`.`ROLECATEGORY`, 
+`Extent2`.`STATUS` AS `STATUS1`, 
+`Extent2`.`ORGID`, 
+`Extent2`.`CREATEBY`, 
+`Extent2`.`CREATETIME`, 
+`Extent2`.`UPDATEBY`, 
+`Extent2`.`UPDATETIME`, 
+`Extent2`.`ISDELETE`, 
+`Extent3`.`ICSTAFFID`, 
+`Extent3`.`USERID` AS `USERID1`, 
+`Extent3`.`AGENCYID`, 
+`Extent3`.`DEPARTMENT`, 
+`Extent3`.`CREATEBY` AS `CREATEBY1`, 
+`Extent3`.`CREATETIME` AS `CREATETIME1`, 
+`Extent3`.`UPDATEBY` AS `UPDATEBY1`, 
+`Extent3`.`UPDATETIME` AS `UPDATETIME1`, 
+`Extent3`.`ISDELETE` AS `ISDELETE1`, 
+CASE WHEN (`Extent3`.`ICSTAFFID` IS  NULL) THEN (NULL)  ELSE (1) END AS `C1`
+FROM `NCI_USER` AS `Extent1` LEFT OUTER JOIN `NCI_ROLE` AS `Extent2` ON `Extent1`.`ROLEID` = `Extent2`.`ROLEID` LEFT OUTER JOIN `NCI_AGENCYSTAFF` AS `Extent3` ON `Extent1`.`USERID` = `Extent3`.`USERID`) AS `Project1`
+ ORDER BY 
+`Project1`.`ROLEID1` ASC, 
+`Project1`.`USERID` ASC, 
+`Project1`.`C1` ASC
+ 
+
+ 记录时间：2016-12-28 18:35:15,148 线程ID:[6] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Project1`.`ROLEID1` AS `ROLEID`, 
+`Project1`.`USERID`, 
+`Project1`.`ACCOUNT`, 
+`Project1`.`PASSWORD`, 
+`Project1`.`ROLENAME`, 
+`Project1`.`ROLETYPE`, 
+`Project1`.`ROLECATEGORY`, 
+`Project1`.`STATUS1` AS `STATUS`, 
+`Project1`.`ORGID`, 
+`Project1`.`CREATEBY`, 
+`Project1`.`CREATETIME`, 
+`Project1`.`UPDATEBY`, 
+`Project1`.`UPDATETIME`, 
+`Project1`.`ISDELETE`, 
+`Project1`.`USERNAME`, 
+`Project1`.`ROLEID` AS `ROLEID1`, 
+`Project1`.`STATUS` AS `STATUS1`, 
+`Project1`.`C1`, 
+`Project1`.`ICSTAFFID`, 
+`Project1`.`USERID1`, 
+`Project1`.`AGENCYID`, 
+`Project1`.`DEPARTMENT`, 
+`Project1`.`CREATEBY1`, 
+`Project1`.`CREATETIME1`, 
+`Project1`.`UPDATEBY1`, 
+`Project1`.`UPDATETIME1`, 
+`Project1`.`ISDELETE1`
+FROM (SELECT
+`Extent1`.`USERID`, 
+`Extent1`.`ROLEID`, 
+`Extent1`.`ACCOUNT`, 
+`Extent1`.`PASSWORD`, 
+`Extent1`.`USERNAME`, 
+`Extent1`.`STATUS`, 
+`Extent2`.`ROLEID` AS `ROLEID1`, 
+`Extent2`.`ROLENAME`, 
+`Extent2`.`ROLETYPE`, 
+`Extent2`.`ROLECATEGORY`, 
+`Extent2`.`STATUS` AS `STATUS1`, 
+`Extent2`.`ORGID`, 
+`Extent2`.`CREATEBY`, 
+`Extent2`.`CREATETIME`, 
+`Extent2`.`UPDATEBY`, 
+`Extent2`.`UPDATETIME`, 
+`Extent2`.`ISDELETE`, 
+`Extent3`.`ICSTAFFID`, 
+`Extent3`.`USERID` AS `USERID1`, 
+`Extent3`.`AGENCYID`, 
+`Extent3`.`DEPARTMENT`, 
+`Extent3`.`CREATEBY` AS `CREATEBY1`, 
+`Extent3`.`CREATETIME` AS `CREATETIME1`, 
+`Extent3`.`UPDATEBY` AS `UPDATEBY1`, 
+`Extent3`.`UPDATETIME` AS `UPDATETIME1`, 
+`Extent3`.`ISDELETE` AS `ISDELETE1`, 
+CASE WHEN (`Extent3`.`ICSTAFFID` IS  NULL) THEN (NULL)  ELSE (1) END AS `C1`
+FROM `NCI_USER` AS `Extent1` LEFT OUTER JOIN `NCI_ROLE` AS `Extent2` ON `Extent1`.`ROLEID` = `Extent2`.`ROLEID` LEFT OUTER JOIN `NCI_AGENCYSTAFF` AS `Extent3` ON `Extent1`.`USERID` = `Extent3`.`USERID`) AS `Project1`
+ ORDER BY 
+`Project1`.`ROLEID1` ASC, 
+`Project1`.`USERID` ASC, 
+`Project1`.`C1` ASC
+ 
+
+ 记录时间：2016-12-28 18:35:20,077 线程ID:[10] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 18:35:32,328 线程ID:[11] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 18:36:16,635 线程ID:[19] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ID`, 
+`Extent1`.`TYPECODE`, 
+`Extent1`.`TYPENAME`, 
+`Extent1`.`ITEMNAME`, 
+`Extent1`.`ORGID`
+FROM `LTC_COMMFILE` AS `Extent1`
+ WHERE (TRIM(`Extent1`.`TYPENAME`) IN ( @gp1,@gp2,@gp3 )) AND (TRIM(`Extent1`.`TYPENAME`) IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 18:36:16,698 线程ID:[18] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ITEMTYPE`, 
+`Extent1`.`ITEMCODE`, 
+`Extent1`.`ITEMNAME`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`ORDERSEQ`, 
+`Extent1`.`UPDATEDATE`, 
+`Extent1`.`UPDATEBY`
+FROM `NCI_CODEDTL` AS `Extent1`
+ WHERE `Extent1`.`ITEMTYPE` IN ( @gp1 )
+ 
+
+ 记录时间：2016-12-28 18:37:39,445 线程ID:[13] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 18:38:17,176 线程ID:[16] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 18:38:53,776 线程ID:[8] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 18:39:31,501 线程ID:[7] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 18:39:43,846 线程ID:[11] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 18:39:50,444 线程ID:[12] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 18:40:02,153 线程ID:[16] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 18:40:02,296 线程ID:[17] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`ID`, 
+`Extent1`.`TYPECODE`, 
+`Extent1`.`TYPENAME`, 
+`Extent1`.`ITEMNAME`, 
+`Extent1`.`ORGID`
+FROM `LTC_COMMFILE` AS `Extent1`
+ WHERE (TRIM(`Extent1`.`TYPENAME`) IN ( @gp1,@gp2 )) AND (TRIM(`Extent1`.`TYPENAME`) IS NOT NULL)
+ 
+
+ 记录时间：2016-12-28 18:40:07,552 线程ID:[25] 日志级别：  DEBUG 出错类：KMLOG property: [(null)] - 错误描述：SELECT
+`Extent1`.`MODULEID`, 
+`Extent1`.`MODULENAME`, 
+`Extent1`.`URL`, 
+`Extent1`.`DESCRIPTION`, 
+`Extent1`.`SUPERMODULEID`, 
+`Extent1`.`TARGET`, 
+`Extent1`.`ICON`, 
+`Extent1`.`ROOTORDER`, 
+`Extent1`.`ISSYS`, 
+`Extent1`.`CREATEDATE`, 
+`Extent1`.`CREATEBY`, 
+`Extent1`.`STATUS`, 
+`Extent1`.`SYSTYPE`
+FROM `NCI_MODULES` AS `Extent1` INNER JOIN `NCI_ROLE_MODULE` AS `Extent2` ON `Extent1`.`MODULEID` = `Extent2`.`MODULEID`
+ WHERE (`Extent2`.`ROLEID` = @p__linq__0) AND (@p__linq__0 IS NOT NULL)
+ 

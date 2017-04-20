@@ -1,0 +1,253 @@
+﻿<link href="../../Content/style/common.css" rel="stylesheet" />
+<style>
+    .width100 {
+        width: 100%;
+    }
+
+    .width98 {
+        width: 98%;
+    }
+
+    .width80 {
+        width: 80%;
+    }
+
+    .width10 {
+        width: 10%;
+    }
+
+    .width20 {
+        width: 20%;
+    }
+
+    .width30 {
+        width: 30%;
+    }
+
+    .mgt15 {
+        margin-top: 15px;
+    }
+
+    .mgl15 {
+        margin-left: 15px;
+    }
+
+    .mgl30 {
+        margin-left: 30px;
+    }
+
+    .mgr100 {
+        margin-right: 190px;
+    }
+
+    .mgtb5 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .pdtb5 {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .spanbgc {
+        background-color: white;
+    }
+
+    .tbCenter {
+        margin: 0,auto;
+    }
+
+    .hCenter {
+        margin: 0,auto;
+    }
+
+    .left {
+        float: left;
+    }
+
+    .pdl15 {
+        padding-left: 15px;
+    }
+
+    .pdt5 {
+        padding-top: 5px;
+    }
+
+    .pdt10 {
+        padding-top: 10px;
+    }
+
+    .pdt15 {
+        padding-top: 15px;
+    }
+
+    .maxWidth {
+        max-width: 1000px;
+    }
+
+    .wordbreak {
+        word-break: break-all;
+    }
+</style>
+
+
+<div class="row">
+    <div id="content" class="col-lg-12">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="page-header">
+                    <ul class="breadcrumb">
+                        <li>
+                            <i class="fa fa-home"></i>
+                            <a href={{homeUrl}}>首页</a>
+                        </li>
+                        <li>月度费用管理</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--搜索框-->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="box border primary">
+                    <div class="box-title">
+                        <h4><i class="fa fa-search"></i>查询条件</h4>
+                    </div>
+                    <form class="form-horizontal ng-pristine ng-valid" role="form">
+                        <div class="box-body">
+                            <div class="input-group">
+                                <label class="search-lable ">起始时间</label>
+                                <input type="text" class="search-control search-input input-width-sm" ng-model="startTime" name="起始时间" ng-change="checkstartTime()" ca-date-picker />
+                                <label class="search-lable ">结束时间</label>
+                                <input type="text" class="search-control search-input input-width-sm" ng-model="endTime" name="结束时间" ng-change="checkendTime()" ca-date-picker />
+                                <label class="search-lable ">定点机构</label>
+                                <select class="search-control search-input input-width-sm" ng-model="selectObj" ng-options="item.NsId as item.NsName for item in OrgData">
+                                    <option value="">所有机构</option>
+                                </select>
+                                <div class="search-btn-div">
+                                    <a class="btn btn-primary btn-sm" ng-click="searchInfo()"><i class="fa fa-search"></i> 查询</a>
+                                </div>
+                                <a class="btn btn-primary btn-sm" ng-click="OpenMonFeeEdit()"><i class="fa fa-plus"></i>审批选中月份</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--搜索框-->
+        <!-- BOX -->
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="box-center">
+                    <div class="box border primary">
+                        <div class="box-title">
+                            <h4><i class="fa fa-table"></i>月度费用列表</h4>
+                        </div>
+                        <div class="box-body">
+                            <ui-data-table options="options">
+                                <table id="datatable1" class="table table-hover ">
+                                    <thead>
+                                        <tr>
+                                            <th>选择</th>
+                                            <th>序号</th>
+                                            <th>年月份</th>
+                                            <th>总人数</th>
+                                            <th>总住院天数</th>
+                                            <th>总费用</th>
+                                            <th>护理险可报销费用</th>
+                                            <th>状态</th>
+                                            <th>创建人姓名</th>
+                                            <th>创建日期</th>
+                                            <th class="center"><i class="fa fa-bars"></i>操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr ng-repeat="MonFee in Data.MonFeeList">
+                                            <td><input type="checkbox" ng-checked="{{MonFee.IsCheck}}" ng-model="MonFee.IsCheck" ng-show="{{MonFee.Status==10}}" /></td>
+                                            <td class="center">{{(options.pageInfo.CurrentPage-1)*options.pageInfo.PageSize+$index+1}}</td>
+                                            <td>{{MonFee.YearMonth}}</td>
+                                            <td>{{MonFee.TotalResident}}</td>
+                                            <td>{{MonFee.TotalHospday}}</td>
+                                            <td>{{MonFee.TotalAmount}}</td>
+                                            <td>{{MonFee.TotalNCIPay}}</td>
+                                            <td>{{MonFee.Status | NCIPMonFeeStatusFormat}}</td>
+                                            <td>{{MonFee.CreatorName}}</td>
+                                            <td>{{MonFee.CreateTime | date:'yyyy-MM-dd'}}</td>
+                                            <td class="center">
+                                                <div class="btn-group btn-group-xs" role="group" aria-label="...">
+                                                    <!--<a data-toggle="modal" class="btn btn-primary" role="button" data-target="#modalDetail" ng-click="DetailsInfo(MonFee)"><i class="fa fa-search"></i>查看详情</a>-->
+                                                    <a class="btn btn-primary" role="button" ng-show="{{MonFee.Status==10}}" ng-click="OpenOneMonFeeEdit(MonFee.NSMonFeeID)"><i class="fa fa-search"></i>费用审批</a>
+                                                    <a class="btn btn-primary" role="button" ng-show="{{MonFee.Status!=10}}" ng-click="OpenOneMonFeeEdit(MonFee.NSMonFeeID)"><i class="fa fa-search"></i>查看明细</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </ui-data-table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /BOX -->
+    </div>
+</div>
+
+<div class="modal fade" id="modalDetail" tabindex="-2" role="dialog" aria-labelledby="modalOrgListLabel" data-target=".bs-example-modal-lg">
+    <div class="modal-dialog bs-example-modal-lg" role="document">
+        <div class="modal-content modal-lg">
+            <div class="modal-header bg-success">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">  &times; </button>
+                <h4 class="modal-title" id="modalOrgListLabel">月度费用详情</h4>
+            </div>
+            <div class="modal-body">
+                <div class="mgl15">
+                    <table id="tbContent" border="1" style="line-height:2em;margin:0,auto;width:98%">
+                        <tbody>
+                            <tr>
+                                <td class="width10 center"><label class="control-label">定点机构名称</label></td>
+                                <td class="width20 center"><span>{{NsName}}</span></td>
+                                <td class="width10 center"><label class="control-label">定点机构编号</label></td>
+                                <td class="width20 center"><span ng-bind="MonFeeInfo.NSNO"></span></td>
+                                <td class="width10 center"><label class="control-label">报销年月份</label></td>
+                                <td class="width20 center"><span ng-bind="MonFeeInfo.YearMonth"></span></td>
+                            </tr>
+                            <tr>
+                                <td class="width10 center"><label class="control-label">总人数</label></td>
+                                <td class="width20 center"><span ng-bind="MonFeeInfo.TotalResident"></span></td>
+                                <td class="width10 center"><label class="control-label">总住院天数</label></td>
+                                <td class="width20 center"><span ng-bind="MonFeeInfo.TotalHospday"></span></td>
+                                <td class="width10 center"><label class="control-label">总费用</label></td>
+                                <td class="width20 center"><span ng-bind="MonFeeInfo.TotalAmount"></span></td>
+                            </tr>
+
+                            <tr>
+                                <td class="width10 center"><label class="control-label">护理险可报销费用</label></td>
+                                <td class="width20 center"><span ng-bind="MonFeeInfo.TotalNCIPay"></span></td>
+                                <td class="width10 center"><label class="control-label">创建人姓名</label></td>
+                                <td class="width20 center"><span ng-bind="MonFeeInfo.CreatorName"></span></td>
+                                <td class="width10 center"><label class="control-label">创建时间</label></td>
+                                <td class="width20 center"><span>{{ MonFeeInfo.CreateTime | date:'yyyy-MM-dd'}}</span></td>
+                            </tr>
+                            <tr>
+                                <td class="center"><label class="control-label">审核状态</label> </td>
+                                <td class="center" colspan="5">
+                                    <span style="font:bolder,12px">{{MonFeeInfo.Status | NCIPMonFeeStatusFormat}}</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">关闭</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+

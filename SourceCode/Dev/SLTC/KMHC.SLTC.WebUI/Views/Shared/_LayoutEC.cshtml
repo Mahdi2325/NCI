@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+
+<html ng-app="sltcApp">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <base href="/">
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" type="text/css" href="/Content/CloudAdmin/css/cloud-admin.css">
+    @*<link rel="stylesheet" type="text/css" href="/Content/style/common.css">
+    <link rel="stylesheet" type="text/css" href="/Content/style/page.css">
+    <link rel="stylesheet" type="text/css" href="/Content/style/plugging/vis.css">
+    <link rel="stylesheet" type="text/css" href="/Content/style/plugging/jquery.qtip.css">*@
+    <!--<link rel="stylesheet" type="text/css" href="/Content/CloudAdmin/css/themes/default.css" id="skin-switcher">-->
+    <link href="/Content/CloudAdmin/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    @Styles.Render("~/Content/Index/css")
+    <link href="~/Content/fullcalendar-2.9.1/fullcalendar.print.css" rel='stylesheet' media='print' />
+    <link href="/Content/uploadify/uploadify.css" rel="stylesheet" />
+    <link href="~/Content/CloudAdmin/bootstrap-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Content/CloudAdmin/js/jquery-ui-1.10.3.custom/css/custom-theme/jquery-ui-1.10.3.custom.min.css" rel="stylesheet">
+    <link href="~/Content/bootstrap-dialog/bootstrap-dialog.min.css" rel="stylesheet" />
+    <link href="~/Content/CI/CSS/style.min.css" rel="stylesheet">
+
+    <style type="text/css">
+        .row {
+            margin: 0;
+        }
+
+        .main {
+            /*background: #e7eef6;
+            padding: 0px;
+            padding-top: 19px;
+            position: fixed;
+            left: 283px;
+            bottom: 0px;
+            top: 0px;
+            right: 0px;
+            overflow-y: scroll;*/
+        }
+
+        .main-container {
+            /*margin-left:293px;
+                padding-top: 19px;
+
+                */
+            padding: 0px;
+            position: relative;
+            /*left: 293px;
+            bottom: 0px;
+            top: 0px;
+            right: 0px;*/
+            overflow-y: hidden;
+            margin-left: 220px;
+            /*background-color: #22304a; */
+            min-height: 100vh;
+        }
+
+        .sidebar-collapse {
+            padding: 0px;
+            position: static;
+            top: 0px;
+            left: 0px;
+            border: none;
+            box-shadow: none;
+        }
+
+        #header {
+            background-color: #f3f4f8;
+            /*margin-right:10px;*/
+        }
+
+        .rightBKBar {
+            background-color: #22304a;
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            /*bottom: 0px;*/
+            width: 10px;
+            /**/ height: 100%;
+        }
+    </style>
+    @Scripts.Render("~/Content/Index/js")
+</head>
+<body>
+    <div class="mm-page" style="min-height:436px">
+        @Html.Partial("~/Views/Shared/SideMenu.cshtml")
+        <div class="container-fluid main-container">
+            <div class="row">
+                <div class="main" style="min-height: 436px;">
+                    <header class="" id="header">
+                        @Html.Partial("~/Views/Shared/ECHeader.cshtml")
+                    </header>
+                    <section id="page">
+                        @RenderBody()
+
+
+                    </section>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- DATE PICKER -->
+    <script src="/Content/laydate/laydate.js"></script>
+    <!-- uploadify -->
+    @*<script src="/Content/uploadify/jquery.uploadify.min.js"></script>*@
+    <!-- CUSTOM SCRIPT -->
+    <script src="/Content/CloudAdmin/js/scriptEC.js"></script>
+    <script>
+        jQuery(document).ready(function () {
+            App.init(); //Initialise plugins and elements
+        });
+        this.currentUser = { UserId: '@ViewBag.User.UserId', UserName: '@ViewBag.User.UserName', CommunityId: '@ViewBag.User.CommunityId', CommunityType: '@ViewBag.User.CommunityType' };
+    </script>
+    <!-- /JAVASCRIPTS -->
+    @Scripts.Render("~/Scripts/angular")
+    <!-- TIMELINE -->
+    @*<script src="/Content/CloudAdmin/js/vistimeline/vis.js"></script>
+    <script src="/Content/CloudAdmin/js/vistimeline/angular-vis.js"></script>*@
+    @Scripts.Render("~/Scripts/AppCommon")
+
+
+    <!-- TOOLTIPS -->
+    @*<script src="/Content/CloudAdmin/js/vistimeline/jquery.qtip.js"></script>*@
+
+
+    @Scripts.Render("~/Scripts/EC")
+    @*<script type="text/javascript">
+        FileAPI = { jsUrl: '/Content/angular-file-upload/FileAPI.min.js', flashUrl: '/Content/angular-file-upload/FileAPI.flash.swf' };
+    </script>*@
+    <script src="~/Content/bootstrap-dialog/bootstrap-dialog.min.js"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>
+

@@ -1,0 +1,15 @@
+
+ 记录时间：2017-04-13 13:54:23,310 线程ID:[13] 日志级别：  ERROR 出错类：KMLOG property: [(null)] - 错误描述：System.Exception: System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 KMHC.SLTC.Business.Implement.DictHelper.CalcMonthIntervalDay(LTC_NCIFinancialMonth monthInfo) 位置 d:\SLTC_AUDIT\source\SLTC\KMHC.SLTC.Business.Implement\DictHelper.cs:行号 272
+   在 KMHC.SLTC.Business.Implement.DictHelper.CalcMonthIntervalDay(LTC_NCIFinancialMonth monthInfo) 位置 d:\SLTC_AUDIT\source\SLTC\KMHC.SLTC.Business.Implement\DictHelper.cs:行号 286
+   在 KMHC.SLTC.Business.Implement.DictManageService.GetFeeIntervalByMonth(String month) 位置 d:\SLTC_AUDIT\source\SLTC\KMHC.SLTC.Business.Implement\DictManageService.cs:行号 138
+ 
+
+ 记录时间：2017-04-13 13:54:48,065 线程ID:[14] 日志级别：  ERROR 出错类：KMLOG property: [(null)] - 错误描述：System.Exception: System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 KMHC.SLTC.Business.Implement.DictHelper.CalcMonthIntervalDay(LTC_NCIFinancialMonth monthInfo) 位置 d:\SLTC_AUDIT\source\SLTC\KMHC.SLTC.Business.Implement\DictHelper.cs:行号 272
+   在 KMHC.SLTC.Business.Implement.DictHelper.CalcMonthIntervalDay(LTC_NCIFinancialMonth monthInfo) 位置 d:\SLTC_AUDIT\source\SLTC\KMHC.SLTC.Business.Implement\DictHelper.cs:行号 286
+   在 KMHC.SLTC.Business.Implement.DictManageService.GetFeeIntervalByMonth(String month) 位置 d:\SLTC_AUDIT\source\SLTC\KMHC.SLTC.Business.Implement\DictManageService.cs:行号 138
+ 
+
+ 记录时间：2017-04-17 15:13:30,102 线程ID:[6] 日志级别：  ERROR 出错类：KMLOG property: [(null)] - 错误描述：The underlying provider failed on Open.
+ 

@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C7D80DFC-079F-4094-A278-7169D90EA142}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KMHC.SLTC.WebAPI</RootNamespace>
+    <AssemblyName>KMHC.SLTC.WebAPI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="KM.Common">
+      <HintPath>..\..\ThirdPartyLib\KM.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ThirdPartyLib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ThirdPartyLib\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ThirdPartyLib\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\AntiForgeryAuthorizationdAttribute.cs" />
+    <Compile Include="CommonController.cs" />
+    <Compile Include="BasicInfoController.cs" />
+    <Compile Include="DictManage\CommonUseWordController.cs" />
+    <Compile Include="ConstrainsBevalController.cs" />
+    <Compile Include="DictManage\CodeController.cs" />
+    <Compile Include="DictManage\DictManageController.cs" />
+    <Compile Include="IndexManage\InfectionItemController.cs" />
+    <Compile Include="IndexManage\SymptomItemController.cs" />
+    <Compile Include="LTC\MonthFeeController.cs" />
+    <Compile Include="myDeskController.cs" />
+    <Compile Include="NCIA\AppcertController.cs" />
+    <Compile Include="NCIA\AppHospController.cs" />
+    <Compile Include="NCIA\ApplicantController.cs" />
+    <Compile Include="NCIA\AuditAppcertController.cs" />
+    <Compile Include="NCIA\AuditAppHospController.cs" />
+    <Compile Include="NCIA\AuditYearCertController.cs" />
+    <Compile Include="NCIA\CaseManagementController.cs" />
+    <Compile Include="NCIA\HlxDeskController.cs" />
+    <Compile Include="NCIA\OrgStatisticsController.cs" />
+    <Compile Include="NCIP\DeductionController.cs" />
+    <Compile Include="NCIP\RSMonFeeDtlController.cs" />
+    <Compile Include="NCIP\MonFeeController.cs" />
+    <Compile Include="NCIP\PayGrantController.cs" />
+    <Compile Include="NCIP\ServiceDepositController.cs" />
+    <Compile Include="NCIP\ServiceDepositGrantController.cs" />
+    <Compile Include="NCIP\RegInHosStatustListController.cs" />
+    <Compile Include="NCIP\ServiceDepositGrantListController.cs" />
+    <Compile Include="NCI\AgencyController.cs" />
+    <Compile Include="NCI\NursingHomeController.cs" />
+    <Compile Include="OrganizationManage\ModuleNewController.cs" />
+    <Compile Include="OrganizationManage\NoticeController.cs" />
+    <Compile Include="OrganizationManage\CodeFileController.cs" />
+    <Compile Include="OrganizationManage\CodeDtlController.cs" />
+    <Compile Include="OrganizationManage\CommfileController.cs" />
+    <Compile Include="OrganizationManage\ModuleController.cs" />
+    <Compile Include="OrganizationManage\RegFileGetcontroller.cs" />
+    <Compile Include="OrganizationManage\RolesNewController.cs" />
+    <Compile Include="Report\PersonStatusReportController.cs" />
+    <Compile Include="Report\ReportManageController.cs" />
+    <Compile Include="Report\ReportController.cs" />
+    <Compile Include="Report\ReportTempManageController.cs" />
+    <Compile Include="ResidentManage\BedStatusController.cs" />
+    <Compile Include="ResidentManage\NutrtionEvalController.cs" />
+    <Compile Include="ResidentManage\HealthManageController.cs" />
+    <Compile Include="ResidentManage\LeaveNursingController.cs" />
+    <Compile Include="ConstraintRecController.cs" />
+    <Compile Include="ContactController.cs" />
+    <Compile Include="IndexManage\LabExamRecController.cs" />
+    <Compile Include="IndexManage\InfectionSympotmController.cs" />
+    <Compile Include="IndexManage\InfectionController.cs" />
+    <Compile Include="IndexManage\UnPlanEdipdController.cs" />
+    <Compile Include="IndexManage\UnPlanWeightIndController.cs" />
+    <Compile Include="OrganizationManage\EmpFileController.cs" />
+    <Compile Include="OrganizationManage\FloorController.cs" />
+    <Compile Include="OrganizationManage\GroupController.cs" />
+    <Compile Include="OrganizationManage\AffairsHandoverController.cs" />
+    <Compile Include="ResidentManage\CaseClosedController.cs" />
+    <Compile Include="ResidentManage\FamilyDiscussController.cs" />
+    <Compile Include="ResidentManage\IpdregOutController.cs" />
+    <Compile Include="ResidentManage\LeaveHospController.cs" />
+    <Compile Include="ResidentManage\PersonController.cs" />
+    <Compile Include="ResidentManage\PreipdController.cs" />
+    <Compile Include="ResidentManage\RelationController.cs" />
+    <Compile Include="ResidentManage\RelationDtlController.cs" />
+    <Compile Include="ResidentManage\RequirementController.cs" />
+    <Compile Include="ResidentManage\ResidentController.cs" />
+    <Compile Include="AttachFileController.cs" />
+    <Compile Include="OrganizationManage\DeptController.cs" />
+    <Compile Include="OrganizationManage\OrgController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="OrganizationManage\RolesController.cs" />
+    <Compile Include="OrganizationManage\RoomController.cs" />
+    <Compile Include="NgUploadController.cs" />
+    <Compile Include="OrganizationManage\UsersController.cs" />
+    <Compile Include="UploadController.cs" />
+    <Compile Include="ValuesController.cs" />
+    <Compile Include="VerifyController.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KMHC.Infrastructure\KMHC.Infrastructure.csproj">
+      <Project>{0997f971-1d2f-4aa8-aa67-5b1683afdefd}</Project>
+      <Name>KMHC.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KMHC.SLTC.Business.Entity\KMHC.SLTC.Business.Entity.csproj">
+      <Project>{208d3a36-9507-4ff2-a3bf-374d718f0a11}</Project>
+      <Name>KMHC.SLTC.Business.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KMHC.SLTC.Business.Interface\KMHC.SLTC.Business.Interface.csproj">
+      <Project>{5b2e2137-06d2-4adf-bc85-aa94984acc50}</Project>
+      <Name>KMHC.SLTC.Business.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KMHC.SLTC.Persistence\KMHC.SLTC.Persistence.csproj">
+      <Project>{3a0737ce-99b6-429f-9b11-85b49fad1de2}</Project>
+      <Name>KMHC.SLTC.Persistence</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

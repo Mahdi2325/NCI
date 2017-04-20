@@ -1,0 +1,102 @@
+﻿@{
+    var currentUser = KMHC.Infrastructure.SecurityHelper.CurrentPrincipal;
+
+}
+
+<style type="text/css">
+
+    .Bar {
+        position: relative;
+        z-index: 5000;
+        height: 40px;
+        margin-bottom: -40px;
+    }
+    .headerContainer {
+        max-width: 1230px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .Bar-table {
+        display: table;
+        width: 100%;
+    }
+
+
+        .Bar-table:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: #00BCD4;
+            /* background: rgba(37,39,44,.94); */
+            z-index: -1;
+            -webkit-transform: translateZ(0);
+        }
+
+    .Bar-navi {
+        display: table-cell;
+        vertical-align: top;
+    }
+
+        .Bar-navi > div {
+            display: table-cell;
+            vertical-align: top;
+            line-height: 40px;
+            float: right;
+            border-left: 1px solid #05D2EC;
+        }
+
+    .Bar-span {
+        display: block;
+        height: 40px;
+        padding: 0 16px;
+        cursor: pointer;
+        color: #fff;
+        text-align: center;
+        white-space: nowrap;
+        font: 18px/40px MetricWeb-Semibold,"Arial Bold",Gadget,sans-serif;
+        transition: background-color .2s;
+    }
+
+    .Bar-span:hover {
+        color: #fff;
+        background-color: #4f5757;
+        background-color: rgba(255,255,255,.15);
+        text-decoration: none;
+    }
+
+    .sf_cols {
+        zoom: 1;
+    }
+
+
+
+        
+</style>
+
+
+
+<div >
+    <nav class="Bar">
+        <div class="headerContainer">
+            <div class="Bar-table">
+                <div class="Bar-navi">
+                    <div class="sf_cols"><span class="Bar-span">
+                        @if(@ViewBag.User.CommunityType==1){
+                        <span>所属单位名称:</span> }else{
+                         <span>所属社区名称:</span> }
+                        @ViewBag.User.CommunityName </span> 
+                    </div>
+                </div>
+
+            </div>
+ </div>
+
+    </nav>
+</div>
+

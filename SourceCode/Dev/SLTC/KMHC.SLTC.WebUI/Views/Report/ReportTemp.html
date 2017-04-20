@@ -1,0 +1,90 @@
+﻿<script src="../../Scripts/ng-table.min.js"></script>
+<link href="../../Content/ng-table.min.css" rel="stylesheet" />
+<div class="row">
+    <div id="content" class="col-sm-12">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="page-header">
+                    <ul class="breadcrumb">
+                        <li>
+                            <i class="fa fa-home"></i>
+                            <a href={{homeUrl}}>首页</a>
+                        </li>
+                        <li>XXX 报表</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="box border primary">
+                    <div class="box-title">
+                        <h4><i class="fa fa-search"></i>查询条件</h4>
+                    </div>
+                    <form class="form-horizontal ng-pristine ng-valid" role="form">
+                        <div class="box-body">
+                            <div class="form-group">
+                                <label class="search-lable">年份</label>
+                                <select class="search-control search-input input-width-sm" ng-model="Year">
+                                    <option value="2016">2016</option>
+                                    <option value="2017">2017</option>
+                                    <option value="2018">2018</option>
+                                </select>
+
+                                <div class="search-btn-div">
+                                    <a class="btn btn-primary" ng-click="search()"><i class="fa fa-search"></i> 查询</a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="box border primary">
+                    <div class="box-title">
+                        <h4><i class="fa fa-table"></i>xx报表</h4>
+                    </div>
+                    <div class="box-body">
+                        <div class="box-center">
+                            <!--<table ng-table="tableParams" class="table" show-filter="true">
+                                <tr ng-repeat="item in items">
+                                    <td title="'机构'" filter="{ org: 'text'}" sortable="'org'">
+                                        {{item.OrgName}}
+                                    </td>
+                                    <td title="'总费用'" filter="{ total: 'number'}" sortable="'total'">
+                                        {{item.Total}}
+                                    </td>
+                                </tr>
+                            </table>-->
+                            <div class="clearfix">
+                                <button ng-click="tableParams.sorting({})" class="btn btn-default pull-right">Clear sorting</button>
+                                <button ng-click="exportData()" class="btn btn-default pull-right">Export Data</button>
+                            </div>
+                            <table ng-table="tableParams" show-filter="true" class="table">
+                                <tr ng-repeat="user in $data" ng-class="{ 'emphasis': user.money > 500 }">
+                                    <td data-title="'Name'" filter="{ 'name': 'select' }" filter-data="names($column)">
+                                        {{user.name}}
+                                    </td>
+                                    <td data-title="'Age'" filter="{ 'age': 'age' }">
+                                        {{user.age}}
+                                    </td>
+                                    <td data-title="'Money'" sortable="'money'">
+                                        {{user.money}}
+                                    </td>
+                                </tr>
+                            </table>
+                            <script type="text/ng-template" id="ng-table/filters/age.html">
+                                <input type="radio" ng-model="params.filter()[name]" name="filter-age" value="" /> None
+                                <br />
+                                <input type="radio" ng-model="params.filter()[name]" name="filter-age" value="50" /> 50 years
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

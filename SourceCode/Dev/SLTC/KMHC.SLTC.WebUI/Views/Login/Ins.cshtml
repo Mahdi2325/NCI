@@ -1,0 +1,459 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>长期护理保险管理平台 | 登录</title>
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="/boostrap/assets/ico/favicon.ico" type="image/x-icon" />
+
+    <link href="~/Content/CloudAdmin/bootstrap-dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Css files -->
+    <link rel="stylesheet" type="text/css" href="/Content/CloudAdmin/css/cloud-admin.css">
+
+    <link rel="stylesheet" type="text/css" href="../../Content/CloudAdmin/font-awesome/css/font-awesome.min.css">
+    <!-- DATE RANGE PICKER -->
+    <link rel="stylesheet" type="text/css" href="../../Content/CloudAdmin/js/bootstrap-daterangepicker/daterangepicker-bs3.css" />
+    <!-- UNIFORM -->
+    <link rel="stylesheet" type="text/css" href="../../Content/CloudAdmin/js/uniform/css/uniform.default.min.css" />
+    <!-- ANIMATE -->
+    <link rel="stylesheet" type="text/css" href="../../Content/CloudAdmin/css/animatecss/animate.min.css" />
+    <!-- MainForm -->
+    <link rel="stylesheet" type="text/css" href="../../Content/MainForm/mainform.css" />
+    <!-- WIZARD -->
+    <link rel="stylesheet" type="text/css" href="/Content/CloudAdmin/js/bootstrap-wizard/wizard.css" />
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    @*<script src="~/Content/CloudAdmin/js/bootbox/bootbox.min.js"></script>*@
+
+    <style type="text/css">
+        blockquote, body, button, code, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, pre, td, textarea, th, ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        body, th, td, input, select, textarea, h1, h2, h3, h4, i, em {
+            font: normal 14px/1 "microsoft yahei",Tahoma, Geneva, sans-serif;
+        }
+
+        html, body {
+            height: 100%;
+            display: block;
+        }
+
+        body {
+            background-color: #fff;
+            color: #333;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        ul, ol {
+            list-style-type: none;
+        }
+
+        input, select, textarea {
+            vertical-align: middle;
+            outline: none;
+            resize: none;
+            border: 0;
+        }
+
+        textarea {
+            resize: none;
+            overflow: auto;
+        }
+
+        input::-ms-clear {
+            display: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
+            a:hover {
+                color: #666;
+            }
+
+        img {
+            border: 0;
+            vertical-align: middle;
+        }
+
+        .page {
+            min-height: 100%;
+            margin-bottom: -100px;
+        }
+
+        .login-top {
+            height: 60px;
+        }
+
+        .w {
+            width: 930px;
+            margin: 0 auto;
+        }
+
+        .clearfix {
+        }
+
+        .logo-box {
+            display: block;
+            float: left;
+            height: 23px;
+            line-height: 23px;
+            padding: 18px 0 19px 0;
+        }
+
+        .login-container {
+            margin-top: 7px;
+            padding-top: 50px;
+            background: url(../../Content/Images/login/topshadow_03.png) left top repeat-x;
+            padding-bottom: 100px;
+        }
+
+        .login-l {
+            float: left;
+            width: 480px;
+            height: 300px;
+            padding-top: 30px;
+        }
+
+        .login-r {
+            float: right;
+            padding-top: 30px;
+        }
+
+        .login-box {
+            position: relative;
+            width: 405px;
+        }
+
+        .form-box {
+            padding-top: 20px;
+        }
+
+
+        body {
+            /*background: url('/Content/CloudAdmin/img/login/5.jpg') no-repeat top center;*/
+            min-width: 950px;
+            /*width: 970px;
+            height: 650px;*/
+            background-size: 100% auto;
+            background-color: #ffffff;
+        }
+
+        .modal-header {
+            border: none;
+            /*padding-top: 105px;*/
+            padding-bottom: 0;
+        }
+
+        .modal.fade.in {
+            overflow: visible;
+            top: 42%;
+            transform: translateY(-50%);
+            /*margin-top: 60px;*/
+            margin-left: 60%;
+            /*margin-right: 100px;*/
+            width: 470px;
+            height: 400px;
+        }
+
+        .modal-body {
+            width: 370px;
+            /*margin-top: 50px;为坏屏幕做特殊处理*/
+            margin-top: 60px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0px;
+        }
+
+        .modal-content {
+            height: 400px;
+        }
+
+        div.modal-header p.modal-title {
+            text-align: center;
+            font-size: 60px;
+            color: #0F384c;
+        }
+
+        div.modal-dialog {
+            width: 480px;
+        }
+
+        div.modal-header p.modal-subtitle {
+            text-align: center;
+            font-size: 24px;
+            color: #408eb5;
+            margin-top: 10px;
+        }
+
+        div.modal-header div.title {
+            text-align: left;
+            font-size: 30px;
+            color: #0accce;
+            width: 455px;
+            padding-top: 30px;
+            /*margin-top: 55px;*/
+            margin-left: 20px;
+            /*margin-right: auto;*/
+            /*border-bottom: 1px solid #e5e5e5;*/
+            /*border-bottom: 2px solid #0accce;*/
+        }
+
+        div.modal-header1 div.footer1 {
+            text-align: left;
+            font-size: 20px;
+            color: #0accce;
+            width: 155px;
+            padding-top: 30px;
+            /*margin-top: 55px;*/
+            margin-left: 20px;
+            /*margin-right: auto;*/
+            /*border-bottom: 1px solid #e5e5e5;*/
+            /*border-bottom: 2px solid #0accce;*/
+        }
+
+        div.modal-header div.title div {
+            /*border-bottom: 3px solid #0accce;*/
+            /*margin-left: auto;*/
+            margin-left: 10px;
+            margin-bottom: 10px;
+            /*margin-right: auto;*/
+            width: 206px;
+        }
+
+        .btn-info {
+            width: 170px;
+            height: 62px;
+            font-size: 24px;
+            color: #ffffff;
+            background-color: #0accce;
+            margin-top: -35px;
+        }
+
+        .input-group .icon-addon .form-control {
+            border-radius: 0;
+        }
+
+        .icon-addon {
+            position: relative;
+            color: #555;
+            display: block;
+        }
+
+            .icon-addon.addon-md .glyphicon,
+            .icon-addon .glyphicon,
+            .icon-addon.addon-md .fa,
+            .icon-addon .fa {
+                position: absolute;
+                z-index: 2;
+                left: 10px;
+                font-size: 14px;
+                width: 20px;
+                margin-left: -2.5px;
+                text-align: center;
+                padding: 10px 0;
+                top: 1px;
+            }
+
+            .icon-addon.addon-lg .form-control {
+                line-height: 1.33;
+                height: 45px;
+                font-size: 18px;
+                padding: 10px 16px 10px 40px;
+                margin-top: 15px;
+            }
+
+            .icon-addon.addon-sm .form-control {
+                height: 30px;
+                padding: 5px 10px 5px 28px;
+                font-size: 12px;
+                line-height: 1.5;
+            }
+
+            .icon-addon.addon-lg .fa,
+            .icon-addon.addon-lg .glyphicon {
+                font-size: 18px;
+                margin-left: 0;
+                left: 11px;
+                top: 4px;
+            }
+
+            .icon-addon.addon-md .form-control,
+            .icon-addon .form-control {
+                padding-left: 30px;
+                /*float: left;*/
+                font-weight: normal;
+            }
+
+            .icon-addon.addon-sm .fa,
+            .icon-addon.addon-sm .glyphicon {
+                margin-left: 0;
+                font-size: 12px;
+                left: 5px;
+                top: -1px;
+            }
+
+            .icon-addon .form-control:focus + .glyphicon,
+            .icon-addon:hover .glyphicon,
+            .icon-addon .form-control:focus + .fa,
+            .icon-addon:hover .fa {
+                color: #2580db;
+            }
+
+
+        ::-webkit-input-placeholder {
+            font-size: 18px;
+            color: #a4c8d8;
+            text-transform: uppercase;
+            text-transform: uppercase;
+            text-align: center;
+            /*font-weight: bold;*/
+        }
+
+        :-moz-placeholder { /* older Firefox*/
+            font-size: 18px;
+            color: #a4c8d8;
+            text-transform: uppercase;
+            text-align: center;
+            /*font-weight: bold;*/
+        }
+
+        ::-moz-placeholder { /* Firefox 19+ */
+            font-size: 18px;
+            color: #a4c8d8;
+            text-transform: uppercase;
+            text-align: center;
+            /*font-weight: bold;*/
+        }
+
+        :-ms-input-placeholder {
+            font-size: 18px;
+            color: #a4c8d8;
+            text-transform: uppercase;
+            text-align: center;
+            /*font-weight: bold;*/
+        }
+
+        .footer p {
+            line-height: 30px;
+            font-size: 12px;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        .login-head {
+            position: absolute;
+            left: 9px;
+            overflow: hidden;
+            width: 380px;
+        }
+
+            .login-head h2 {
+                float: left;
+                font-size: 24px;
+                color: #0accce;
+                font-weight: bold;
+                margin-right: 14px;
+                line-height: 25px;
+                padding-left: 50px;
+            }
+
+        .login-form {
+            padding-top: 20px;
+        }
+        .login-errorMsg {
+            color: red;
+        }
+    </style>
+
+</head>
+<body>
+    @using (Html.BeginForm("Ins", "Login", FormMethod.Post))
+    {
+        <div class="page login-page">
+            <div class="login-top">
+                <div class="w clearfix">
+                    <a href="#" class="logo-box"><img src="~/Content/Images/login/logo_top.png" style="height:45px;" alt="" /></a>
+                </div>
+            </div>
+            <div class="login-container">
+                <div class="w clearfix">
+                    <div class="login-l">
+                        <img src="~/Content/Images/login/NCIleft.jpg" style="height:400px; width:480px; " alt="" />
+                    </div>
+                    <div class="login-r">
+                        <div class="login-box">
+                            <div class="login-head">
+                                <h2 class="login-tit">用户登录</h2>
+                            </div>
+                            <div class="form-box">
+                                <form class="login-form account-login">
+                                    <div class="form-group">
+                                        <div class="icon-addon addon-lg">
+                                            <!---->
+                                            <input type="text" name="name" placeholder="请输入用户名" class="form-control" id="userID" value="agadmin" style="background-color:#ffffff; width:350px;">
+                                            @*<label for="userID" title="User ID" class="glyphicon" style="border-right: solid 2px #A4C8D8; height: 40px;"></label>*@
+                                            <img src="~/Content/Images/login/username.png" style="height: 20px; width: 20px; margin-top: -57px; margin-left: 8px;" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="icon-addon addon-lg">
+                                            <input type="password" name="pwd" placeholder="请输入密码" class="form-control" id="userPwd" value="123" style="background-color:#ffffff;width:350px;">
+                                            @*<label for="userPwd" title="User Password" class="glyphicon" style=" border-right: solid 2px #A4C8D8; height: 40px;"></label>*@
+                                            <img src="~/Content/Images/login/password.png" style="height: 20px; width: 20px; margin-top: -57px; margin-left: 8px;" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="icon-addon addon-lg">
+                                            <select name="orgId" class="form-control" id="userOrgId" style="width:350px;">
+                                                @foreach (KMHC.SLTC.Business.Entity.NCI.Insurance s in @ViewBag.OrgList as List<KMHC.SLTC.Business.Entity.NCI.Insurance>)
+                                                {
+                                                    <option value="@s.ICID">@s.IcName</option>
+                                                }
+                                            </select>
+                                            @*<label for="userPwd" title="User Password" class="glyphicon" style="border-right: solid 2px #A4C8D8; height: 40px;"></label>*@
+                                            <img src="~/Content/Images/login/mechanism.png" style="height: 30px; width: 30px; margin-top: -57px; margin-left: 8px;" alt="" />
+                                        </div>
+                                    </div>
+
+                                    <div class="modal-header1">
+                                        <div class="footer1"><div><span style="color: #0accce; font-size: 20px; margin-top:130px;">承办机构</span></div></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-info" style="width:130px;height:40px;margin-left:220px; text-align:center; line-height:20px; font-size: 18px; padding:0px; border:0px;">登  录</button>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="login-errorMsg">@ViewBag.Msg</div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="w">
+                <p></p>
+            </div>
+        </div>
+    }
+</body>
+</html>

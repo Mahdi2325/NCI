@@ -1,0 +1,169 @@
+﻿<link href="../../Content/style/common.css" rel="stylesheet" />
+<div class="row">
+    <div id="content" class="col-lg-12">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="page-header">
+                    <ul class="breadcrumb">
+                        <li>
+                            <i class="fa fa-home"></i>
+                            <a href={{homeUrl}}>首页</a>
+                        </li>
+                        <li>
+                            <a ui-sref="auditAppHosp">长期护理保险住院审核列表</a>
+                        </li>
+                        <li>长期护理保险住院审核详情</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="tab-content">
+                    <div class="tab-pane fade in active" id="box_tab1">
+                        <div class="row">
+                            <form class="form-horizontal" name="appertForm" role="form" novalidate>
+                                <div class="col-md-12">
+                                    <div class="box border primary">
+                                        <div class="box-title">
+                                            <h4><i class="fa fa-columns"></i><span class="hidden-inline-mobile">巨鹿县长期护理保险住院审核</span></h4>
+                                        </div>
+                                        <div class="box-body">
+                                            <div class="form-group">
+                                                <label class="col-md-1 control-label">社会保障卡号</label>
+                                                <div class="col-md-2">
+                                                    <input name="社会保障卡号" class="form-control" placeholder="输入有效的保障卡号" ng-model="currentItem.SsNO" ng-disabled="true" ng-blur="GetAppcertInfo(currentItem.SsNO,'Ss')" />
+                                                </div>
+                                                <label class="col-md-1 control-label">身份证号</label>
+                                                <div class="col-md-2">
+                                                    <input name="身份证号" class="form-control" placeholder="输入有效的身份证号" ng-model="currentItem.IdNO" ng-disabled="true" ng-blur="GetAppcertInfo(currentItem.IdNO,'Id')" />
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-md-1 control-label">姓名</label>
+                                                <div class="col-md-2">
+                                                    <input name="姓名" class="form-control" ng-model="currentItem.Name" ng-disabled="true" />
+                                                </div>
+                                                <label class="col-md-1 control-label">性别</label>
+                                                <div class="col-md-2">
+                                                    <input name="性别" class="form-control" ng-model="currentItem.Gender" ng-disabled="true" />
+                                                </div>
+                                                <label class="col-md-1 control-label">年龄</label>
+                                                <div class="col-md-2">
+                                                    <input name="年龄" class="form-control" ng-model="currentItem.Age" ng-disabled="true" />
+                                                </div>
+                                                <label class="col-md-1 control-label">人员身份</label>
+                                                <div class="col-md-2">
+                                                    <select name="人员身份" id="selMcType" class="form-control" ng-model="currentItem.Mctype" select-code="A002" ng-disabled="true"></select>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-md-1 control-label">护理形式</label>
+                                                <div class="col-md-2">
+                                                    <input name="护理形式" id="selCareType" class="form-control" ng-model="currentItem.CareTypetxt" ng-disabled="true" />
+                                                    <input name="护理形式" id="hidCareType" class="form-control" ng-model="currentItem.CareType" ng-show="false" ng-disabled="true" />
+                                                </div>
+                                                <label class="col-md-1 control-label">患者家属</label>
+                                                <div class="col-md-2">
+                                                    <input name="患者家属" class="form-control" ng-model="currentItem.FamilyMemberName" ng-disabled="true" />
+                                                </div>
+                                                <label class="col-md-1 control-label">病种</label>
+                                                <div class="col-md-5">
+                                                    <!--<select name="病种" id="selDisease" class="form-control" select-code="A003" ng-model="currentItem.Disease" ng-disabled="true"></select>-->
+                                                    <input type="text" id="selDisease" class="form-control" ng-model="currentItem.Disease" select-multiple-code="A003" disabled="disabled" name="病种" />
+                                                </div>
+
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-1 control-label">医师姓名</label>
+                                                <div class="col-md-2">
+                                                    <input name="医师姓名" class="form-control" ng-model="currentItem.DoctorName" ng-disabled="true" required />
+                                                </div>
+                                                <label class="col-md-1 control-label">入院日期</label>
+                                                <div class="col-md-2">
+                                                    <input type="text" class="form-control " style="clear: both;" ng-model="currentItem.EntryTime" name="入院日期" ng-disabled="true" ca-date-time-picker required />
+                                                </div>
+                                                <label class="col-md-1 control-label">现住址</label>
+                                                <div class="col-md-5">
+                                                    <input name="现住址" class="form-control" ng-model="currentItem.Address" ng-disabled="true" />
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-md-1 control-label">联系电话</label>
+                                                <div class="col-md-5">
+                                                    <input name="联系电话" class="form-control" ng-model="currentItem.Phone" ng-disabled="true" />
+                                                </div>
+
+                                                <label class="col-md-1 control-label">家属联系电话</label>
+                                                <div class="col-md-5">
+                                                    <input name="家属联系电话" class="form-control" ng-model="currentItem.FamilyMemberphone" ng-disabled="true" />
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-md-1 control-label">申请原因</label>
+                                                <div class="col-md-11">
+                                                    <textarea name="申请原因" class="form-control" rows="6" ng-model="currentItem.AppReason" ng-disabled="true"></textarea>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-md-1 control-label">机构意见</label>
+                                                <div class="col-md-11">
+                                                    <textarea name="机构意见" class="form-control" rows="6" ng-model="currentItem.NsComment" ng-disabled="true"></textarea>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-md-1 control-label">经办意见<span class="required">*</span></label>
+                                                <div class="col-md-11">
+                                                    <textarea name="经办意见" class="form-control" rows="6" ng-model="currentItem.AgencyComment" required="required"></textarea>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-md-1 control-label">相关材料附件</label>
+                                                <div class="col-md-11">
+                                                    <div class="border">
+                                                        <div class="left pdl15 pdt15">
+                                                            <span><a ng-href="{{currentItem.UploadFiles | filePathFormat}}" target="_blank">{{currentItem.UploadFiles | fileNameFormat}}</a></span>
+                                                        </div>
+                                                        <!--<div class="left pdl15 pdt10">
+                                                            <div id="ArchiveFilePicker"></div>
+                                                        </div>
+                                                        <div class="left pdl15 pdt10">
+                                                            <button class="btn btn-sm btn-primary" type="button" ng-click="clear()">清除</button>
+                                                        </div>-->
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="from-group">
+                                                <input name="资格申请ID" class="form-control" ng-model="currentItem.Appcertid" ng-show="false" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="hack hack-border"></div>
+                                    <div class="form-group">
+
+                                        <div class="col-md-offset-8">
+                                            <a class="btn btn-primary" ng-disabled="appertForm.$invalid" ng-click="AuditAppHosp(currentItem,'success')"><i class="fa">审核通过</i></a>
+                                            <a class="btn btn-success" ng-disabled="appertForm.$invalid" ng-click="AuditAppHosp(currentItem,'fail')"><i class="fa">审核不通过</i></a>
+                                            <a class="btn btn-default" ng-click="backList()"><i class="fa">返回列表</i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

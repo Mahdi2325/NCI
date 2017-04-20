@@ -1,0 +1,83 @@
+﻿<div class="row">
+    <div id="content" class="col-sm-12">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="page-header">
+                    <ul class="breadcrumb">
+                        <li>
+                            <i class="fa fa-home"></i>
+                            <a href={{homeUrl}}>首页</a>
+                        </li>
+                        <li>服务保证金发放</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="box border primary">
+                    <div class="box-title">
+                        <h4><i class="fa fa-search"></i>查询条件</h4>
+                    </div>
+                    <form class="form-horizontal ng-pristine ng-valid" role="form">
+                        <div class="box-body">
+                            <div class="form-group">
+
+
+                                <label class="search-lable">年份</label>
+                                <select class="search-control search-input input-width-sm" ng-model="Year" ng-options="item.value as item.text for item in YearList"></select>
+
+
+                                <label class="search-lable">定点机构</label>
+                                <select class="search-control search-input input-width-sm" ng-model="selectObj" ng-options="item.NsId as item.NsName for item in OrgData">
+                                    <option value="">所有机构</option>
+                                </select>
+
+                                <div class="search-btn-div">
+                                    <a class="btn btn-primary btn-sm" ng-click="Search()"><i class="fa fa-search"></i> 查询</a>
+                                </div>
+                                <a class="btn btn-primary btn-sm" ng-click="Grant()">发放</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="box border primary">
+                    <div class="box-title">
+                        <h4><i class="fa fa-table"></i>保证金列表</h4>
+                    </div>
+                    <div class="box-body">
+                        <div class="box-center">
+                            <ui-data-table options="options">
+                                <table id="datatable1" class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th class="center">序号</th>
+                                            <th class="center">年月份</th>
+                                            <th class="center">保证金</th>
+                                            <th class="center">状态</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr ng-repeat="sd in Data.ServiceDepositList">
+                                            <td class="center">{{$index + 1}}</td>
+                                            <td class="center">{{sd.YearMonth}}</td>
+                                            <td class="center">{{sd.Amount}}</td>
+                                            <td class="center">{{sd.Status.toString().replace("0","未发放").replace("1","已发放")}}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </ui-data-table>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

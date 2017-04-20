@@ -1,0 +1,137 @@
+﻿<link href="../../Content/style/common.css" rel="stylesheet" />
+<div class="row">
+            <div class="row">
+            <div class="col-md-12">
+                <div class="tab-content">
+                    <div class="tab-pane fade in active" id="box_tab1">
+                        <div class="row">
+                            <form class="form-horizontal" name="appertForm" role="form" novalidate>
+                                <div class="col-md-12">
+                                    <div class="box border primary">
+                                        <div class="box-title">
+                                            <h4><i class="fa fa-columns"></i><span class="hidden-inline-mobile">人员状态详细信息</span></h4>
+                                        </div>
+                                        <div class="box-body">
+                                            <div class="form-group">
+                                                <label class="col-md-1 control-label">姓名</label>
+                                                <div class="col-md-2">
+                                                    <span class="form-control">{{currentItem.Name}}</span>
+                                                </div>
+                                                <label class="col-md-1 control-label">性别</label>
+                                                <div class="col-md-2">
+                                                    <span class="form-control">{{currentItem.Gender}}</span>
+                                                </div>
+                                                <label class="col-md-1 control-label">年龄</label>
+                                                <div class="col-md-2">
+                                                    <span class="form-control">{{currentItem.Age}}</span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-1 control-label">身份证号</label>
+                                                <div class="col-md-2">
+                                                    <span class="form-control">{{currentItem.IdNo}}</span>
+                                                </div>
+                                                <label class="col-md-1 control-label">社保卡号</label>
+                                                <div class="col-md-2">
+                                                    <span class="form-control">{{currentItem.SsNo}}</span>
+                                                </div>
+                                                <label class="col-md-1 control-label">联系电话</label>
+                                                <div class="col-md-2">
+                                                    <span class="form-control">{{currentItem.Phone}}</span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-1 control-label">人员身份</label>
+                                                <div class="col-md-2">
+                                                    <span class="form-control" select-code="A002" select-value="{{currentItem.McType}}"></span>
+                                                </div>
+                                                <label class="col-md-1 control-label">病种</label>
+                                                <div class="col-md-2">
+                                                    <span class="form-control" select-code="A003" select-value="{{currentItem.Disease}}"></span>
+                                                </div>
+                                                <label class="col-md-1 control-label">婚姻状况</label>
+                                                <div class="col-md-2">
+                                                    <span class="form-control" select-code="A004" select-value="{{currentItem.MaritalStatus}}"></span>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-md-1 control-label">家属姓名</label>
+                                                <div class="col-md-2">
+                                                    <span class="form-control">{{currentItem.FamilyMemberName}}</span>
+                                                </div>
+                                                <label class="col-md-1 control-label">与人员关系</label>
+                                                <div class="col-md-2">
+                                                    <span class="form-control">{{currentItem.FamilyMemberRelationship}}</span>
+                                                </div>
+                                                <label class="col-md-1 control-label">家属联系电话</label>
+                                                <div class="col-md-2">
+                                                    <span class="form-control">{{currentItem.FamilyMemberPhone}}</span>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="form-group">
+                                                <label class="col-md-1 control-label">目前状态</label>
+                                                <div class="col-md-2">
+                                                    <span class="form-control">{{currentItem.InHosStatus.toString().replace("0","在院").replace("1","未入院").replace("2","请假").replace("3","出院")}}</span>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="form-group">
+                                                <label class="col-md-1 control-label">入住机构</label>
+                                                <div class="col-md-2">
+                                                    <span class="form-control">{{currentItem.NsId.toString().replace("1","巨鹿县福缘居老年医养中心").replace("2","巨鹿县健民福利院").replace("3","巨鹿县祈康养老院")}}</span>
+                                                </div>
+                                                <label class="col-md-1 control-label">护理形式</label>
+                                                <div class="col-md-2">
+                                                    <span class="form-control">{{currentItem.NsAppCareType.toString().replace("1","一级专护").replace("2","二级专护").replace("3","机构护理")}}</span>
+                                                </div>
+                                                <label class="col-md-1 control-label">本次入住时间</label>
+                                                <div class="col-md-2">
+                                                    <span class="form-control">{{currentItem.InDate | timeFormat}}</span>
+                                                    <!--<input name="本次入住时间" class="form-control" ng-model="currentItem.InDate | timeFormat" />-->
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-md-1 control-label">出院时间</label>
+                                                <div class="col-md-2">
+                                                    <span class="form-control">{{currentItem.OutDate | timeFormat}}</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-md-1 control-label">请假时间</label>
+                                                <div class="col-md-2">
+                                                    <span class="form-control">{{currentItem.StartDate | timeFormat}}</span>
+                                                </div>
+                                                <label class="col-md-1 control-label">销假时间</label>
+                                                <div class="col-md-2">
+                                                    <span class="form-control">{{currentItem.ReturnDate | timeFormat}}</span>
+                                                </div>
+                                                <label class="col-md-1 control-label">请假期间(小时)</label>
+                                                <div class="col-md-2">
+                                                    <span class="form-control">{{currentItem.LeHour}} </span>
+                                                </div>
+                                            </div>
+                                          </div>
+                                    </div>
+
+                                    <!--<div class="hack hack-border"></div>
+                                    <div class="form-group">
+
+                                        <div class="col-md-offset-4">
+                                            <a class="btn btn-primary"  ng-click="Close()"><i class="fa">关闭</i></a>
+                                        </div>
+                                    </div>-->
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--</div>-->
+</div>
